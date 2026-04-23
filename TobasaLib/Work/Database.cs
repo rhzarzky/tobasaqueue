@@ -1,4 +1,4 @@
-﻿#region License
+#region License
 /*
     Tobasa Library - Provide Async TCP server, DirectShow wrapper and simple Logger class
     Copyright (C) 2015-2025  Jefri Sibarani
@@ -42,16 +42,16 @@ namespace Tobasa
     public class Database : Notifier
     {
         public static string DEFAULT_MYSQL_CONNSTRING           = "Data Source=127.0.0.1,3306;User ID=antrian;Initial Catalog=antri;";
-        public static string DEFAULT_MYSQL_CONNSTRING_PASSWORD  = "ad7415644add93d6e719d2b593da6e6e";
+        public static string DEFAULT_MYSQL_CONNSTRING_PASSWORD  = "";
         
         public static string DEFAULT_PGSQL_CONNSTRING           = "Host=127.0.0.1;Username=antrian;Database=antri;Port=5432;";
-        public static string DEFAULT_PGSQL_CONNSTRING_PASSWORD  = "ad7415644add93d6e719d2b593da6e6e";
+        public static string DEFAULT_PGSQL_CONNSTRING_PASSWORD  = "";
         
         public static string DEFAULT_MSSQL_CONNSTRING           = "Server=127.0.0.1,1433;Database=antri;User ID=antrian;Trusted_Connection=False;";
-        public static string DEFAULT_MSSQL_CONNSTRING_PASSWORD  = "ad7415644add93d6e719d2b593da6e6e";
+        public static string DEFAULT_MSSQL_CONNSTRING_PASSWORD  = "";
         
         public static string DEFAULT_SQLITE_CONNSTRING          = "Data Source=.\\Database\\antri.db3;Version=3;";
-        public static string DEFAULT_SQLITE_CONNSTRING_PASSWORD = "ad7415644add93d6e719d2b593da6e6e";
+        public static string DEFAULT_SQLITE_CONNSTRING_PASSWORD = "";
         
         public static string DEFAULT_SECURITY_SALT              = "C4BC3A3AC2D6D367A74580388B20BC069C96B048DFEAF5CCDC0CE1E25BF23F39";
 
@@ -99,24 +99,33 @@ namespace Tobasa
             {
                 MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder();
                 builder.ConnectionString = partialConnStr;
-                string clearPwd = Util.DecryptPassword(encryptedPwd, salt);
-                builder.Add("Password", clearPwd);
+                if (!string.IsNullOrEmpty(encryptedPwd)) 
+                {
+                    string clearPwd = Util.DecryptPassword(encryptedPwd, salt);
+                    builder.Add("Password", clearPwd);
+                }
                 return builder.ToString();
             }
             else if (ProviderType == DatabaseProviderType.MSSQL)
             {
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
                 builder.ConnectionString = partialConnStr;
-                string clearPwd = Util.DecryptPassword(encryptedPwd, salt);
-                builder.Password = clearPwd;
+                if (!string.IsNullOrEmpty(encryptedPwd)) 
+                {
+                    string clearPwd = Util.DecryptPassword(encryptedPwd, salt);
+                    builder.Password = clearPwd;
+                }
                 return builder.ToString();
             }
             else if (ProviderType == DatabaseProviderType.PGSQL)
             {
                 NpgsqlConnectionStringBuilder builder = new NpgsqlConnectionStringBuilder();
                 builder.ConnectionString = partialConnStr;
-                string clearPwd = Util.DecryptPassword(encryptedPwd, salt);
-                builder.Add("Password", clearPwd);
+                if (!string.IsNullOrEmpty(encryptedPwd)) 
+                {
+                    string clearPwd = Util.DecryptPassword(encryptedPwd, salt);
+                    builder.Add("Password", clearPwd);
+                }
                 return builder.ToString();
             }
             else

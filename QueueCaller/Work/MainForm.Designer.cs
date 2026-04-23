@@ -1035,7 +1035,7 @@ namespace Tobasa
             this.tbPort.Name = "tbPort";
             this.tbPort.Size = new System.Drawing.Size(44, 20);
             this.tbPort.TabIndex = 20;
-            this.tbPort.Text = "2345";
+            this.tbPort.Text = "3306";
             // 
             // label5
             // 

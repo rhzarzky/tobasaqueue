@@ -33,7 +33,7 @@
       <Value Profile="(Default)">127.0.0.1</Value>
     </Setting>
     <Setting Name="QueueServerPort" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">2345</Value>
+      <Value Profile="(Default)">3306</Value>
     </Setting>
     <Setting Name="StationName" Type="System.String" Scope="User">
       <Value Profile="(Default)">DISP#1</Value>

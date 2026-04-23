@@ -2,7 +2,7 @@ Untuk MS SQL Server
 -----------------------------------------------------------------
 Provider: SqlClient
 Connection String          :  "Server=127.0.0.1,1433;Database=antri;User ID=antrian;Trusted_Connection=False;"
-ConnectionStringPassword   :  ad7415644add93d6e719d2b593da6e6e
+ConnectionStringPassword   :  
 
 
 Untuk SQLite
@@ -15,12 +15,12 @@ ConnectionStringPassword   :
 Untuk MySQL Server
 -----------------------------------------------------------------
 Provider: MYSQL
-Connection String          :  "Data Source=127.0.0.1,1433;User ID=antrian;Initial Catalog=antri;"
-ConnectionStringPassword   :  ad7415644add93d6e719d2b593da6e6e
+Connection String          :  "Data Source=127.0.0.1,3306;User ID=root;password=;Initial Catalog=antri;"
+ConnectionStringPassword   :  
 
 
 Untuk PostgreSQL Server
 -----------------------------------------------------------------
 Provider: Npgsql
 Connection String          :  "Data Source=127.0.0.1,1433;User ID=antrian;Initial Catalog=antri;"
-ConnectionStringPassword   :  ad7415644add93d6e719d2b593da6e6e
+ConnectionStringPassword   :  

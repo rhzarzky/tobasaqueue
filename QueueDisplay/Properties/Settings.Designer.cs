@@ -139,7 +139,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2345")]
+        [global::System.Configuration.DefaultSettingValueAttribute("3306")]
         public int QueueServerPort {
             get {
                 return ((int)(this["QueueServerPort"]));
