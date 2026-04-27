@@ -396,7 +396,7 @@ namespace DirectShowLib
         /// VB.Net doesn't support implicit cast. <see cref="DirectShowLib.DsInt.ToInt64"/> for similar functionality.
         /// <code>
         ///   // Define a new DsInt instance
-        ///   DsInt dsI = new DsInt(0x13306678);
+        ///   DsInt dsI = new DsInt(0x12345678);
         ///   // Do implicit cast between DsInt and Int32
         ///   int i = dsI;
         ///
@@ -415,7 +415,7 @@ namespace DirectShowLib
         /// VB.Net doesn't support implicit cast. <see cref="DirectShowLib.DsGuid.FromInt32"/> for similar functionality.
         /// <code>
         ///   // Define a new Int32 instance
-        ///   int i = 0x13306678;
+        ///   int i = 0x12345678;
         ///   // Do implicit cast between Int64 and DsInt
         ///   DsInt dsI = i;
         ///

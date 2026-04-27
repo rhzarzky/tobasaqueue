@@ -25,7 +25,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("3306")]
+        [global::System.Configuration.DefaultSettingValueAttribute("2345")]
         public int ListenPort {
             get {
                 return ((int)(this["ListenPort"]));
@@ -61,7 +61,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("ad7415644add93d6e719d2b593da6e6e")]
         public string ConnectionStringPassword {
             get {
                 return ((string)(this["ConnectionStringPassword"]));

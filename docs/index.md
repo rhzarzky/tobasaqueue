@@ -7,7 +7,7 @@ meningkatkan kualitas layanan dan memaksimalkan kepuasan pelanggan.
 
 ## Kebutuhan minimal
 * Windows 7 Service Pack 1 
-* Microsoft .NET Framework 4.8
+* Microsoft .NET Framework 4.6
 
 ## Build/Compile dari source code
 * Clone/download project source code dari https://github.com/jefrisibarani/tobasaqueue

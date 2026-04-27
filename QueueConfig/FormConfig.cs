@@ -31,7 +31,7 @@ namespace Tobasa
             database = "antri",
             username = "antrian",
             password = "TOBASA",
-            passwordEnc = "",
+            passwordEnc = "ad7415644add93d6e719d2b593da6e6e",
             connString = "Data Source=127.0.0.1,3306;User ID=antrian;Initial Catalog=antri;"
         };
 
@@ -42,7 +42,7 @@ namespace Tobasa
             database = "antri",
             username = "antrian",
             password = "TOBASA",
-            passwordEnc = "",
+            passwordEnc = "ad7415644add93d6e719d2b593da6e6e",
             connString = "Host=127.0.0.1;Username=antrian;Database=antri;Port=5432;"
         };
 
@@ -53,14 +53,14 @@ namespace Tobasa
             database = "antri",
             username = "antrian",
             password = "TOBASA",
-            passwordEnc = "",
+            passwordEnc = "ad7415644add93d6e719d2b593da6e6e",
             connString = "Server=127.0.0.1,1433;Database=antri;User ID=antrian;Trusted_Connection=False;"
         };
 
         private readonly QueOptions queOptionsDefault = new QueOptions()
         {
             hostAddr = "127.0.0.1",
-            tcpPort = "3306",
+            tcpPort = "2345",
             username = "tobasaqueue",
             password = "TOBASA",
             passwordEnc = "e4ee0e54215f5e3dd7683923abe1dac8"
