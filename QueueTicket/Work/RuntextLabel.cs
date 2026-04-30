@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 using System.Drawing;
 
@@ -26,6 +26,8 @@ namespace Tobasa
 
         void Timer_Tick(object sender, EventArgs e)
         {
+            if (Parent == null) return;
+
             if (CurrentPosition <= (int)leftLimit)
             {
                 CurrentPosition = Parent.Width;
@@ -56,10 +58,13 @@ namespace Tobasa
         {
             if (disposing)
             {
-                if (Timer != null)
-                    Timer.Dispose();
+                if (timer != null)
+                {
+                    timer.Stop();
+                    timer.Dispose();
+                }
             }
-            Timer = null;
+            timer = null;
         }
     }
 }

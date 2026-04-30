@@ -1,4 +1,4 @@
-﻿#region License
+#region License
 /*
     Sotware Antrian Tobasa
     Copyright (C) 2015-2025  Jefri Sibarani
@@ -85,6 +85,11 @@ namespace Tobasa
             this.btnChangePost7 = new System.Windows.Forms.Button();
             this.btnChangePost8 = new System.Windows.Forms.Button();
             this.btnChangePost9 = new System.Windows.Forms.Button();
+            this.btnChangePost10 = new System.Windows.Forms.Button();
+            this.btnChangePost11 = new System.Windows.Forms.Button();
+            this.btnChangePost12 = new System.Windows.Forms.Button();
+            this.btnChangePost13 = new System.Windows.Forms.Button();
+            this.btnChangePost14 = new System.Windows.Forms.Button();
             this.tabProcessing = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -486,12 +491,18 @@ namespace Tobasa
             this.postsBtnDiv.Controls.Add(this.btnChangePost7, 2, 1);
             this.postsBtnDiv.Controls.Add(this.btnChangePost8, 3, 1);
             this.postsBtnDiv.Controls.Add(this.btnChangePost9, 4, 1);
+            this.postsBtnDiv.Controls.Add(this.btnChangePost10, 0, 2);
+            this.postsBtnDiv.Controls.Add(this.btnChangePost11, 1, 2);
+            this.postsBtnDiv.Controls.Add(this.btnChangePost12, 2, 2);
+            this.postsBtnDiv.Controls.Add(this.btnChangePost13, 3, 2);
+            this.postsBtnDiv.Controls.Add(this.btnChangePost14, 4, 2);
             this.postsBtnDiv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.postsBtnDiv.Location = new System.Drawing.Point(201, 334);
             this.postsBtnDiv.Name = "postsBtnDiv";
-            this.postsBtnDiv.RowCount = 2;
-            this.postsBtnDiv.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.postsBtnDiv.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.postsBtnDiv.RowCount = 3;
+            this.postsBtnDiv.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33F));
+            this.postsBtnDiv.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33F));
+            this.postsBtnDiv.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.34F));
             this.postsBtnDiv.Size = new System.Drawing.Size(260, 80);
             this.postsBtnDiv.TabIndex = 24;
             // 
@@ -614,6 +625,66 @@ namespace Tobasa
             this.btnChangePost9.Text = "Post 9";
             this.btnChangePost9.UseVisualStyleBackColor = true;
             this.btnChangePost9.Click += new System.EventHandler(this.OnChangePost);
+            // 
+            // btnChangePost10
+            // 
+            this.btnChangePost10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnChangePost10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangePost10.Location = new System.Drawing.Point(3, 83);
+            this.btnChangePost10.Name = "btnChangePost10";
+            this.btnChangePost10.Size = new System.Drawing.Size(46, 34);
+            this.btnChangePost10.TabIndex = 10;
+            this.btnChangePost10.Text = "Post 10";
+            this.btnChangePost10.UseVisualStyleBackColor = true;
+            this.btnChangePost10.Click += new System.EventHandler(this.OnChangePost);
+            // 
+            // btnChangePost11
+            // 
+            this.btnChangePost11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnChangePost11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangePost11.Location = new System.Drawing.Point(55, 83);
+            this.btnChangePost11.Name = "btnChangePost11";
+            this.btnChangePost11.Size = new System.Drawing.Size(46, 34);
+            this.btnChangePost11.TabIndex = 11;
+            this.btnChangePost11.Text = "Post 11";
+            this.btnChangePost11.UseVisualStyleBackColor = true;
+            this.btnChangePost11.Click += new System.EventHandler(this.OnChangePost);
+            // 
+            // btnChangePost12
+            // 
+            this.btnChangePost12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnChangePost12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangePost12.Location = new System.Drawing.Point(107, 83);
+            this.btnChangePost12.Name = "btnChangePost12";
+            this.btnChangePost12.Size = new System.Drawing.Size(46, 34);
+            this.btnChangePost12.TabIndex = 12;
+            this.btnChangePost12.Text = "Post 12";
+            this.btnChangePost12.UseVisualStyleBackColor = true;
+            this.btnChangePost12.Click += new System.EventHandler(this.OnChangePost);
+            // 
+            // btnChangePost13
+            // 
+            this.btnChangePost13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnChangePost13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangePost13.Location = new System.Drawing.Point(159, 83);
+            this.btnChangePost13.Name = "btnChangePost13";
+            this.btnChangePost13.Size = new System.Drawing.Size(46, 34);
+            this.btnChangePost13.TabIndex = 13;
+            this.btnChangePost13.Text = "Post 13";
+            this.btnChangePost13.UseVisualStyleBackColor = true;
+            this.btnChangePost13.Click += new System.EventHandler(this.OnChangePost);
+            // 
+            // btnChangePost14
+            // 
+            this.btnChangePost14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnChangePost14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangePost14.Location = new System.Drawing.Point(211, 83);
+            this.btnChangePost14.Name = "btnChangePost14";
+            this.btnChangePost14.Size = new System.Drawing.Size(46, 34);
+            this.btnChangePost14.TabIndex = 14;
+            this.btnChangePost14.Text = "Post 14";
+            this.btnChangePost14.UseVisualStyleBackColor = true;
+            this.btnChangePost14.Click += new System.EventHandler(this.OnChangePost);
             // 
             // tabProcessing
             // 
@@ -1035,7 +1106,7 @@ namespace Tobasa
             this.tbPort.Name = "tbPort";
             this.tbPort.Size = new System.Drawing.Size(44, 20);
             this.tbPort.TabIndex = 20;
-            this.tbPort.Text = "2345";
+            this.tbPort.Text = "3306";
             // 
             // label5
             // 
@@ -1163,6 +1234,11 @@ namespace Tobasa
 		private System.Windows.Forms.Button btnChangePost7;
 		private System.Windows.Forms.Button btnChangePost8;
 		private System.Windows.Forms.Button btnChangePost9;
+		private System.Windows.Forms.Button btnChangePost10;
+		private System.Windows.Forms.Button btnChangePost11;
+		private System.Windows.Forms.Button btnChangePost12;
+		private System.Windows.Forms.Button btnChangePost13;
+		private System.Windows.Forms.Button btnChangePost14;
 		private System.Windows.Forms.ToolTip toolTip;
 		private System.Windows.Forms.GroupBox gbConnProps;
 		private System.Windows.Forms.GroupBox groupBox1;

@@ -29,10 +29,10 @@ namespace Tobasa
             hostAddr = "127.0.0.1",
             tcpPort = "3306",
             database = "antri",
-            username = "antrian",
-            password = "TOBASA",
+            username = "root",
+            password = "",
             passwordEnc = "ad7415644add93d6e719d2b593da6e6e",
-            connString = "Data Source=127.0.0.1,3306;User ID=antrian;Initial Catalog=antri;"
+            connString = "Data Source=127.0.0.1,3306;User ID=root;password=;Initial Catalog=antri;"
         };
 
         private readonly SqlOptions pgsqlOptionsDefault = new SqlOptions()

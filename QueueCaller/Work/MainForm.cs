@@ -1,4 +1,4 @@
-﻿#region License
+#region License
 /*
     Sotware Antrian Tobasa
     Copyright (C) 2015-2025  Jefri Sibarani
@@ -683,10 +683,31 @@ namespace Tobasa
                 else if ((Button)sender == btnChangePost9)
                 {
                     postId = "POST9";
-                    _settings.StationName = fullStationName;
+                }
+                else if ((Button)sender == btnChangePost10)
+                {
+                    postId = "POST10";
+                }
+                else if ((Button)sender == btnChangePost11)
+                {
+                    postId = "POST11";
+                }
+                else if ((Button)sender == btnChangePost12)
+                {
+                    postId = "POST12";
+                }
+                else if ((Button)sender == btnChangePost13)
+                {
+                    postId = "POST13";
+                }
+                else if ((Button)sender == btnChangePost14)
+                {
+                    postId = "POST14";
                 }
                 else
                     postId = cbPost.Text;
+
+                _settings.StationName = fullStationName;
 
                 cbPost.Text = postId;
 
@@ -1073,6 +1094,11 @@ namespace Tobasa
             toolTip.SetToolTip(btnChangePost7, _postIdsDict["POST7"]);
             toolTip.SetToolTip(btnChangePost8, _postIdsDict["POST8"]);
             toolTip.SetToolTip(btnChangePost9, _postIdsDict["POST9"]);
+            toolTip.SetToolTip(btnChangePost10, _postIdsDict["POST10"]);
+            toolTip.SetToolTip(btnChangePost11, _postIdsDict["POST11"]);
+            toolTip.SetToolTip(btnChangePost12, _postIdsDict["POST12"]);
+            toolTip.SetToolTip(btnChangePost13, _postIdsDict["POST13"]);
+            toolTip.SetToolTip(btnChangePost14, _postIdsDict["POST14"]);
         }
 
         #endregion

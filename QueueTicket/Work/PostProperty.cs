@@ -390,6 +390,66 @@ namespace Tobasa
                 settings.Post9PrintHeader = PrintHeader;
                 settings.Post9UseThemeButton = UseThmeButtonImage;
             }
+            else if (Id == "POST10")
+            {
+                settings.Post10Name = Name;
+                settings.Post10Caption = Caption;
+                settings.Post10Enabled = Enabled;
+                settings.Post10Visible = Visible;
+                settings.Post10BtnImgOn = BtnImageOn;
+                settings.Post10BtnImgOff = BtnImageOff;
+                settings.Post10PrintCopies = (short)PrintCopies;
+                settings.Post10PrintHeader = PrintHeader;
+                settings.Post10UseThemeButton = UseThmeButtonImage;
+            }
+            else if (Id == "POST11")
+            {
+                settings.Post11Name = Name;
+                settings.Post11Caption = Caption;
+                settings.Post11Enabled = Enabled;
+                settings.Post11Visible = Visible;
+                settings.Post11BtnImgOn = BtnImageOn;
+                settings.Post11BtnImgOff = BtnImageOff;
+                settings.Post11PrintCopies = (short)PrintCopies;
+                settings.Post11PrintHeader = PrintHeader;
+                settings.Post11UseThemeButton = UseThmeButtonImage;
+            }
+            else if (Id == "POST12")
+            {
+                settings.Post12Name = Name;
+                settings.Post12Caption = Caption;
+                settings.Post12Enabled = Enabled;
+                settings.Post12Visible = Visible;
+                settings.Post12BtnImgOn = BtnImageOn;
+                settings.Post12BtnImgOff = BtnImageOff;
+                settings.Post12PrintCopies = (short)PrintCopies;
+                settings.Post12PrintHeader = PrintHeader;
+                settings.Post12UseThemeButton = UseThmeButtonImage;
+            }
+            else if (Id == "POST13")
+            {
+                settings.Post13Name = Name;
+                settings.Post13Caption = Caption;
+                settings.Post13Enabled = Enabled;
+                settings.Post13Visible = Visible;
+                settings.Post13BtnImgOn = BtnImageOn;
+                settings.Post13BtnImgOff = BtnImageOff;
+                settings.Post13PrintCopies = (short)PrintCopies;
+                settings.Post13PrintHeader = PrintHeader;
+                settings.Post13UseThemeButton = UseThmeButtonImage;
+            }
+            else if (Id == "POST14")
+            {
+                settings.Post14Name = Name;
+                settings.Post14Caption = Caption;
+                settings.Post14Enabled = Enabled;
+                settings.Post14Visible = Visible;
+                settings.Post14BtnImgOn = BtnImageOn;
+                settings.Post14BtnImgOff = BtnImageOff;
+                settings.Post14PrintCopies = (short)PrintCopies;
+                settings.Post14PrintHeader = PrintHeader;
+                settings.Post14UseThemeButton = UseThmeButtonImage;
+            }
         }
         public void LoadFromConfiguration()
         {
@@ -534,6 +594,76 @@ namespace Tobasa
                 PrintCopies = (int)settings.Post9PrintCopies;
                 PrintHeader = settings.Post9PrintHeader;
                 UseThmeButtonImage = settings.Post9UseThemeButton;
+            }
+            else if (Id == "POST10")
+            {
+                Index = 10;
+                Name = settings.Post10Name;
+                Id = settings.Post10Post;
+                Caption = settings.Post10Caption;
+                Enabled = settings.Post10Enabled;
+                Visible = settings.Post10Visible;
+                BtnImageOn = settings.Post10BtnImgOn;
+                BtnImageOff = settings.Post10BtnImgOff;
+                PrintCopies = (int)settings.Post10PrintCopies;
+                PrintHeader = settings.Post10PrintHeader;
+                UseThmeButtonImage = settings.Post10UseThemeButton;
+            }
+            else if (Id == "POST11")
+            {
+                Index = 11;
+                Name = settings.Post11Name;
+                Id = settings.Post11Post;
+                Caption = settings.Post11Caption;
+                Enabled = settings.Post11Enabled;
+                Visible = settings.Post11Visible;
+                BtnImageOn = settings.Post11BtnImgOn;
+                BtnImageOff = settings.Post11BtnImgOff;
+                PrintCopies = (int)settings.Post11PrintCopies;
+                PrintHeader = settings.Post11PrintHeader;
+                UseThmeButtonImage = settings.Post11UseThemeButton;
+            }
+            else if (Id == "POST12")
+            {
+                Index = 12;
+                Name = settings.Post12Name;
+                Id = settings.Post12Post;
+                Caption = settings.Post12Caption;
+                Enabled = settings.Post12Enabled;
+                Visible = settings.Post12Visible;
+                BtnImageOn = settings.Post12BtnImgOn;
+                BtnImageOff = settings.Post12BtnImgOff;
+                PrintCopies = (int)settings.Post12PrintCopies;
+                PrintHeader = settings.Post12PrintHeader;
+                UseThmeButtonImage = settings.Post12UseThemeButton;
+            }
+            else if (Id == "POST13")
+            {
+                Index = 13;
+                Name = settings.Post13Name;
+                Id = settings.Post13Post;
+                Caption = settings.Post13Caption;
+                Enabled = settings.Post13Enabled;
+                Visible = settings.Post13Visible;
+                BtnImageOn = settings.Post13BtnImgOn;
+                BtnImageOff = settings.Post13BtnImgOff;
+                PrintCopies = (int)settings.Post13PrintCopies;
+                PrintHeader = settings.Post13PrintHeader;
+                UseThmeButtonImage = settings.Post13UseThemeButton;
+            }
+            else if (Id == "POST14")
+            {
+                Index = 14;
+                Name = settings.Post14Name;
+                Id = settings.Post14Post;
+                Caption = settings.Post14Caption;
+                Enabled = settings.Post14Enabled;
+                Visible = settings.Post14Visible;
+                BtnImageOn = settings.Post14BtnImgOn;
+                BtnImageOff = settings.Post14BtnImgOff;
+                PrintCopies = (int)settings.Post14PrintCopies;
+                PrintHeader = settings.Post14PrintHeader;
+                UseThmeButtonImage = settings.Post14UseThemeButton;
             }
         }
     };

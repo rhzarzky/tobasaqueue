@@ -1,4 +1,4 @@
-﻿#region License
+#region License
 /*
     Sotware Antrian Tobasa
     Copyright (C) 2015-2025  Jefri Sibarani
@@ -113,6 +113,16 @@ namespace Tobasa
         private Bitmap post8BtnImgOff = null;
         private Bitmap post9BtnImgOn  = null;
         private Bitmap post9BtnImgOff = null;
+        private Bitmap post10BtnImgOn = null;
+        private Bitmap post10BtnImgOff = null;
+        private Bitmap post11BtnImgOn = null;
+        private Bitmap post11BtnImgOff = null;
+        private Bitmap post12BtnImgOn = null;
+        private Bitmap post12BtnImgOff = null;
+        private Bitmap post13BtnImgOn = null;
+        private Bitmap post13BtnImgOff = null;
+        private Bitmap post14BtnImgOn = null;
+        private Bitmap post14BtnImgOff = null;
 
         #endregion
 
@@ -292,6 +302,11 @@ namespace Tobasa
             labelRecordList.Add(new LabelRecord(lblPnl7));
             labelRecordList.Add(new LabelRecord(lblPnl8));
             labelRecordList.Add(new LabelRecord(lblPnl9));
+            labelRecordList.Add(new LabelRecord(lblPnl10));
+            labelRecordList.Add(new LabelRecord(lblPnl11));
+            labelRecordList.Add(new LabelRecord(lblPnl12));
+            labelRecordList.Add(new LabelRecord(lblPnl13));
+            labelRecordList.Add(new LabelRecord(lblPnl14));
             //labelRecordList.Add(new LabelRecord(runningTextBottom));
         }
 
@@ -446,8 +461,28 @@ namespace Tobasa
             post8BtnImgOff = btn8.imageOff;
 
             ButtonImage btn9 = GetButtonImage("POST9");
-            post9BtnImgOn = btn9.imageOn;
+            post9BtnImgOn  = btn9.imageOn;
             post9BtnImgOff = btn9.imageOff;
+
+            ButtonImage btn10 = GetButtonImage("POST10");
+            post10BtnImgOn = btn10.imageOn;
+            post10BtnImgOff = btn10.imageOff;
+
+            ButtonImage btn11 = GetButtonImage("POST11");
+            post11BtnImgOn = btn11.imageOn;
+            post11BtnImgOff = btn11.imageOff;
+
+            ButtonImage btn12 = GetButtonImage("POST12");
+            post12BtnImgOn = btn12.imageOn;
+            post12BtnImgOff = btn12.imageOff;
+
+            ButtonImage btn13 = GetButtonImage("POST13");
+            post13BtnImgOn = btn13.imageOn;
+            post13BtnImgOff = btn13.imageOff;
+
+            ButtonImage btn14 = GetButtonImage("POST14");
+            post14BtnImgOn = btn14.imageOn;
+            post14BtnImgOff = btn14.imageOff;
 
 
             picBtnPnl0.Enabled = _settings.Post0Enabled;
@@ -460,6 +495,11 @@ namespace Tobasa
             picBtnPnl7.Enabled = _settings.Post7Enabled;
             picBtnPnl8.Enabled = _settings.Post8Enabled;
             picBtnPnl9.Enabled = _settings.Post9Enabled;
+            picBtnPnl10.Enabled = _settings.Post10Enabled;
+            picBtnPnl11.Enabled = _settings.Post11Enabled;
+            picBtnPnl12.Enabled = _settings.Post12Enabled;
+            picBtnPnl13.Enabled = _settings.Post13Enabled;
+            picBtnPnl14.Enabled = _settings.Post14Enabled;
 
             if (!picBtnPnl0.Enabled)
             {
@@ -521,6 +561,36 @@ namespace Tobasa
                 post9BtnImgOff = Util.MakeGrayscale3(post9BtnImgOff);
             }
 
+            if (!picBtnPnl10.Enabled)
+            {
+                post10BtnImgOn = Util.MakeGrayscale3(post10BtnImgOn);
+                post10BtnImgOff = Util.MakeGrayscale3(post10BtnImgOff);
+            }
+
+            if (!picBtnPnl11.Enabled)
+            {
+                post11BtnImgOn = Util.MakeGrayscale3(post11BtnImgOn);
+                post11BtnImgOff = Util.MakeGrayscale3(post11BtnImgOff);
+            }
+
+            if (!picBtnPnl12.Enabled)
+            {
+                post12BtnImgOn = Util.MakeGrayscale3(post12BtnImgOn);
+                post12BtnImgOff = Util.MakeGrayscale3(post12BtnImgOff);
+            }
+
+            if (!picBtnPnl13.Enabled)
+            {
+                post13BtnImgOn = Util.MakeGrayscale3(post13BtnImgOn);
+                post13BtnImgOff = Util.MakeGrayscale3(post13BtnImgOff);
+            }
+
+            if (!picBtnPnl14.Enabled)
+            {
+                post14BtnImgOn = Util.MakeGrayscale3(post14BtnImgOn);
+                post14BtnImgOff = Util.MakeGrayscale3(post14BtnImgOff);
+            }
+
             picBtnPnl0.Image = post0BtnImgOff;
             picBtnPnl1.Image = post1BtnImgOff;
             picBtnPnl2.Image = post2BtnImgOff;
@@ -531,6 +601,11 @@ namespace Tobasa
             picBtnPnl7.Image = post7BtnImgOff;
             picBtnPnl8.Image = post8BtnImgOff;
             picBtnPnl9.Image = post9BtnImgOff;
+            picBtnPnl10.Image = post10BtnImgOff;
+            picBtnPnl11.Image = post11BtnImgOff;
+            picBtnPnl12.Image = post12BtnImgOff;
+            picBtnPnl13.Image = post13BtnImgOff;
+            picBtnPnl14.Image = post14BtnImgOff;
         }
 
         void InitButtonText()
@@ -545,6 +620,11 @@ namespace Tobasa
             picBtnPnl7.Text = _settings.Post7Name;
             picBtnPnl8.Text = _settings.Post8Name;
             picBtnPnl9.Text = _settings.Post9Name;
+            picBtnPnl10.Text = _settings.Post10Name;
+            picBtnPnl11.Text = _settings.Post11Name;
+            picBtnPnl12.Text = _settings.Post12Name;
+            picBtnPnl13.Text = _settings.Post13Name;
+            picBtnPnl14.Text = _settings.Post14Name;
         }
 
         void AddRunningText(string text)
@@ -572,6 +652,11 @@ namespace Tobasa
             lblPnl7.Text = _settings.Post7Caption;
             lblPnl8.Text = _settings.Post8Caption;
             lblPnl9.Text = _settings.Post9Caption;
+            lblPnl10.Text = _settings.Post10Caption;
+            lblPnl11.Text = _settings.Post11Caption;
+            lblPnl12.Text = _settings.Post12Caption;
+            lblPnl13.Text = _settings.Post13Caption;
+            lblPnl14.Text = _settings.Post14Caption;
 
             AddRunningText(_settings.RunningText0);
             AddRunningText(_settings.RunningText1);
@@ -595,6 +680,11 @@ namespace Tobasa
             lblPnl7.TextAlign = contentAligment;
             lblPnl8.TextAlign = contentAligment;
             lblPnl9.TextAlign = contentAligment;
+            lblPnl10.TextAlign = contentAligment;
+            lblPnl11.TextAlign = contentAligment;
+            lblPnl12.TextAlign = contentAligment;
+            lblPnl13.TextAlign = contentAligment;
+            lblPnl14.TextAlign = contentAligment;
 
             float fontSize = (float) _settings.MainMenuLabelFontSize;
             if (fontSize > 26) fontSize = 26;
@@ -610,6 +700,11 @@ namespace Tobasa
             lblPnl7.Font = new Font("Microsoft Sans Serif", fontSize, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
             lblPnl8.Font = new Font("Microsoft Sans Serif", fontSize, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
             lblPnl9.Font = new Font("Microsoft Sans Serif", fontSize, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
+            lblPnl10.Font = new Font("Microsoft Sans Serif", fontSize, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
+            lblPnl11.Font = new Font("Microsoft Sans Serif", fontSize, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
+            lblPnl12.Font = new Font("Microsoft Sans Serif", fontSize, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
+            lblPnl13.Font = new Font("Microsoft Sans Serif", fontSize, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
+            lblPnl14.Font = new Font("Microsoft Sans Serif", fontSize, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
         }
 
         public void ToggleFullScreen()
@@ -632,82 +727,48 @@ namespace Tobasa
         private void AdaptDivMenuLayout()
         {
             // Left Part
-            bool visible3 = _settings.Post3Visible;
-            divPost3.Visible = visible3;
-            bool visible4 = _settings.Post4Visible;
-            divPost4.Visible = visible4;
-            
-            if (visible3 && visible4)
-            {
-                foreach (RowStyle style in divMenuLeft.RowStyles)
-                {
-                    style.SizeType = SizeType.Percent;
-                    style.Height = 20F;
-                }
-            }
-            else if (!visible3 && !visible4)
-            {
-                divMenuLeft.RowStyles[0].Height = 33.33F;
-                divMenuLeft.RowStyles[1].Height = 33.33F;
-                divMenuLeft.RowStyles[2].Height = 33.33F;
-                divMenuLeft.RowStyles[3].Height = 0F;
-                divMenuLeft.RowStyles[4].Height = 0F;
-            }
-            else if (!visible3 && visible4)
-            {
-                divMenuLeft.RowStyles[0].Height = 25F;
-                divMenuLeft.RowStyles[1].Height = 25F;
-                divMenuLeft.RowStyles[2].Height = 25F;
-                divMenuLeft.RowStyles[3].Height = 0F;
-                divMenuLeft.RowStyles[4].Height = 25F;
-            }
-            else if (visible3 && !visible4)
-            {
-                divMenuLeft.RowStyles[0].Height = 25F;
-                divMenuLeft.RowStyles[1].Height = 25F;
-                divMenuLeft.RowStyles[2].Height = 25F;
-                divMenuLeft.RowStyles[3].Height = 25F;
-                divMenuLeft.RowStyles[4].Height = 0F;
-            }
-
+            divPost3.Visible = _settings.Post3Visible;
+            divPost4.Visible = _settings.Post4Visible;
+            divPost10.Visible = _settings.Post10Visible;
+            divPost11.Visible = _settings.Post11Visible;
+            divPost12.Visible = _settings.Post12Visible;
 
             // Right Part
-            bool visible8 = _settings.Post8Visible;
-            divPost8.Visible = visible8;
-            bool visible9 = _settings.Post9Visible;
-            divPost9.Visible = visible9;
+            divPost8.Visible = _settings.Post8Visible;
+            divPost9.Visible = _settings.Post9Visible;
+            divPost13.Visible = _settings.Post13Visible;
+            divPost14.Visible = _settings.Post14Visible;
 
-            if (visible8 && visible9)
+            // Count visible rows in left panel (POST0, 1, 2 always visible; 3,4,10,11,12 conditional)
+            int leftVisible = 3; // POST0, POST1, POST2 always visible
+            if (divPost3.Visible)  leftVisible++;
+            if (divPost4.Visible)  leftVisible++;
+            if (divPost10.Visible) leftVisible++;
+            if (divPost11.Visible) leftVisible++;
+            if (divPost12.Visible) leftVisible++;
+
+            // Count visible rows in right panel (POST5, 6, 7 always visible; 8,9,13,14 conditional)
+            int rightVisible = 3; // POST5, POST6, POST7 always visible
+            if (divPost8.Visible)  rightVisible++;
+            if (divPost9.Visible)  rightVisible++;
+            if (divPost13.Visible) rightVisible++;
+            if (divPost14.Visible) rightVisible++;
+
+            float leftRowHeight  = leftVisible  > 0 ? (100f / leftVisible)  : 12.5f;
+            float rightRowHeight = rightVisible > 0 ? (100f / rightVisible) : 14.28f;
+
+            // Row sizing logic for divMenuLeft
+            foreach (RowStyle style in divMenuLeft.RowStyles)
             {
-                foreach (RowStyle style in divMenuRight.RowStyles)
-                {
-                    style.SizeType = SizeType.Percent;
-                    style.Height = 20F;
-                }
+                style.SizeType = SizeType.Percent;
+                style.Height = leftRowHeight;
             }
-            else if (!visible8 && !visible9)
+
+            // Row sizing logic for divMenuRight
+            foreach (RowStyle style in divMenuRight.RowStyles)
             {
-                divMenuRight.RowStyles[0].Height = 33.33F;
-                divMenuRight.RowStyles[1].Height = 33.33F;
-                divMenuRight.RowStyles[2].Height = 33.33F;
-                divMenuRight.RowStyles[3].Height = 0F;
-                divMenuRight.RowStyles[4].Height = 0F;
-            }
-            else if (!visible8 && visible9)
-            {
-                divMenuRight.RowStyles[0].Height = 25F;
-                divMenuRight.RowStyles[1].Height = 25F;
-                divMenuRight.RowStyles[2].Height = 25F;
-                divMenuRight.RowStyles[3].Height = 0F;
-                divMenuRight.RowStyles[4].Height = 25F;
-            }
-            else if (visible8 && !visible9)
-            {
-                divMenuRight.RowStyles[0].Height = 25F;
-                divMenuRight.RowStyles[1].Height = 25F;
-                divMenuRight.RowStyles[2].Height = 25F;
-                divMenuRight.RowStyles[3].Height = 25F;
-                divMenuRight.RowStyles[4].Height = 0F;
+                style.SizeType = SizeType.Percent;
+                style.Height = rightRowHeight;
             }
         }
 
@@ -818,6 +879,21 @@ namespace Tobasa
 
             lblPnl9.BackColor = basePostCaptionBackColor;
             lblPnl9.ForeColor = baseTextColor;
+
+            lblPnl10.BackColor = basePostCaptionBackColor;
+            lblPnl10.ForeColor = baseTextColor;
+
+            lblPnl11.BackColor = basePostCaptionBackColor;
+            lblPnl11.ForeColor = baseTextColor;
+
+            lblPnl12.BackColor = basePostCaptionBackColor;
+            lblPnl12.ForeColor = baseTextColor;
+
+            lblPnl13.BackColor = basePostCaptionBackColor;
+            lblPnl13.ForeColor = baseTextColor;
+
+            lblPnl14.BackColor = basePostCaptionBackColor;
+            lblPnl14.ForeColor = baseTextColor;
         }
 
         ButtonImage GetButtonImage(string postName )
@@ -1051,6 +1127,111 @@ namespace Tobasa
                 }
             }
 
+            if (postName == "POST10")
+            {
+                if (_settings.Post10UseThemeButton)
+                {
+                    buttonImage.imageOn = colorProfile.postBtnImgOn;
+                    buttonImage.imageOff = colorProfile.postBtnImgOff;
+                }
+                else
+                {
+                    if (File.Exists(_settings.Post10BtnImgOn))
+                        buttonImage.imageOn = new Bitmap(_settings.Post10BtnImgOn);
+                    else
+                        buttonImage.imageOn = colorProfile.postBtnImgOn;
+
+                    if (File.Exists(_settings.Post10BtnImgOff))
+                        buttonImage.imageOff = new Bitmap(_settings.Post10BtnImgOff);
+                    else
+                        buttonImage.imageOff = colorProfile.postBtnImgOff;
+                }
+            }
+
+            if (postName == "POST11")
+            {
+                if (_settings.Post11UseThemeButton)
+                {
+                    buttonImage.imageOn = colorProfile.postBtnImgOn;
+                    buttonImage.imageOff = colorProfile.postBtnImgOff;
+                }
+                else
+                {
+                    if (File.Exists(_settings.Post11BtnImgOn))
+                        buttonImage.imageOn = new Bitmap(_settings.Post11BtnImgOn);
+                    else
+                        buttonImage.imageOn = colorProfile.postBtnImgOn;
+
+                    if (File.Exists(_settings.Post11BtnImgOff))
+                        buttonImage.imageOff = new Bitmap(_settings.Post11BtnImgOff);
+                    else
+                        buttonImage.imageOff = colorProfile.postBtnImgOff;
+                }
+            }
+
+            if (postName == "POST12")
+            {
+                if (_settings.Post12UseThemeButton)
+                {
+                    buttonImage.imageOn = colorProfile.postBtnImgOn;
+                    buttonImage.imageOff = colorProfile.postBtnImgOff;
+                }
+                else
+                {
+                    if (File.Exists(_settings.Post12BtnImgOn))
+                        buttonImage.imageOn = new Bitmap(_settings.Post12BtnImgOn);
+                    else
+                        buttonImage.imageOn = colorProfile.postBtnImgOn;
+
+                    if (File.Exists(_settings.Post12BtnImgOff))
+                        buttonImage.imageOff = new Bitmap(_settings.Post12BtnImgOff);
+                    else
+                        buttonImage.imageOff = colorProfile.postBtnImgOff;
+                }
+            }
+
+            if (postName == "POST13")
+            {
+                if (_settings.Post13UseThemeButton)
+                {
+                    buttonImage.imageOn = colorProfile.postBtnImgOn;
+                    buttonImage.imageOff = colorProfile.postBtnImgOff;
+                }
+                else
+                {
+                    if (File.Exists(_settings.Post13BtnImgOn))
+                        buttonImage.imageOn = new Bitmap(_settings.Post13BtnImgOn);
+                    else
+                        buttonImage.imageOn = colorProfile.postBtnImgOn;
+
+                    if (File.Exists(_settings.Post13BtnImgOff))
+                        buttonImage.imageOff = new Bitmap(_settings.Post13BtnImgOff);
+                    else
+                        buttonImage.imageOff = colorProfile.postBtnImgOff;
+                }
+            }
+
+            if (postName == "POST14")
+            {
+                if (_settings.Post14UseThemeButton)
+                {
+                    buttonImage.imageOn = colorProfile.postBtnImgOn;
+                    buttonImage.imageOff = colorProfile.postBtnImgOff;
+                }
+                else
+                {
+                    if (File.Exists(_settings.Post14BtnImgOn))
+                        buttonImage.imageOn = new Bitmap(_settings.Post14BtnImgOn);
+                    else
+                        buttonImage.imageOn = colorProfile.postBtnImgOn;
+
+                    if (File.Exists(_settings.Post14BtnImgOff))
+                        buttonImage.imageOff = new Bitmap(_settings.Post14BtnImgOff);
+                    else
+                        buttonImage.imageOff = colorProfile.postBtnImgOff;
+                }
+            }
+
             return buttonImage;
         }
 
@@ -1208,6 +1389,31 @@ namespace Tobasa
                 {
                     prnCopies = _settings.Post9PrintCopies;
                     header = _settings.Post9PrintHeader;
+                }
+                else if (post == _settings.Post10Post)
+                {
+                    prnCopies = _settings.Post10PrintCopies;
+                    header = _settings.Post10PrintHeader;
+                }
+                else if (post == _settings.Post11Post)
+                {
+                    prnCopies = _settings.Post11PrintCopies;
+                    header = _settings.Post11PrintHeader;
+                }
+                else if (post == _settings.Post12Post)
+                {
+                    prnCopies = _settings.Post12PrintCopies;
+                    header = _settings.Post12PrintHeader;
+                }
+                else if (post == _settings.Post13Post)
+                {
+                    prnCopies = _settings.Post13PrintCopies;
+                    header = _settings.Post13PrintHeader;
+                }
+                else if (post == _settings.Post14Post)
+                {
+                    prnCopies = _settings.Post14PrintCopies;
+                    header = _settings.Post14PrintHeader;
                 }
 
                 int i = 0;
@@ -1367,6 +1573,16 @@ namespace Tobasa
                 postname = post8;
             else if (text == "POST9")
                 postname = post9;
+            else if (text == "POST10")
+                postname = _settings.Post10Post;
+            else if (text == "POST11")
+                postname = _settings.Post11Post;
+            else if (text == "POST12")
+                postname = _settings.Post12Post;
+            else if (text == "POST13")
+                postname = _settings.Post13Post;
+            else if (text == "POST14")
+                postname = _settings.Post14Post;
 
             RequestNewTicket(postname);
         }
@@ -1436,6 +1652,16 @@ namespace Tobasa
                 picBox.Image = post8BtnImgOn;
             else if (picBox == picBtnPnl9)
                 picBox.Image = post9BtnImgOn;
+            else if (picBox == picBtnPnl10)
+                picBox.Image = post10BtnImgOn;
+            else if (picBox == picBtnPnl11)
+                picBox.Image = post11BtnImgOn;
+            else if (picBox == picBtnPnl12)
+                picBox.Image = post12BtnImgOn;
+            else if (picBox == picBtnPnl13)
+                picBox.Image = post13BtnImgOn;
+            else if (picBox == picBtnPnl14)
+                picBox.Image = post14BtnImgOn;
         }
 
         private void OnMouseUp(object sender, MouseEventArgs e)
@@ -1491,6 +1717,31 @@ namespace Tobasa
             {
                 picBox.Image = post9BtnImgOff;
                 CreateNewNumber("POST9");
+            }
+            else if (picBox == picBtnPnl10)
+            {
+                picBox.Image = post10BtnImgOff;
+                CreateNewNumber("POST10");
+            }
+            else if (picBox == picBtnPnl11)
+            {
+                picBox.Image = post11BtnImgOff;
+                CreateNewNumber("POST11");
+            }
+            else if (picBox == picBtnPnl12)
+            {
+                picBox.Image = post12BtnImgOff;
+                CreateNewNumber("POST12");
+            }
+            else if (picBox == picBtnPnl13)
+            {
+                picBox.Image = post13BtnImgOff;
+                CreateNewNumber("POST13");
+            }
+            else if (picBox == picBtnPnl14)
+            {
+                picBox.Image = post14BtnImgOff;
+                CreateNewNumber("POST14");
             }
         }
 
@@ -1562,6 +1813,26 @@ namespace Tobasa
                 else if (picBox == picBtnPnl9)
                 {
                     DrawButtonLabel(e, _settings.Post9Name);
+                }
+                else if (picBox == picBtnPnl10)
+                {
+                    DrawButtonLabel(e, _settings.Post10Name);
+                }
+                else if (picBox == picBtnPnl11)
+                {
+                    DrawButtonLabel(e, _settings.Post11Name);
+                }
+                else if (picBox == picBtnPnl12)
+                {
+                    DrawButtonLabel(e, _settings.Post12Name);
+                }
+                else if (picBox == picBtnPnl13)
+                {
+                    DrawButtonLabel(e, _settings.Post13Name);
+                }
+                else if (picBox == picBtnPnl14)
+                {
+                    DrawButtonLabel(e, _settings.Post14Name);
                 }
             }
         }

@@ -1,4 +1,4 @@
-﻿#region License
+#region License
 /*
     Sotware Antrian Tobasa
     Copyright (C) 2015-2025  Jefri Sibarani
@@ -81,6 +81,21 @@ namespace Tobasa
             this.divPost0 = new System.Windows.Forms.TableLayoutPanel();
             this.lblPnl0 = new System.Windows.Forms.Label();
             this.picBtnPnl0 = new System.Windows.Forms.PictureBox();
+            this.divPost10 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPnl10 = new System.Windows.Forms.Label();
+            this.picBtnPnl10 = new System.Windows.Forms.PictureBox();
+            this.divPost11 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPnl11 = new System.Windows.Forms.Label();
+            this.picBtnPnl11 = new System.Windows.Forms.PictureBox();
+            this.divPost12 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPnl12 = new System.Windows.Forms.Label();
+            this.picBtnPnl12 = new System.Windows.Forms.PictureBox();
+            this.divPost13 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPnl13 = new System.Windows.Forms.Label();
+            this.picBtnPnl13 = new System.Windows.Forms.PictureBox();
+            this.divPost14 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPnl14 = new System.Windows.Forms.Label();
+            this.picBtnPnl14 = new System.Windows.Forms.PictureBox();
             this.divBottom = new System.Windows.Forms.TableLayoutPanel();
             this.runningTextBottom = new Tobasa.RuntextLabel();
             this.divMain.SuspendLayout();
@@ -110,28 +125,34 @@ namespace Tobasa
             ((System.ComponentModel.ISupportInitialize)(this.picBtnPnl2)).BeginInit();
             this.divPost1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBtnPnl1)).BeginInit();
-            this.divPost0.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBtnPnl0)).BeginInit();
+            this.divPost10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnPnl10)).BeginInit();
+            this.divPost11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnPnl11)).BeginInit();
+            this.divPost12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnPnl12)).BeginInit();
+            this.divPost13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnPnl13)).BeginInit();
+            this.divPost14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnPnl14)).BeginInit();
             this.divBottom.SuspendLayout();
             this.SuspendLayout();
             // 
             // divMain
             // 
-            this.divMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.divMain.AutoSize = true;
             this.divMain.BackColor = System.Drawing.Color.Transparent;
             this.divMain.ColumnCount = 1;
             this.divMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.divMain.Controls.Add(this.divContent, 0, 0);
             this.divMain.Controls.Add(this.divBottom, 0, 1);
+            this.divMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.divMain.Location = new System.Drawing.Point(0, 0);
             this.divMain.Name = "divMain";
             this.divMain.RowCount = 2;
             this.divMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.divMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.divMain.Size = new System.Drawing.Size(784, 570);
+            this.divMain.Size = new System.Drawing.Size(784, 750);
             this.divMain.TabIndex = 0;
             // 
             // divContent
@@ -217,7 +238,6 @@ namespace Tobasa
             // 
             // divMenu
             // 
-            this.divMenu.AutoSize = true;
             this.divMenu.ColumnCount = 2;
             this.divMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.divMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -228,15 +248,16 @@ namespace Tobasa
             this.divMenu.Margin = new System.Windows.Forms.Padding(10, 10, 10, 3);
             this.divMenu.Name = "divMenu";
             this.divMenu.RowCount = 1;
-            this.divMenu.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.divMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.divMenu.Size = new System.Drawing.Size(758, 393);
             this.divMenu.TabIndex = 10;
             // 
             // divMenuRight
             // 
-            this.divMenuRight.AutoSize = true;
             this.divMenuRight.ColumnCount = 1;
             this.divMenuRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.divMenuRight.Controls.Add(this.divPost14, 0, 6);
+            this.divMenuRight.Controls.Add(this.divPost13, 0, 5);
             this.divMenuRight.Controls.Add(this.divPost9, 0, 4);
             this.divMenuRight.Controls.Add(this.divPost8, 0, 3);
             this.divMenuRight.Controls.Add(this.divPost7, 0, 2);
@@ -245,12 +266,14 @@ namespace Tobasa
             this.divMenuRight.Dock = System.Windows.Forms.DockStyle.Fill;
             this.divMenuRight.Location = new System.Drawing.Point(382, 3);
             this.divMenuRight.Name = "divMenuRight";
-            this.divMenuRight.RowCount = 5;
-            this.divMenuRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.divMenuRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.divMenuRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.divMenuRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.divMenuRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.divMenuRight.RowCount = 7;
+            this.divMenuRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.divMenuRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.divMenuRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.divMenuRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.divMenuRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.divMenuRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.divMenuRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.divMenuRight.Size = new System.Drawing.Size(373, 395);
             this.divMenuRight.TabIndex = 25;
             // 
@@ -491,9 +514,11 @@ namespace Tobasa
             // 
             // divMenuLeft
             // 
-            this.divMenuLeft.AutoSize = true;
             this.divMenuLeft.ColumnCount = 1;
             this.divMenuLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.divMenuLeft.Controls.Add(this.divPost12, 0, 7);
+            this.divMenuLeft.Controls.Add(this.divPost11, 0, 6);
+            this.divMenuLeft.Controls.Add(this.divPost10, 0, 5);
             this.divMenuLeft.Controls.Add(this.divPost4, 0, 4);
             this.divMenuLeft.Controls.Add(this.divPost3, 0, 3);
             this.divMenuLeft.Controls.Add(this.divPost2, 0, 2);
@@ -502,12 +527,15 @@ namespace Tobasa
             this.divMenuLeft.Dock = System.Windows.Forms.DockStyle.Fill;
             this.divMenuLeft.Location = new System.Drawing.Point(3, 3);
             this.divMenuLeft.Name = "divMenuLeft";
-            this.divMenuLeft.RowCount = 5;
-            this.divMenuLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.divMenuLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.divMenuLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.divMenuLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.divMenuLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.divMenuLeft.RowCount = 8;
+            this.divMenuLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.divMenuLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.divMenuLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.divMenuLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.divMenuLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.divMenuLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.divMenuLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.divMenuLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.divMenuLeft.Size = new System.Drawing.Size(373, 395);
             this.divMenuLeft.TabIndex = 24;
             // 
@@ -746,6 +774,241 @@ namespace Tobasa
             this.picBtnPnl0.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnMouseDown);
             this.picBtnPnl0.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OnMouseUp);
             // 
+            // divPost10
+            // 
+            this.divPost10.ColumnCount = 2;
+            this.divPost10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.divPost10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.divPost10.Controls.Add(this.lblPnl10, 0, 0);
+            this.divPost10.Controls.Add(this.picBtnPnl10, 1, 0);
+            this.divPost10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.divPost10.Location = new System.Drawing.Point(3, 3);
+            this.divPost10.Name = "divPost10";
+            this.divPost10.RowCount = 1;
+            this.divPost10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.divPost10.Size = new System.Drawing.Size(367, 73);
+            this.divPost10.TabIndex = 28;
+            // 
+            // lblPnl10
+            // 
+            this.lblPnl10.AutoSize = true;
+            this.lblPnl10.BackColor = System.Drawing.Color.LightGray;
+            this.lblPnl10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPnl10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPnl10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblPnl10.Location = new System.Drawing.Point(6, 6);
+            this.lblPnl10.Margin = new System.Windows.Forms.Padding(6);
+            this.lblPnl10.Name = "lblPnl10";
+            this.lblPnl10.Padding = new System.Windows.Forms.Padding(2);
+            this.lblPnl10.Size = new System.Drawing.Size(263, 61);
+            this.lblPnl10.TabIndex = 15;
+            this.lblPnl10.Text = "Label Menu 10";
+            this.lblPnl10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPnl10.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // picBtnPnl10
+            // 
+            this.picBtnPnl10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picBtnPnl10.Image = global::Tobasa.Properties.Resources.ButtonGreenOff;
+            this.picBtnPnl10.Location = new System.Drawing.Point(277, 2);
+            this.picBtnPnl10.Margin = new System.Windows.Forms.Padding(2);
+            this.picBtnPnl10.Name = "picBtnPnl10";
+            this.picBtnPnl10.Size = new System.Drawing.Size(88, 69);
+            this.picBtnPnl10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBtnPnl10.TabIndex = 14;
+            this.picBtnPnl10.TabStop = false;
+            this.picBtnPnl10.Paint += new System.Windows.Forms.PaintEventHandler(this.OnButtonPaint);
+            this.picBtnPnl10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnMouseDown);
+            this.picBtnPnl10.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OnMouseUp);
+            // 
+            // divPost11
+            // 
+            this.divPost11.ColumnCount = 2;
+            this.divPost11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.divPost11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.divPost11.Controls.Add(this.lblPnl11, 0, 0);
+            this.divPost11.Controls.Add(this.picBtnPnl11, 1, 0);
+            this.divPost11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.divPost11.Location = new System.Drawing.Point(3, 3);
+            this.divPost11.Name = "divPost11";
+            this.divPost11.RowCount = 1;
+            this.divPost11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.divPost11.Size = new System.Drawing.Size(367, 73);
+            this.divPost11.TabIndex = 29;
+            // 
+            // lblPnl11
+            // 
+            this.lblPnl11.AutoSize = true;
+            this.lblPnl11.BackColor = System.Drawing.Color.LightGray;
+            this.lblPnl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPnl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPnl11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblPnl11.Location = new System.Drawing.Point(6, 6);
+            this.lblPnl11.Margin = new System.Windows.Forms.Padding(6);
+            this.lblPnl11.Name = "lblPnl11";
+            this.lblPnl11.Padding = new System.Windows.Forms.Padding(2);
+            this.lblPnl11.Size = new System.Drawing.Size(263, 61);
+            this.lblPnl11.TabIndex = 15;
+            this.lblPnl11.Text = "Label Menu 11";
+            this.lblPnl11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPnl11.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // picBtnPnl11
+            // 
+            this.picBtnPnl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picBtnPnl11.Image = global::Tobasa.Properties.Resources.ButtonGreenOff;
+            this.picBtnPnl11.Location = new System.Drawing.Point(277, 2);
+            this.picBtnPnl11.Margin = new System.Windows.Forms.Padding(2);
+            this.picBtnPnl11.Name = "picBtnPnl11";
+            this.picBtnPnl11.Size = new System.Drawing.Size(88, 69);
+            this.picBtnPnl11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBtnPnl11.TabIndex = 14;
+            this.picBtnPnl11.TabStop = false;
+            this.picBtnPnl11.Paint += new System.Windows.Forms.PaintEventHandler(this.OnButtonPaint);
+            this.picBtnPnl11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnMouseDown);
+            this.picBtnPnl11.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OnMouseUp);
+            // 
+            // divPost12
+            // 
+            this.divPost12.ColumnCount = 2;
+            this.divPost12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.divPost12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.divPost12.Controls.Add(this.lblPnl12, 0, 0);
+            this.divPost12.Controls.Add(this.picBtnPnl12, 1, 0);
+            this.divPost12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.divPost12.Location = new System.Drawing.Point(3, 3);
+            this.divPost12.Name = "divPost12";
+            this.divPost12.RowCount = 1;
+            this.divPost12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.divPost12.Size = new System.Drawing.Size(367, 73);
+            this.divPost12.TabIndex = 30;
+            // 
+            // lblPnl12
+            // 
+            this.lblPnl12.AutoSize = true;
+            this.lblPnl12.BackColor = System.Drawing.Color.LightGray;
+            this.lblPnl12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPnl12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPnl12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblPnl12.Location = new System.Drawing.Point(6, 6);
+            this.lblPnl12.Margin = new System.Windows.Forms.Padding(6);
+            this.lblPnl12.Name = "lblPnl12";
+            this.lblPnl12.Padding = new System.Windows.Forms.Padding(2);
+            this.lblPnl12.Size = new System.Drawing.Size(263, 61);
+            this.lblPnl12.TabIndex = 15;
+            this.lblPnl12.Text = "Label Menu 12";
+            this.lblPnl12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPnl12.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // picBtnPnl12
+            // 
+            this.picBtnPnl12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picBtnPnl12.Image = global::Tobasa.Properties.Resources.ButtonGreenOff;
+            this.picBtnPnl12.Location = new System.Drawing.Point(277, 2);
+            this.picBtnPnl12.Margin = new System.Windows.Forms.Padding(2);
+            this.picBtnPnl12.Name = "picBtnPnl12";
+            this.picBtnPnl12.Size = new System.Drawing.Size(88, 69);
+            this.picBtnPnl12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBtnPnl12.TabIndex = 14;
+            this.picBtnPnl12.TabStop = false;
+            this.picBtnPnl12.Paint += new System.Windows.Forms.PaintEventHandler(this.OnButtonPaint);
+            this.picBtnPnl12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnMouseDown);
+            this.picBtnPnl12.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OnMouseUp);
+            // 
+            // divPost13
+            // 
+            this.divPost13.ColumnCount = 2;
+            this.divPost13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.divPost13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.divPost13.Controls.Add(this.lblPnl13, 0, 0);
+            this.divPost13.Controls.Add(this.picBtnPnl13, 1, 0);
+            this.divPost13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.divPost13.Location = new System.Drawing.Point(3, 3);
+            this.divPost13.Name = "divPost13";
+            this.divPost13.RowCount = 1;
+            this.divPost13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.divPost13.Size = new System.Drawing.Size(367, 73);
+            this.divPost13.TabIndex = 31;
+            // 
+            // lblPnl13
+            // 
+            this.lblPnl13.AutoSize = true;
+            this.lblPnl13.BackColor = System.Drawing.Color.LightGray;
+            this.lblPnl13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPnl13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPnl13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblPnl13.Location = new System.Drawing.Point(6, 6);
+            this.lblPnl13.Margin = new System.Windows.Forms.Padding(6);
+            this.lblPnl13.Name = "lblPnl13";
+            this.lblPnl13.Padding = new System.Windows.Forms.Padding(2);
+            this.lblPnl13.Size = new System.Drawing.Size(263, 61);
+            this.lblPnl13.TabIndex = 15;
+            this.lblPnl13.Text = "Label Menu 13";
+            this.lblPnl13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPnl13.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // picBtnPnl13
+            // 
+            this.picBtnPnl13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picBtnPnl13.Image = global::Tobasa.Properties.Resources.ButtonGreenOff;
+            this.picBtnPnl13.Location = new System.Drawing.Point(277, 2);
+            this.picBtnPnl13.Margin = new System.Windows.Forms.Padding(2);
+            this.picBtnPnl13.Name = "picBtnPnl13";
+            this.picBtnPnl13.Size = new System.Drawing.Size(88, 69);
+            this.picBtnPnl13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBtnPnl13.TabIndex = 14;
+            this.picBtnPnl13.TabStop = false;
+            this.picBtnPnl13.Paint += new System.Windows.Forms.PaintEventHandler(this.OnButtonPaint);
+            this.picBtnPnl13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnMouseDown);
+            this.picBtnPnl13.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OnMouseUp);
+            // 
+            // divPost14
+            // 
+            this.divPost14.ColumnCount = 2;
+            this.divPost14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.divPost14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.divPost14.Controls.Add(this.lblPnl14, 0, 0);
+            this.divPost14.Controls.Add(this.picBtnPnl14, 1, 0);
+            this.divPost14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.divPost14.Location = new System.Drawing.Point(3, 3);
+            this.divPost14.Name = "divPost14";
+            this.divPost14.RowCount = 1;
+            this.divPost14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.divPost14.Size = new System.Drawing.Size(367, 73);
+            this.divPost14.TabIndex = 32;
+            // 
+            // lblPnl14
+            // 
+            this.lblPnl14.AutoSize = true;
+            this.lblPnl14.BackColor = System.Drawing.Color.LightGray;
+            this.lblPnl14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPnl14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPnl14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblPnl14.Location = new System.Drawing.Point(6, 6);
+            this.lblPnl14.Margin = new System.Windows.Forms.Padding(6);
+            this.lblPnl14.Name = "lblPnl14";
+            this.lblPnl14.Padding = new System.Windows.Forms.Padding(2);
+            this.lblPnl14.Size = new System.Drawing.Size(263, 61);
+            this.lblPnl14.TabIndex = 15;
+            this.lblPnl14.Text = "Label Menu 14";
+            this.lblPnl14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPnl14.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // picBtnPnl14
+            // 
+            this.picBtnPnl14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picBtnPnl14.Image = global::Tobasa.Properties.Resources.ButtonGreenOff;
+            this.picBtnPnl14.Location = new System.Drawing.Point(277, 2);
+            this.picBtnPnl14.Margin = new System.Windows.Forms.Padding(2);
+            this.picBtnPnl14.Name = "picBtnPnl14";
+            this.picBtnPnl14.Size = new System.Drawing.Size(88, 69);
+            this.picBtnPnl14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBtnPnl14.TabIndex = 14;
+            this.picBtnPnl14.TabStop = false;
+            this.picBtnPnl14.Paint += new System.Windows.Forms.PaintEventHandler(this.OnButtonPaint);
+            this.picBtnPnl14.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnMouseDown);
+            this.picBtnPnl14.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OnMouseUp);
+            // 
             // divBottom
             // 
             this.divBottom.ColumnCount = 1;
@@ -795,10 +1058,10 @@ namespace Tobasa
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
-            this.ClientSize = new System.Drawing.Size(784, 562);
+            this.ClientSize = new System.Drawing.Size(784, 750);
             this.Controls.Add(this.divMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(800, 600);
+            this.MinimumSize = new System.Drawing.Size(800, 790);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Queue Ticket";
@@ -844,7 +1107,21 @@ namespace Tobasa
             ((System.ComponentModel.ISupportInitialize)(this.picBtnPnl1)).EndInit();
             this.divPost0.ResumeLayout(false);
             this.divPost0.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBtnPnl0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnPnl10)).EndInit();
+            this.divPost10.ResumeLayout(false);
+            this.divPost10.PerformLayout();
+            this.divPost11.ResumeLayout(false);
+            this.divPost11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnPnl11)).EndInit();
+            this.divPost12.ResumeLayout(false);
+            this.divPost12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnPnl12)).EndInit();
+            this.divPost13.ResumeLayout(false);
+            this.divPost13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnPnl13)).EndInit();
+            this.divPost14.ResumeLayout(false);
+            this.divPost14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBtnPnl14)).EndInit();
             this.divBottom.ResumeLayout(false);
             this.divBottom.PerformLayout();
             this.ResumeLayout(false);
@@ -893,6 +1170,21 @@ namespace Tobasa
 		private System.Windows.Forms.TableLayoutPanel divPost0;
 		private System.Windows.Forms.Label lblPnl0;
 		private System.Windows.Forms.PictureBox picBtnPnl0;
+		private System.Windows.Forms.TableLayoutPanel divPost10;
+		private System.Windows.Forms.Label lblPnl10;
+		private System.Windows.Forms.PictureBox picBtnPnl10;
+		private System.Windows.Forms.TableLayoutPanel divPost11;
+		private System.Windows.Forms.Label lblPnl11;
+		private System.Windows.Forms.PictureBox picBtnPnl11;
+		private System.Windows.Forms.TableLayoutPanel divPost12;
+		private System.Windows.Forms.Label lblPnl12;
+		private System.Windows.Forms.PictureBox picBtnPnl12;
+		private System.Windows.Forms.TableLayoutPanel divPost13;
+		private System.Windows.Forms.Label lblPnl13;
+		private System.Windows.Forms.PictureBox picBtnPnl13;
+		private System.Windows.Forms.TableLayoutPanel divPost14;
+		private System.Windows.Forms.Label lblPnl14;
+		private System.Windows.Forms.PictureBox picBtnPnl14;
 		private System.Windows.Forms.TableLayoutPanel divBottom;
 		private RuntextLabel runningTextBottom;
 	}

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data.Common;
 
@@ -68,16 +68,16 @@ namespace Tobasa
                     }
                 }
 
+                bool populationRequired = false;
                 if (tablesFound == 7 && viewsFound == 3 && triggerFound == 1)
                 {
                     QueueServer.Log($"DBMigration found correct database objects");
-                    return true;
+                    populationRequired = true;
                 }
                 else if (tablesFound != 7 && viewsFound != 3 && triggerFound != 1)
                 {
                     QueueServer.Log($"DBMigration creating database objects");
 
-                    int affected0 = 0;
                     using (DbCommand cmd = Database.Me.Connection.CreateCommand())
                     {
                         foreach (string sqlCmd in commandList)
@@ -85,28 +85,29 @@ namespace Tobasa
                             QueueServer.Log($"DBMigration Executing command \n{sqlCmd}");
 
                             cmd.CommandText = sqlCmd;
-                            affected0 = cmd.ExecuteNonQuery();
+                            cmd.ExecuteNonQuery();
                         }
                     }
-
-                    QueueServer.Log($"DBMigration populating basic data");
-                    int affected1 = 0;
-                    using (DbCommand cmd = Database.Me.Connection.CreateCommand())
-                    {
-                        QueueServer.Log($"DBMigration Executing command \n{pupulateDataSql}");
-
-                        cmd.CommandText = pupulateDataSql;
-                        affected1 = cmd.ExecuteNonQuery();
-                    }
-
-                    QueueServer.Log($"DBMigration completed successfully");
-
-                    return true;
+                    populationRequired = true;
                 }
                 else
                 {
                     QueueServer.Log($"DBMigration found {tablesFound} tables, {viewsFound} views, {triggerFound} trigger");
                     return false;
+                }
+
+                if (populationRequired)
+                {
+                    QueueServer.Log($"DBMigration populating/updating basic data");
+                    using (DbCommand cmd = Database.Me.Connection.CreateCommand())
+                    {
+                        QueueServer.Log($"DBMigration Executing command \n{pupulateDataSql}");
+
+                        cmd.CommandText = pupulateDataSql;
+                        cmd.ExecuteNonQuery();
+                    }
+                    QueueServer.Log($"DBMigration completed successfully");
+                    return true;
                 }
             }
             catch (Exception e)

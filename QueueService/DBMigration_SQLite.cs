@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 namespace Tobasa
 {
@@ -231,7 +231,12 @@ namespace Tobasa
                ( 'POST6', 'Pos layanan 7',  'DR'),
                ( 'POST7', 'Pos layanan 8',  'P'),
                ( 'POST8', 'Pos layanan 9',  'Z'),
-               ( 'POST9', 'Pos layanan 10', 'HO');   
+               ( 'POST9', 'Pos layanan 10', 'HO'),
+               ( 'POST10', 'Pos layanan 11', 'K'),
+               ( 'POST11', 'Pos layanan 12', 'L'),
+               ( 'POST12', 'Pos layanan 13', 'M'),
+               ( 'POST13', 'Pos layanan 14', 'N'),
+               ( 'POST14', 'Pos layanan 15', 'O');
 	
             INSERT INTO queue_stations (name,post,keterangan,canlogin) VALUES
                ('ADMIN#1',  'POST0',NULL, 1),
@@ -244,6 +249,11 @@ namespace Tobasa
                ('ADMIN#1',  'POST7',NULL, 1),
                ('ADMIN#1',  'POST8',NULL, 1),
                ('ADMIN#1',  'POST9',NULL, 1),
+               ('ADMIN#1',  'POST10',NULL, 1),
+               ('ADMIN#1',  'POST11',NULL, 1),
+               ('ADMIN#1',  'POST12',NULL, 1),
+               ('ADMIN#1',  'POST13',NULL, 1),
+               ('ADMIN#1',  'POST14',NULL, 1),
 
                ('ADMIN#2',  'POST0',NULL, 1),
                ('ADMIN#2',  'POST1',NULL, 1),
@@ -255,6 +265,11 @@ namespace Tobasa
                ('ADMIN#2',  'POST7',NULL, 1),
                ('ADMIN#2',  'POST8',NULL, 1),
                ('ADMIN#2',  'POST9',NULL, 1),
+               ('ADMIN#2',  'POST10',NULL, 1),
+               ('ADMIN#2',  'POST11',NULL, 1),
+               ('ADMIN#2',  'POST12',NULL, 1),
+               ('ADMIN#2',  'POST13',NULL, 1),
+               ('ADMIN#2',  'POST14',NULL, 1),
 
                ('CALL#1',   'POST0',NULL, 1),
                ('CALL#1',   'POST1',NULL, 1),
@@ -266,6 +281,11 @@ namespace Tobasa
                ('CALL#1',   'POST7',NULL, 1),
                ('CALL#1',   'POST8',NULL, 1),
                ('CALL#1',   'POST9',NULL, 1),
+               ('CALL#1',   'POST10',NULL, 1),
+               ('CALL#1',   'POST11',NULL, 1),
+               ('CALL#1',   'POST12',NULL, 1),
+               ('CALL#1',   'POST13',NULL, 1),
+               ('CALL#1',   'POST14',NULL, 1),
 
                ('CALL#2',   'POST0',NULL, 1),
                ('CALL#2',   'POST1',NULL, 1),
@@ -277,6 +297,11 @@ namespace Tobasa
                ('CALL#2',   'POST7',NULL, 1),
                ('CALL#2',   'POST8',NULL, 1),
                ('CALL#2',   'POST9',NULL, 1),
+               ('CALL#2',   'POST10',NULL, 1),
+               ('CALL#2',   'POST11',NULL, 1),
+               ('CALL#2',   'POST12',NULL, 1),
+               ('CALL#2',   'POST13',NULL, 1),
+               ('CALL#2',   'POST14',NULL, 1),
 
                ('CALL#3',   'POST0',NULL, 1),
                ('CALL#3',   'POST1',NULL, 1),
@@ -288,6 +313,11 @@ namespace Tobasa
                ('CALL#3',   'POST7',NULL, 1),
                ('CALL#3',   'POST8',NULL, 1),
                ('CALL#3',   'POST9',NULL, 1),
+               ('CALL#3',   'POST10',NULL, 1),
+               ('CALL#3',   'POST11',NULL, 1),
+               ('CALL#3',   'POST12',NULL, 1),
+               ('CALL#3',   'POST13',NULL, 1),
+               ('CALL#3',   'POST14',NULL, 1),
 
                ('CALL#4',   'POST0',NULL, 1),
                ('CALL#4',   'POST1',NULL, 1),
@@ -299,6 +329,11 @@ namespace Tobasa
                ('CALL#4',   'POST7',NULL, 1),
                ('CALL#4',   'POST8',NULL, 1),
                ('CALL#4',   'POST9',NULL, 1),
+               ('CALL#4',   'POST10',NULL, 1),
+               ('CALL#4',   'POST11',NULL, 1),
+               ('CALL#4',   'POST12',NULL, 1),
+               ('CALL#4',   'POST13',NULL, 1),
+               ('CALL#4',   'POST14',NULL, 1),
 
                ('CALL#5',   'POST0',NULL, 1),
                ('CALL#5',   'POST1',NULL, 1),
@@ -310,6 +345,11 @@ namespace Tobasa
                ('CALL#5',   'POST7',NULL, 1),
                ('CALL#5',   'POST8',NULL, 1),
                ('CALL#5',   'POST9',NULL, 1),
+               ('CALL#5',   'POST10',NULL, 1),
+               ('CALL#5',   'POST11',NULL, 1),
+               ('CALL#5',   'POST12',NULL, 1),
+               ('CALL#5',   'POST13',NULL, 1),
+               ('CALL#5',   'POST14',NULL, 1),
 
                ('CALL#6',   'POST0',NULL, 1),
                ('CALL#6',   'POST1',NULL, 1),
@@ -321,6 +361,11 @@ namespace Tobasa
                ('CALL#6',   'POST7',NULL, 1),
                ('CALL#6',   'POST8',NULL, 1),
                ('CALL#6',   'POST9',NULL, 1),
+               ('CALL#6',   'POST10',NULL, 1),
+               ('CALL#6',   'POST11',NULL, 1),
+               ('CALL#6',   'POST12',NULL, 1),
+               ('CALL#6',   'POST13',NULL, 1),
+               ('CALL#6',   'POST14',NULL, 1),
 
                ('CALL#7',   'POST0',NULL, 1),
                ('CALL#7',   'POST1',NULL, 1),
@@ -332,6 +377,11 @@ namespace Tobasa
                ('CALL#7',   'POST7',NULL, 1),
                ('CALL#7',   'POST8',NULL, 1),
                ('CALL#7',   'POST9',NULL, 1),
+               ('CALL#7',   'POST10',NULL, 1),
+               ('CALL#7',   'POST11',NULL, 1),
+               ('CALL#7',   'POST12',NULL, 1),
+               ('CALL#7',   'POST13',NULL, 1),
+               ('CALL#7',   'POST14',NULL, 1),
 
                ('CALL#8',   'POST0',NULL, 1),
                ('CALL#8',   'POST1',NULL, 1),
@@ -343,6 +393,11 @@ namespace Tobasa
                ('CALL#8',   'POST7',NULL, 1),
                ('CALL#8',   'POST8',NULL, 1),
                ('CALL#8',   'POST9',NULL, 1),
+               ('CALL#8',   'POST10',NULL, 1),
+               ('CALL#8',   'POST11',NULL, 1),
+               ('CALL#8',   'POST12',NULL, 1),
+               ('CALL#8',   'POST13',NULL, 1),
+               ('CALL#8',   'POST14',NULL, 1),
 
                ('CALL#9',   'POST0',NULL, 1),
                ('CALL#9',   'POST1',NULL, 1),
@@ -354,6 +409,11 @@ namespace Tobasa
                ('CALL#9',   'POST7',NULL, 1),
                ('CALL#9',   'POST8',NULL, 1),
                ('CALL#9',   'POST9',NULL, 1),
+               ('CALL#9',   'POST10',NULL, 1),
+               ('CALL#9',   'POST11',NULL, 1),
+               ('CALL#9',   'POST12',NULL, 1),
+               ('CALL#9',   'POST13',NULL, 1),
+               ('CALL#9',   'POST14',NULL, 1),
 
                ('CALL#10',  'POST0',NULL, 1),
                ('CALL#10',  'POST1',NULL, 1),
@@ -365,6 +425,11 @@ namespace Tobasa
                ('CALL#10',  'POST7',NULL, 1),
                ('CALL#10',  'POST8',NULL, 1),
                ('CALL#10',  'POST9',NULL, 1),
+               ('CALL#10',  'POST10',NULL, 1),
+               ('CALL#10',  'POST11',NULL, 1),
+               ('CALL#10',  'POST12',NULL, 1),
+               ('CALL#10',  'POST13',NULL, 1),
+               ('CALL#10',  'POST14',NULL, 1),
 
                ('DISP#1',   'POST0',NULL, 1),
                ('DISP#1',   'POST1',NULL, 1),
@@ -376,6 +441,11 @@ namespace Tobasa
                ('DISP#1',   'POST7',NULL, 1),
                ('DISP#1',   'POST8',NULL, 1),
                ('DISP#1',   'POST9',NULL, 1),
+               ('DISP#1',   'POST10',NULL, 1),
+               ('DISP#1',   'POST11',NULL, 1),
+               ('DISP#1',   'POST12',NULL, 1),
+               ('DISP#1',   'POST13',NULL, 1),
+               ('DISP#1',   'POST14',NULL, 1),
 
                ('DISP#2',   'POST0',NULL, 1),
                ('DISP#2',   'POST1',NULL, 1),
@@ -387,6 +457,11 @@ namespace Tobasa
                ('DISP#2',   'POST7',NULL, 1),
                ('DISP#2',   'POST8',NULL, 1),
                ('DISP#2',   'POST9',NULL, 1),
+               ('DISP#2',   'POST10',NULL, 1),
+               ('DISP#2',   'POST11',NULL, 1),
+               ('DISP#2',   'POST12',NULL, 1),
+               ('DISP#2',   'POST13',NULL, 1),
+               ('DISP#2',   'POST14',NULL, 1),
 
                ('TICKET#1', 'POST0',NULL, 1),
                ('TICKET#1', 'POST1',NULL, 1),
@@ -398,6 +473,11 @@ namespace Tobasa
                ('TICKET#1', 'POST7',NULL, 1),
                ('TICKET#1', 'POST8',NULL, 1),
                ('TICKET#1', 'POST9',NULL, 1),
+               ('TICKET#1', 'POST10',NULL, 1),
+               ('TICKET#1', 'POST11',NULL, 1),
+               ('TICKET#1', 'POST12',NULL, 1),
+               ('TICKET#1', 'POST13',NULL, 1),
+               ('TICKET#1', 'POST14',NULL, 1),
 
                ('TICKET#2', 'POST0',NULL, 1),
                ('TICKET#2', 'POST1',NULL, 1),
@@ -409,6 +489,11 @@ namespace Tobasa
                ('TICKET#2', 'POST7',NULL, 1),
                ('TICKET#2', 'POST8',NULL, 1),
                ('TICKET#2', 'POST9',NULL, 1),
+               ('TICKET#2', 'POST10',NULL, 1),
+               ('TICKET#2', 'POST11',NULL, 1),
+               ('TICKET#2', 'POST12',NULL, 1),
+               ('TICKET#2', 'POST13',NULL, 1),
+               ('TICKET#2', 'POST14',NULL, 1),
 
                ('TICKET#3', 'POST0',NULL, 1),
                ('TICKET#3', 'POST1',NULL, 1),
@@ -420,6 +505,11 @@ namespace Tobasa
                ('TICKET#3', 'POST7',NULL, 1),
                ('TICKET#3', 'POST8',NULL, 1),
                ('TICKET#3', 'POST9',NULL, 1),
+               ('TICKET#3', 'POST10',NULL, 1),
+               ('TICKET#3', 'POST11',NULL, 1),
+               ('TICKET#3', 'POST12',NULL, 1),
+               ('TICKET#3', 'POST13',NULL, 1),
+               ('TICKET#3', 'POST14',NULL, 1),
 
                ('TICKET#4', 'POST0',NULL, 1),
                ('TICKET#4', 'POST1',NULL, 1),
@@ -430,7 +520,12 @@ namespace Tobasa
                ('TICKET#4', 'POST6',NULL, 1),
                ('TICKET#4', 'POST7',NULL, 1),
                ('TICKET#4', 'POST8',NULL, 1),
-               ('TICKET#4', 'POST9',NULL, 1);
+               ('TICKET#4', 'POST9',NULL, 1),
+               ('TICKET#4', 'POST10',NULL, 1),
+               ('TICKET#4', 'POST11',NULL, 1),
+               ('TICKET#4', 'POST12',NULL, 1),
+               ('TICKET#4', 'POST13',NULL, 1),
+               ('TICKET#4', 'POST14',NULL, 1);
             ";
 
         public static List<string> GetCommandList()

@@ -1,4 +1,4 @@
-﻿#region License
+#region License
 /*
     Sotware Antrian Tobasa
     Copyright (C) 2015-2025  Jefri Sibarani
@@ -169,6 +169,41 @@ namespace Tobasa
             this.timerPost7 = new System.Windows.Forms.Timer(this.components);
             this.timerPost8 = new System.Windows.Forms.Timer(this.components);
             this.timerPost9 = new System.Windows.Forms.Timer(this.components);
+            this.pnlPost10 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPost10JumAn = new System.Windows.Forms.Label();
+            this.lblPost10JumAnVal = new System.Windows.Forms.Label();
+            this.lblPost10Caption = new System.Windows.Forms.Label();
+            this.lblPost10No = new System.Windows.Forms.Label();
+            this.lblPost10CounterNo = new System.Windows.Forms.Label();
+            this.pnlPost11 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPost11JumAn = new System.Windows.Forms.Label();
+            this.lblPost11JumAnVal = new System.Windows.Forms.Label();
+            this.lblPost11Caption = new System.Windows.Forms.Label();
+            this.lblPost11No = new System.Windows.Forms.Label();
+            this.lblPost11CounterNo = new System.Windows.Forms.Label();
+            this.pnlPost12 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPost12JumAn = new System.Windows.Forms.Label();
+            this.lblPost12JumAnVal = new System.Windows.Forms.Label();
+            this.lblPost12Caption = new System.Windows.Forms.Label();
+            this.lblPost12No = new System.Windows.Forms.Label();
+            this.lblPost12CounterNo = new System.Windows.Forms.Label();
+            this.pnlPost13 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPost13JumAn = new System.Windows.Forms.Label();
+            this.lblPost13JumAnVal = new System.Windows.Forms.Label();
+            this.lblPost13Caption = new System.Windows.Forms.Label();
+            this.lblPost13No = new System.Windows.Forms.Label();
+            this.lblPost13CounterNo = new System.Windows.Forms.Label();
+            this.pnlPost14 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPost14JumAn = new System.Windows.Forms.Label();
+            this.lblPost14JumAnVal = new System.Windows.Forms.Label();
+            this.lblPost14Caption = new System.Windows.Forms.Label();
+            this.lblPost14No = new System.Windows.Forms.Label();
+            this.lblPost14CounterNo = new System.Windows.Forms.Label();
+            this.timerPost10 = new System.Windows.Forms.Timer(this.components);
+            this.timerPost11 = new System.Windows.Forms.Timer(this.components);
+            this.timerPost12 = new System.Windows.Forms.Timer(this.components);
+            this.timerPost13 = new System.Windows.Forms.Timer(this.components);
+            this.timerPost14 = new System.Windows.Forms.Timer(this.components);
             this.mainDiv.SuspendLayout();
             this.bottomDiv.SuspendLayout();
             this.topDiv.SuspendLayout();
@@ -202,12 +237,16 @@ namespace Tobasa
             this.pnlPost7.SuspendLayout();
             this.pnlPost8.SuspendLayout();
             this.pnlPost9.SuspendLayout();
+            this.pnlPost10.SuspendLayout();
+            this.pnlPost11.SuspendLayout();
+            this.pnlPost12.SuspendLayout();
+            this.pnlPost13.SuspendLayout();
+            this.pnlPost14.SuspendLayout();
             this.rightDivNmrCtr.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainDiv
             // 
-            this.mainDiv.AutoSize = true;
             this.mainDiv.BackColor = System.Drawing.Color.Transparent;
             this.mainDiv.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.mainDiv.ColumnCount = 1;
@@ -288,7 +327,6 @@ namespace Tobasa
             // 
             // topDiv
             // 
-            this.topDiv.AutoSize = true;
             this.topDiv.ColumnCount = 3;
             this.topDiv.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.topDiv.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -307,7 +345,6 @@ namespace Tobasa
             // 
             // leftDiv
             // 
-            this.leftDiv.AutoSize = true;
             this.leftDiv.BackColor = System.Drawing.Color.Transparent;
             this.leftDiv.ColumnCount = 1;
             this.leftDiv.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -325,25 +362,30 @@ namespace Tobasa
             // 
             // leftDivPost
             // 
-            this.leftDivPost.AutoSize = true;
             this.leftDivPost.BackColor = System.Drawing.Color.RoyalBlue;
             this.leftDivPost.ColumnCount = 1;
             this.leftDivPost.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.leftDivPost.Controls.Add(this.pnlPost4, 0, 4);
             this.leftDivPost.Controls.Add(this.pnlPost0, 0, 0);
             this.leftDivPost.Controls.Add(this.pnlPost1, 0, 1);
             this.leftDivPost.Controls.Add(this.pnlPost2, 0, 2);
             this.leftDivPost.Controls.Add(this.pnlPost3, 0, 3);
+            this.leftDivPost.Controls.Add(this.pnlPost4, 0, 4);
+            this.leftDivPost.Controls.Add(this.pnlPost10, 0, 5);
+            this.leftDivPost.Controls.Add(this.pnlPost11, 0, 6);
+            this.leftDivPost.Controls.Add(this.pnlPost12, 0, 7);
             this.leftDivPost.Dock = System.Windows.Forms.DockStyle.Fill;
             this.leftDivPost.Location = new System.Drawing.Point(0, 35);
             this.leftDivPost.Margin = new System.Windows.Forms.Padding(0);
             this.leftDivPost.Name = "leftDivPost";
-            this.leftDivPost.RowCount = 5;
-            this.leftDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.leftDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.leftDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.leftDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.leftDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.leftDivPost.RowCount = 8;
+            this.leftDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.leftDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.leftDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.leftDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.leftDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.leftDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.leftDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.leftDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.leftDivPost.Size = new System.Drawing.Size(252, 669);
             this.leftDivPost.TabIndex = 0;
             // 
@@ -1558,16 +1600,20 @@ namespace Tobasa
             this.rightDivPost.Controls.Add(this.pnlPost7, 0, 2);
             this.rightDivPost.Controls.Add(this.pnlPost8, 0, 3);
             this.rightDivPost.Controls.Add(this.pnlPost9, 0, 4);
+            this.rightDivPost.Controls.Add(this.pnlPost13, 0, 5);
+            this.rightDivPost.Controls.Add(this.pnlPost14, 0, 6);
             this.rightDivPost.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rightDivPost.Location = new System.Drawing.Point(0, 35);
             this.rightDivPost.Margin = new System.Windows.Forms.Padding(0);
             this.rightDivPost.Name = "rightDivPost";
-            this.rightDivPost.RowCount = 5;
-            this.rightDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.rightDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.rightDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.rightDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.rightDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.rightDivPost.RowCount = 7;
+            this.rightDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.rightDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.rightDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.rightDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.rightDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.rightDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.rightDivPost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.rightDivPost.Size = new System.Drawing.Size(252, 669);
             this.rightDivPost.TabIndex = 4;
             // 
@@ -2210,6 +2256,580 @@ namespace Tobasa
             // 
             // timerPost9
             // 
+            // 
+            // timerPost9
+            // 
+            this.timerPost9.Tick += new System.EventHandler(this.OnTimer);
+            // 
+            // pnlPost10
+            // 
+            this.pnlPost10.BackColor = System.Drawing.Color.Transparent;
+            this.pnlPost10.BackgroundImage = global::Tobasa.Properties.Resources.bgblue_rounded330x40;
+            this.pnlPost10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlPost10.ColumnCount = 2;
+            this.pnlPost10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.pnlPost10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.pnlPost10.Controls.Add(this.lblPost10JumAn, 0, 2);
+            this.pnlPost10.Controls.Add(this.lblPost10JumAnVal, 0, 2);
+            this.pnlPost10.Controls.Add(this.lblPost10Caption, 0, 0);
+            this.pnlPost10.Controls.Add(this.lblPost10No, 0, 1);
+            this.pnlPost10.Controls.Add(this.lblPost10CounterNo, 1, 1);
+            this.pnlPost10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPost10.Location = new System.Drawing.Point(0, 0);
+            this.pnlPost10.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
+            this.pnlPost10.Name = "pnlPost10";
+            this.pnlPost10.RowCount = 3;
+            this.pnlPost10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.pnlPost10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.pnlPost10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.pnlPost10.Size = new System.Drawing.Size(252, 135);
+            this.pnlPost10.TabIndex = 20;
+            // 
+            // lblPost10JumAn
+            // 
+            this.lblPost10JumAn.AutoSize = true;
+            this.lblPost10JumAn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost10JumAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost10JumAn.ForeColor = System.Drawing.Color.Beige;
+            this.lblPost10JumAn.Location = new System.Drawing.Point(0, 108);
+            this.lblPost10JumAn.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost10JumAn.Name = "lblPost10JumAn";
+            this.lblPost10JumAn.Size = new System.Drawing.Size(163, 27);
+            this.lblPost10JumAn.TabIndex = 11;
+            this.lblPost10JumAn.Text = "Jumlah Antrian";
+            this.lblPost10JumAn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost10JumAn.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost10JumAnVal
+            // 
+            this.lblPost10JumAnVal.AutoSize = true;
+            this.lblPost10JumAnVal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost10JumAnVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost10JumAnVal.ForeColor = System.Drawing.Color.Beige;
+            this.lblPost10JumAnVal.Location = new System.Drawing.Point(163, 108);
+            this.lblPost10JumAnVal.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost10JumAnVal.Name = "lblPost10JumAnVal";
+            this.lblPost10JumAnVal.Size = new System.Drawing.Size(89, 27);
+            this.lblPost10JumAnVal.TabIndex = 10;
+            this.lblPost10JumAnVal.Text = "0";
+            this.lblPost10JumAnVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost10JumAnVal.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost10Caption
+            // 
+            this.lblPost10Caption.AutoSize = true;
+            this.lblPost10Caption.BackColor = System.Drawing.Color.Transparent;
+            this.pnlPost10.SetColumnSpan(this.lblPost10Caption, 2);
+            this.lblPost10Caption.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost10Caption.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost10Caption.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lblPost10Caption.Image = global::Tobasa.Properties.Resources.btn326x35;
+            this.lblPost10Caption.Location = new System.Drawing.Point(0, 0);
+            this.lblPost10Caption.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost10Caption.Name = "lblPost10Caption";
+            this.lblPost10Caption.Size = new System.Drawing.Size(252, 27);
+            this.lblPost10Caption.TabIndex = 0;
+            this.lblPost10Caption.Text = "POST#10";
+            this.lblPost10Caption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost10Caption.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost10No
+            // 
+            this.lblPost10No.AutoSize = true;
+            this.lblPost10No.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost10No.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost10No.ForeColor = System.Drawing.Color.Gold;
+            this.lblPost10No.Location = new System.Drawing.Point(0, 27);
+            this.lblPost10No.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost10No.Name = "lblPost10No";
+            this.lblPost10No.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.lblPost10No.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblPost10No.Size = new System.Drawing.Size(163, 81);
+            this.lblPost10No.TabIndex = 2;
+            this.lblPost10No.Text = "A000";
+            this.lblPost10No.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost10No.UseCompatibleTextRendering = true;
+            this.lblPost10No.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost10CounterNo
+            // 
+            this.lblPost10CounterNo.AutoSize = true;
+            this.lblPost10CounterNo.BackColor = System.Drawing.Color.MidnightBlue;
+            this.lblPost10CounterNo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost10CounterNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost10CounterNo.ForeColor = System.Drawing.Color.Gold;
+            this.lblPost10CounterNo.Image = global::Tobasa.Properties.Resources.bgblue3;
+            this.lblPost10CounterNo.Location = new System.Drawing.Point(163, 27);
+            this.lblPost10CounterNo.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost10CounterNo.Name = "lblPost10CounterNo";
+            this.lblPost10CounterNo.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.lblPost10CounterNo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblPost10CounterNo.Size = new System.Drawing.Size(89, 81);
+            this.lblPost10CounterNo.TabIndex = 4;
+            this.lblPost10CounterNo.Text = "0";
+            this.lblPost10CounterNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost10CounterNo.UseCompatibleTextRendering = true;
+            this.lblPost10CounterNo.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // pnlPost11
+            // 
+            this.pnlPost11.BackColor = System.Drawing.Color.Transparent;
+            this.pnlPost11.BackgroundImage = global::Tobasa.Properties.Resources.bgblue_rounded330x40;
+            this.pnlPost11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlPost11.ColumnCount = 2;
+            this.pnlPost11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.pnlPost11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.pnlPost11.Controls.Add(this.lblPost11JumAn, 0, 2);
+            this.pnlPost11.Controls.Add(this.lblPost11JumAnVal, 0, 2);
+            this.pnlPost11.Controls.Add(this.lblPost11Caption, 0, 0);
+            this.pnlPost11.Controls.Add(this.lblPost11No, 0, 1);
+            this.pnlPost11.Controls.Add(this.lblPost11CounterNo, 1, 1);
+            this.pnlPost11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPost11.Location = new System.Drawing.Point(0, 0);
+            this.pnlPost11.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
+            this.pnlPost11.Name = "pnlPost11";
+            this.pnlPost11.RowCount = 3;
+            this.pnlPost11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.pnlPost11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.pnlPost11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.pnlPost11.Size = new System.Drawing.Size(252, 135);
+            this.pnlPost11.TabIndex = 21;
+            // 
+            // lblPost11JumAn
+            // 
+            this.lblPost11JumAn.AutoSize = true;
+            this.lblPost11JumAn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost11JumAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost11JumAn.ForeColor = System.Drawing.Color.Beige;
+            this.lblPost11JumAn.Location = new System.Drawing.Point(0, 108);
+            this.lblPost11JumAn.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost11JumAn.Name = "lblPost11JumAn";
+            this.lblPost11JumAn.Size = new System.Drawing.Size(163, 27);
+            this.lblPost11JumAn.TabIndex = 11;
+            this.lblPost11JumAn.Text = "Jumlah Antrian";
+            this.lblPost11JumAn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost11JumAn.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost11JumAnVal
+            // 
+            this.lblPost11JumAnVal.AutoSize = true;
+            this.lblPost11JumAnVal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost11JumAnVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost11JumAnVal.ForeColor = System.Drawing.Color.Beige;
+            this.lblPost11JumAnVal.Location = new System.Drawing.Point(163, 108);
+            this.lblPost11JumAnVal.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost11JumAnVal.Name = "lblPost11JumAnVal";
+            this.lblPost11JumAnVal.Size = new System.Drawing.Size(89, 27);
+            this.lblPost11JumAnVal.TabIndex = 10;
+            this.lblPost11JumAnVal.Text = "0";
+            this.lblPost11JumAnVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost11JumAnVal.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost11Caption
+            // 
+            this.lblPost11Caption.AutoSize = true;
+            this.lblPost11Caption.BackColor = System.Drawing.Color.Transparent;
+            this.pnlPost11.SetColumnSpan(this.lblPost11Caption, 2);
+            this.lblPost11Caption.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost11Caption.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost11Caption.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lblPost11Caption.Image = global::Tobasa.Properties.Resources.btn326x35;
+            this.lblPost11Caption.Location = new System.Drawing.Point(0, 0);
+            this.lblPost11Caption.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost11Caption.Name = "lblPost11Caption";
+            this.lblPost11Caption.Size = new System.Drawing.Size(252, 27);
+            this.lblPost11Caption.TabIndex = 0;
+            this.lblPost11Caption.Text = "POST#11";
+            this.lblPost11Caption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost11Caption.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost11No
+            // 
+            this.lblPost11No.AutoSize = true;
+            this.lblPost11No.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost11No.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost11No.ForeColor = System.Drawing.Color.Gold;
+            this.lblPost11No.Location = new System.Drawing.Point(0, 27);
+            this.lblPost11No.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost11No.Name = "lblPost11No";
+            this.lblPost11No.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.lblPost11No.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblPost11No.Size = new System.Drawing.Size(163, 81);
+            this.lblPost11No.TabIndex = 2;
+            this.lblPost11No.Text = "A000";
+            this.lblPost11No.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost11No.UseCompatibleTextRendering = true;
+            this.lblPost11No.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost11CounterNo
+            // 
+            this.lblPost11CounterNo.AutoSize = true;
+            this.lblPost11CounterNo.BackColor = System.Drawing.Color.MidnightBlue;
+            this.lblPost11CounterNo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost11CounterNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost11CounterNo.ForeColor = System.Drawing.Color.Gold;
+            this.lblPost11CounterNo.Image = global::Tobasa.Properties.Resources.bgblue3;
+            this.lblPost11CounterNo.Location = new System.Drawing.Point(163, 27);
+            this.lblPost11CounterNo.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost11CounterNo.Name = "lblPost11CounterNo";
+            this.lblPost11CounterNo.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.lblPost11CounterNo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblPost11CounterNo.Size = new System.Drawing.Size(89, 81);
+            this.lblPost11CounterNo.TabIndex = 4;
+            this.lblPost11CounterNo.Text = "0";
+            this.lblPost11CounterNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost11CounterNo.UseCompatibleTextRendering = true;
+            this.lblPost11CounterNo.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // pnlPost12
+            // 
+            this.pnlPost12.BackColor = System.Drawing.Color.Transparent;
+            this.pnlPost12.BackgroundImage = global::Tobasa.Properties.Resources.bgblue_rounded330x40;
+            this.pnlPost12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlPost12.ColumnCount = 2;
+            this.pnlPost12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.pnlPost12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.pnlPost12.Controls.Add(this.lblPost12JumAn, 0, 2);
+            this.pnlPost12.Controls.Add(this.lblPost12JumAnVal, 0, 2);
+            this.pnlPost12.Controls.Add(this.lblPost12Caption, 0, 0);
+            this.pnlPost12.Controls.Add(this.lblPost12No, 0, 1);
+            this.pnlPost12.Controls.Add(this.lblPost12CounterNo, 1, 1);
+            this.pnlPost12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPost12.Location = new System.Drawing.Point(0, 0);
+            this.pnlPost12.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
+            this.pnlPost12.Name = "pnlPost12";
+            this.pnlPost12.RowCount = 3;
+            this.pnlPost12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.pnlPost12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.pnlPost12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.pnlPost12.Size = new System.Drawing.Size(252, 135);
+            this.pnlPost12.TabIndex = 22;
+            // 
+            // lblPost12JumAn
+            // 
+            this.lblPost12JumAn.AutoSize = true;
+            this.lblPost12JumAn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost12JumAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost12JumAn.ForeColor = System.Drawing.Color.Beige;
+            this.lblPost12JumAn.Location = new System.Drawing.Point(0, 108);
+            this.lblPost12JumAn.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost12JumAn.Name = "lblPost12JumAn";
+            this.lblPost12JumAn.Size = new System.Drawing.Size(163, 27);
+            this.lblPost12JumAn.TabIndex = 11;
+            this.lblPost12JumAn.Text = "Jumlah Antrian";
+            this.lblPost12JumAn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost12JumAn.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost12JumAnVal
+            // 
+            this.lblPost12JumAnVal.AutoSize = true;
+            this.lblPost12JumAnVal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost12JumAnVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost12JumAnVal.ForeColor = System.Drawing.Color.Beige;
+            this.lblPost12JumAnVal.Location = new System.Drawing.Point(163, 108);
+            this.lblPost12JumAnVal.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost12JumAnVal.Name = "lblPost12JumAnVal";
+            this.lblPost12JumAnVal.Size = new System.Drawing.Size(89, 27);
+            this.lblPost12JumAnVal.TabIndex = 10;
+            this.lblPost12JumAnVal.Text = "0";
+            this.lblPost12JumAnVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost12JumAnVal.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost12Caption
+            // 
+            this.lblPost12Caption.AutoSize = true;
+            this.lblPost12Caption.BackColor = System.Drawing.Color.Transparent;
+            this.pnlPost12.SetColumnSpan(this.lblPost12Caption, 2);
+            this.lblPost12Caption.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost12Caption.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost12Caption.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lblPost12Caption.Image = global::Tobasa.Properties.Resources.btn326x35;
+            this.lblPost12Caption.Location = new System.Drawing.Point(0, 0);
+            this.lblPost12Caption.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost12Caption.Name = "lblPost12Caption";
+            this.lblPost12Caption.Size = new System.Drawing.Size(252, 27);
+            this.lblPost12Caption.TabIndex = 0;
+            this.lblPost12Caption.Text = "POST#12";
+            this.lblPost12Caption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost12Caption.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost12No
+            // 
+            this.lblPost12No.AutoSize = true;
+            this.lblPost12No.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost12No.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost12No.ForeColor = System.Drawing.Color.Gold;
+            this.lblPost12No.Location = new System.Drawing.Point(0, 27);
+            this.lblPost12No.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost12No.Name = "lblPost12No";
+            this.lblPost12No.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.lblPost12No.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblPost12No.Size = new System.Drawing.Size(163, 81);
+            this.lblPost12No.TabIndex = 2;
+            this.lblPost12No.Text = "A000";
+            this.lblPost12No.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost12No.UseCompatibleTextRendering = true;
+            this.lblPost12No.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost12CounterNo
+            // 
+            this.lblPost12CounterNo.AutoSize = true;
+            this.lblPost12CounterNo.BackColor = System.Drawing.Color.MidnightBlue;
+            this.lblPost12CounterNo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost12CounterNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost12CounterNo.ForeColor = System.Drawing.Color.Gold;
+            this.lblPost12CounterNo.Image = global::Tobasa.Properties.Resources.bgblue3;
+            this.lblPost12CounterNo.Location = new System.Drawing.Point(163, 27);
+            this.lblPost12CounterNo.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost12CounterNo.Name = "lblPost12CounterNo";
+            this.lblPost12CounterNo.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.lblPost12CounterNo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblPost12CounterNo.Size = new System.Drawing.Size(89, 81);
+            this.lblPost12CounterNo.TabIndex = 4;
+            this.lblPost12CounterNo.Text = "0";
+            this.lblPost12CounterNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost12CounterNo.UseCompatibleTextRendering = true;
+            this.lblPost12CounterNo.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // pnlPost13
+            // 
+            this.pnlPost13.BackColor = System.Drawing.Color.Transparent;
+            this.pnlPost13.BackgroundImage = global::Tobasa.Properties.Resources.bgblue_rounded330x40;
+            this.pnlPost13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlPost13.ColumnCount = 2;
+            this.pnlPost13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.pnlPost13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.pnlPost13.Controls.Add(this.lblPost13JumAn, 0, 2);
+            this.pnlPost13.Controls.Add(this.lblPost13JumAnVal, 0, 2);
+            this.pnlPost13.Controls.Add(this.lblPost13Caption, 0, 0);
+            this.pnlPost13.Controls.Add(this.lblPost13No, 0, 1);
+            this.pnlPost13.Controls.Add(this.lblPost13CounterNo, 1, 1);
+            this.pnlPost13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPost13.Location = new System.Drawing.Point(0, 0);
+            this.pnlPost13.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
+            this.pnlPost13.Name = "pnlPost13";
+            this.pnlPost13.RowCount = 3;
+            this.pnlPost13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.pnlPost13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.pnlPost13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.pnlPost13.Size = new System.Drawing.Size(252, 135);
+            this.pnlPost13.TabIndex = 23;
+            // 
+            // lblPost13JumAn
+            // 
+            this.lblPost13JumAn.AutoSize = true;
+            this.lblPost13JumAn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost13JumAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost13JumAn.ForeColor = System.Drawing.Color.Beige;
+            this.lblPost13JumAn.Location = new System.Drawing.Point(0, 108);
+            this.lblPost13JumAn.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost13JumAn.Name = "lblPost13JumAn";
+            this.lblPost13JumAn.Size = new System.Drawing.Size(163, 27);
+            this.lblPost13JumAn.TabIndex = 11;
+            this.lblPost13JumAn.Text = "Jumlah Antrian";
+            this.lblPost13JumAn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost13JumAn.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost13JumAnVal
+            // 
+            this.lblPost13JumAnVal.AutoSize = true;
+            this.lblPost13JumAnVal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost13JumAnVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost13JumAnVal.ForeColor = System.Drawing.Color.Beige;
+            this.lblPost13JumAnVal.Location = new System.Drawing.Point(163, 108);
+            this.lblPost13JumAnVal.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost13JumAnVal.Name = "lblPost13JumAnVal";
+            this.lblPost13JumAnVal.Size = new System.Drawing.Size(89, 27);
+            this.lblPost13JumAnVal.TabIndex = 10;
+            this.lblPost13JumAnVal.Text = "0";
+            this.lblPost13JumAnVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost13JumAnVal.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost13Caption
+            // 
+            this.lblPost13Caption.AutoSize = true;
+            this.lblPost13Caption.BackColor = System.Drawing.Color.Transparent;
+            this.pnlPost13.SetColumnSpan(this.lblPost13Caption, 2);
+            this.lblPost13Caption.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost13Caption.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost13Caption.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lblPost13Caption.Image = global::Tobasa.Properties.Resources.btn326x35;
+            this.lblPost13Caption.Location = new System.Drawing.Point(0, 0);
+            this.lblPost13Caption.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost13Caption.Name = "lblPost13Caption";
+            this.lblPost13Caption.Size = new System.Drawing.Size(252, 27);
+            this.lblPost13Caption.TabIndex = 0;
+            this.lblPost13Caption.Text = "POST#13";
+            this.lblPost13Caption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost13Caption.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost13No
+            // 
+            this.lblPost13No.AutoSize = true;
+            this.lblPost13No.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost13No.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost13No.ForeColor = System.Drawing.Color.Gold;
+            this.lblPost13No.Location = new System.Drawing.Point(0, 27);
+            this.lblPost13No.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost13No.Name = "lblPost13No";
+            this.lblPost13No.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.lblPost13No.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblPost13No.Size = new System.Drawing.Size(163, 81);
+            this.lblPost13No.TabIndex = 2;
+            this.lblPost13No.Text = "A000";
+            this.lblPost13No.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost13No.UseCompatibleTextRendering = true;
+            this.lblPost13No.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost13CounterNo
+            // 
+            this.lblPost13CounterNo.AutoSize = true;
+            this.lblPost13CounterNo.BackColor = System.Drawing.Color.MidnightBlue;
+            this.lblPost13CounterNo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost13CounterNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost13CounterNo.ForeColor = System.Drawing.Color.Gold;
+            this.lblPost13CounterNo.Image = global::Tobasa.Properties.Resources.bgblue3;
+            this.lblPost13CounterNo.Location = new System.Drawing.Point(163, 27);
+            this.lblPost13CounterNo.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost13CounterNo.Name = "lblPost13CounterNo";
+            this.lblPost13CounterNo.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.lblPost13CounterNo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblPost13CounterNo.Size = new System.Drawing.Size(89, 81);
+            this.lblPost13CounterNo.TabIndex = 4;
+            this.lblPost13CounterNo.Text = "0";
+            this.lblPost13CounterNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost13CounterNo.UseCompatibleTextRendering = true;
+            this.lblPost13CounterNo.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // pnlPost14
+            // 
+            this.pnlPost14.BackColor = System.Drawing.Color.Transparent;
+            this.pnlPost14.BackgroundImage = global::Tobasa.Properties.Resources.bgblue_rounded330x40;
+            this.pnlPost14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlPost14.ColumnCount = 2;
+            this.pnlPost14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.pnlPost14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.pnlPost14.Controls.Add(this.lblPost14JumAn, 0, 2);
+            this.pnlPost14.Controls.Add(this.lblPost14JumAnVal, 0, 2);
+            this.pnlPost14.Controls.Add(this.lblPost14Caption, 0, 0);
+            this.pnlPost14.Controls.Add(this.lblPost14No, 0, 1);
+            this.pnlPost14.Controls.Add(this.lblPost14CounterNo, 1, 1);
+            this.pnlPost14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPost14.Location = new System.Drawing.Point(0, 0);
+            this.pnlPost14.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
+            this.pnlPost14.Name = "pnlPost14";
+            this.pnlPost14.RowCount = 3;
+            this.pnlPost14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.pnlPost14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.pnlPost14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.pnlPost14.Size = new System.Drawing.Size(252, 135);
+            this.pnlPost14.TabIndex = 24;
+            // 
+            // lblPost14JumAn
+            // 
+            this.lblPost14JumAn.AutoSize = true;
+            this.lblPost14JumAn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost14JumAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost14JumAn.ForeColor = System.Drawing.Color.Beige;
+            this.lblPost14JumAn.Location = new System.Drawing.Point(0, 108);
+            this.lblPost14JumAn.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost14JumAn.Name = "lblPost14JumAn";
+            this.lblPost14JumAn.Size = new System.Drawing.Size(163, 27);
+            this.lblPost14JumAn.TabIndex = 11;
+            this.lblPost14JumAn.Text = "Jumlah Antrian";
+            this.lblPost14JumAn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost14JumAn.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost14JumAnVal
+            // 
+            this.lblPost14JumAnVal.AutoSize = true;
+            this.lblPost14JumAnVal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost14JumAnVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost14JumAnVal.ForeColor = System.Drawing.Color.Beige;
+            this.lblPost14JumAnVal.Location = new System.Drawing.Point(163, 108);
+            this.lblPost14JumAnVal.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost14JumAnVal.Name = "lblPost14JumAnVal";
+            this.lblPost14JumAnVal.Size = new System.Drawing.Size(89, 27);
+            this.lblPost14JumAnVal.TabIndex = 10;
+            this.lblPost14JumAnVal.Text = "0";
+            this.lblPost14JumAnVal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost14JumAnVal.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost14Caption
+            // 
+            this.lblPost14Caption.AutoSize = true;
+            this.lblPost14Caption.BackColor = System.Drawing.Color.Transparent;
+            this.pnlPost14.SetColumnSpan(this.lblPost14Caption, 2);
+            this.lblPost14Caption.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost14Caption.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost14Caption.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lblPost14Caption.Image = global::Tobasa.Properties.Resources.btn326x35;
+            this.lblPost14Caption.Location = new System.Drawing.Point(0, 0);
+            this.lblPost14Caption.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost14Caption.Name = "lblPost14Caption";
+            this.lblPost14Caption.Size = new System.Drawing.Size(252, 27);
+            this.lblPost14Caption.TabIndex = 0;
+            this.lblPost14Caption.Text = "POST#14";
+            this.lblPost14Caption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost14Caption.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost14No
+            // 
+            this.lblPost14No.AutoSize = true;
+            this.lblPost14No.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost14No.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost14No.ForeColor = System.Drawing.Color.Gold;
+            this.lblPost14No.Location = new System.Drawing.Point(0, 27);
+            this.lblPost14No.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost14No.Name = "lblPost14No";
+            this.lblPost14No.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.lblPost14No.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblPost14No.Size = new System.Drawing.Size(163, 81);
+            this.lblPost14No.TabIndex = 2;
+            this.lblPost14No.Text = "A000";
+            this.lblPost14No.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost14No.UseCompatibleTextRendering = true;
+            this.lblPost14No.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // lblPost14CounterNo
+            // 
+            this.lblPost14CounterNo.AutoSize = true;
+            this.lblPost14CounterNo.BackColor = System.Drawing.Color.MidnightBlue;
+            this.lblPost14CounterNo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPost14CounterNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPost14CounterNo.ForeColor = System.Drawing.Color.Gold;
+            this.lblPost14CounterNo.Image = global::Tobasa.Properties.Resources.bgblue3;
+            this.lblPost14CounterNo.Location = new System.Drawing.Point(163, 27);
+            this.lblPost14CounterNo.Margin = new System.Windows.Forms.Padding(0);
+            this.lblPost14CounterNo.Name = "lblPost14CounterNo";
+            this.lblPost14CounterNo.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.lblPost14CounterNo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblPost14CounterNo.Size = new System.Drawing.Size(89, 81);
+            this.lblPost14CounterNo.TabIndex = 4;
+            this.lblPost14CounterNo.Text = "0";
+            this.lblPost14CounterNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPost14CounterNo.UseCompatibleTextRendering = true;
+            this.lblPost14CounterNo.Resize += new System.EventHandler(this.OnLabelResize);
+            // 
+            // timerPost10
+            // 
+            this.timerPost10.Tick += new System.EventHandler(this.OnTimer);
+            // 
+            // timerPost11
+            // 
+            this.timerPost11.Tick += new System.EventHandler(this.OnTimer);
+            // 
+            // timerPost12
+            // 
+            this.timerPost12.Tick += new System.EventHandler(this.OnTimer);
+            // 
+            // timerPost13
+            // 
+            this.timerPost13.Tick += new System.EventHandler(this.OnTimer);
+            // 
+            // timerPost14
+            // 
+            this.timerPost14.Tick += new System.EventHandler(this.OnTimer);
             this.timerPost9.Tick += new System.EventHandler(this.OnTimer);
             // 
             // Display
@@ -2285,6 +2905,16 @@ namespace Tobasa
             this.pnlPost8.PerformLayout();
             this.pnlPost9.ResumeLayout(false);
             this.pnlPost9.PerformLayout();
+            this.pnlPost10.ResumeLayout(false);
+            this.pnlPost10.PerformLayout();
+            this.pnlPost11.ResumeLayout(false);
+            this.pnlPost11.PerformLayout();
+            this.pnlPost12.ResumeLayout(false);
+            this.pnlPost12.PerformLayout();
+            this.pnlPost13.ResumeLayout(false);
+            this.pnlPost13.PerformLayout();
+            this.pnlPost14.ResumeLayout(false);
+            this.pnlPost14.PerformLayout();
             this.rightDivNmrCtr.ResumeLayout(false);
             this.rightDivNmrCtr.PerformLayout();
             this.ResumeLayout(false);
@@ -2407,6 +3037,41 @@ namespace Tobasa
 		private System.Windows.Forms.Timer timerPost7;
 		private System.Windows.Forms.Timer timerPost8;
 		private System.Windows.Forms.Timer timerPost9;
+        private System.Windows.Forms.TableLayoutPanel pnlPost10;
+        private System.Windows.Forms.Label lblPost10JumAn;
+        private System.Windows.Forms.Label lblPost10JumAnVal;
+        private System.Windows.Forms.Label lblPost10Caption;
+        private System.Windows.Forms.Label lblPost10No;
+        private System.Windows.Forms.Label lblPost10CounterNo;
+        private System.Windows.Forms.TableLayoutPanel pnlPost11;
+        private System.Windows.Forms.Label lblPost11JumAn;
+        private System.Windows.Forms.Label lblPost11JumAnVal;
+        private System.Windows.Forms.Label lblPost11Caption;
+        private System.Windows.Forms.Label lblPost11No;
+        private System.Windows.Forms.Label lblPost11CounterNo;
+        private System.Windows.Forms.TableLayoutPanel pnlPost12;
+        private System.Windows.Forms.Label lblPost12JumAn;
+        private System.Windows.Forms.Label lblPost12JumAnVal;
+        private System.Windows.Forms.Label lblPost12Caption;
+        private System.Windows.Forms.Label lblPost12No;
+        private System.Windows.Forms.Label lblPost12CounterNo;
+        private System.Windows.Forms.TableLayoutPanel pnlPost13;
+        private System.Windows.Forms.Label lblPost13JumAn;
+        private System.Windows.Forms.Label lblPost13JumAnVal;
+        private System.Windows.Forms.Label lblPost13Caption;
+        private System.Windows.Forms.Label lblPost13No;
+        private System.Windows.Forms.Label lblPost13CounterNo;
+        private System.Windows.Forms.TableLayoutPanel pnlPost14;
+        private System.Windows.Forms.Label lblPost14JumAn;
+        private System.Windows.Forms.Label lblPost14JumAnVal;
+        private System.Windows.Forms.Label lblPost14Caption;
+        private System.Windows.Forms.Label lblPost14No;
+        private System.Windows.Forms.Label lblPost14CounterNo;
+        private System.Windows.Forms.Timer timerPost10;
+        private System.Windows.Forms.Timer timerPost11;
+        private System.Windows.Forms.Timer timerPost12;
+        private System.Windows.Forms.Timer timerPost13;
+        private System.Windows.Forms.Timer timerPost14;
 		private RuntextLabel runningTextBottom;
 		private System.Windows.Forms.TableLayoutPanel centerInfoStrip1Div;
 		private System.Windows.Forms.Label lblTopText1;

@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -67,12 +67,12 @@ namespace Tobasa
 
         public static bool CanLogin(string staName, string staPost, out string reasonOut)
         {
-            if (! Database.Me.Connected)
+            if (!Database.Me.Connected)
             {
-                reasonOut = "QueueServer is not connected to database"; ;
+                reasonOut = "QueueServer is not connected to database";
                 return false;
             }
-            
+
             try
             {
                 string reason = "";
@@ -80,10 +80,12 @@ namespace Tobasa
                 Database.Me.OpenConnection();
                 using (DbCommand cmd = Database.Me.Connection.CreateCommand())
                 {
-                    string sql = $"SELECT canlogin FROM {Tbl.stations} WHERE name = @name AND post = @post ";
+                    // Use TRIM and UPPER for robustness against whitespace and casing variations
+                    string sql = $"SELECT canlogin FROM {Tbl.stations} WHERE UPPER(TRIM(name)) = UPPER(TRIM(@name)) AND UPPER(TRIM(post)) = UPPER(TRIM(@post)) ";
                     cmd.CommandText = sql;
-                    Database.Me.AddParameter(cmd, "name", staName, DbType.String);
-                    Database.Me.AddParameter(cmd, "post", staPost, DbType.String);
+
+                    Database.Me.AddParameter(cmd, "name", staName?.Trim(), DbType.String);
+                    Database.Me.AddParameter(cmd, "post", staPost?.Trim(), DbType.String);
 
                     var res = cmd.ExecuteScalar();
                     if (res != null)
@@ -124,7 +126,7 @@ namespace Tobasa
                 {
                     string sql = $"SELECT username, password, expired, active FROM {Tbl.logins} WHERE username = @username";
                     cmd.CommandText = sql;
-                    Database.Me.AddParameter(cmd, "username", userName, DbType.String);
+                    Database.Me.AddParameter(cmd, "username", userName?.Trim(), DbType.String);
 
                     using (DbDataReader reader = cmd.ExecuteReader())
                     {

@@ -1,4 +1,4 @@
-﻿#region License
+#region License
 /*
     Sotware Antrian Tobasa
     Copyright (C) 2015-2025  Jefri Sibarani
@@ -78,6 +78,11 @@ namespace Tobasa
         private Stopwatch swPost7 = new Stopwatch();
         private Stopwatch swPost8 = new Stopwatch();
         private Stopwatch swPost9 = new Stopwatch();
+        private Stopwatch swPost10 = new Stopwatch();
+        private Stopwatch swPost11 = new Stopwatch();
+        private Stopwatch swPost12 = new Stopwatch();
+        private Stopwatch swPost13 = new Stopwatch();
+        private Stopwatch swPost14 = new Stopwatch();
 
         // Timer to display clock
         private Timer timerClock { get; set; }
@@ -92,10 +97,12 @@ namespace Tobasa
         // optional Msg.DISPLAY_CALL_NUMBER info strip, shown in lblTopText0
         string topTextPost0, topTextPost1, topTextPost2, topTextPost3, topTextPost4;
         string topTextPost5, topTextPost6, topTextPost7, topTextPost8, topTextPost9;
+        string topTextPost10, topTextPost11, topTextPost12, topTextPost13, topTextPost14;
 
         // optional msg.DISPLAY_SHOW_MESSAGE info strip, shown in lblTopText1
         string midTextPost0, midTextPost1, midTextPost2, midTextPost3, midTextPost4;
         string midTextPost5, midTextPost6, midTextPost7, midTextPost8, midTextPost9;
+        string midTextPost10, midTextPost11, midTextPost12, midTextPost13, midTextPost14;
         
         Bitmap displayLogoImg  = null;
         
@@ -228,6 +235,16 @@ namespace Tobasa
                     lblPost8JumAnVal.Text = total;
                 if (post == "POST9")
                     lblPost9JumAnVal.Text = total;
+                if (post == "POST10")
+                    lblPost10JumAnVal.Text = total;
+                if (post == "POST11")
+                    lblPost11JumAnVal.Text = total;
+                if (post == "POST12")
+                    lblPost12JumAnVal.Text = total;
+                if (post == "POST13")
+                    lblPost13JumAnVal.Text = total;
+                if (post == "POST14")
+                    lblPost14JumAnVal.Text = total;
             }
         }
 
@@ -248,14 +265,19 @@ namespace Tobasa
             string post7Name = _settings.Post7Post;
             string post8Name = _settings.Post8Post;
             string post9Name = _settings.Post9Post;
+            string post10Name = _settings.Post10Post;
+            string post11Name = _settings.Post11Post;
+            string post12Name = _settings.Post12Post;
+            string post13Name = _settings.Post13Post;
+            string post14Name = _settings.Post14Post;
 
             // main left posts visible?
-            if ((post.Equals(post0Name) || post.Equals(post1Name) || post.Equals(post2Name) || post.Equals(post3Name) || post.Equals(post4Name))
+            if ((post.Equals(post0Name) || post.Equals(post1Name) || post.Equals(post2Name) || post.Equals(post3Name) || post.Equals(post4Name) || post.Equals(post10Name) || post.Equals(post11Name) || post.Equals(post12Name))
                 && !leftDiv.Visible)
                 return false;
 
             // main right posts visible?
-            if ((post.Equals(post5Name) || post.Equals(post6Name) || post.Equals(post7Name) || post.Equals(post8Name) || post.Equals(post9Name))
+            if ((post.Equals(post5Name) || post.Equals(post6Name) || post.Equals(post7Name) || post.Equals(post8Name) || post.Equals(post9Name) || post.Equals(post13Name) || post.Equals(post14Name))
                     && !rightDiv.Visible)
                 return false;
 
@@ -267,6 +289,16 @@ namespace Tobasa
             else if (post.Equals(post8Name) && !_settings.Post8Visible)
                 return false;
             else if (post.Equals(post9Name) && !_settings.Post9Visible)
+                return false;
+            else if (post.Equals(post10Name) && !_settings.Post10Visible)
+                return false;
+            else if (post.Equals(post11Name) && !_settings.Post11Visible)
+                return false;
+            else if (post.Equals(post12Name) && !_settings.Post12Visible)
+                return false;
+            else if (post.Equals(post13Name) && !_settings.Post13Visible)
+                return false;
+            else if (post.Equals(post14Name) && !_settings.Post14Visible)
                 return false;
 
             return true;
@@ -306,6 +338,11 @@ namespace Tobasa
             string post7Name = _settings.Post7Post;
             string post8Name = _settings.Post8Post;
             string post9Name = _settings.Post9Post;
+            string post10Name = _settings.Post10Post;
+            string post11Name = _settings.Post11Post;
+            string post12Name = _settings.Post12Post;
+            string post13Name = _settings.Post13Post;
+            string post14Name = _settings.Post14Post;
 
             // Posts info strip prefix, shown in lblTopText0
             string post0RunText = _settings.Post0RunText;
@@ -318,6 +355,11 @@ namespace Tobasa
             string post7RunText = _settings.Post7RunText;
             string post8RunText = _settings.Post8RunText;
             string post9RunText = _settings.Post9RunText;
+            string post10RunText = _settings.Post10RunText;
+            string post11RunText = _settings.Post11RunText;
+            string post12RunText = _settings.Post12RunText;
+            string post13RunText = _settings.Post13RunText;
+            string post14RunText = _settings.Post14RunText;
 
             string postMainCaption = "";
             bool playAudio = false;
@@ -490,6 +532,86 @@ namespace Tobasa
                 playAudio = _settings.Post9PlayAudio;
                 postMainCaption = _settings.Post9Caption;
             }
+            else if (post.Equals(post10Name))
+            {
+                if (!recall) lblPost10JumAnVal.Text = queueCount;
+
+                lblPost10No.Text = prefix + number;
+                lblPost10CounterNo.Text = GetStationIdAsChar(stationId);
+
+                // animate label
+                timerPost10.Start();
+                swPost10.Start();
+
+                topTextPost10 = String.Format("{0} : Nomor {1} di {2} {3}  ", post10RunText, prefix + number, textCounterOrLabel, stationId);
+
+                playAudio = _settings.Post10PlayAudio;
+                postMainCaption = _settings.Post10Caption;
+            }
+            else if (post.Equals(post11Name))
+            {
+                if (!recall) lblPost11JumAnVal.Text = queueCount;
+
+                lblPost11No.Text = prefix + number;
+                lblPost11CounterNo.Text = GetStationIdAsChar(stationId);
+
+                // animate label
+                timerPost11.Start();
+                swPost11.Start();
+
+                topTextPost11 = String.Format("{0} : Nomor {1} di {2} {3}  ", post11RunText, prefix + number, textCounterOrLabel, stationId);
+
+                playAudio = _settings.Post11PlayAudio;
+                postMainCaption = _settings.Post11Caption;
+            }
+            else if (post.Equals(post12Name))
+            {
+                if (!recall) lblPost12JumAnVal.Text = queueCount;
+
+                lblPost12No.Text = prefix + number;
+                lblPost12CounterNo.Text = GetStationIdAsChar(stationId);
+
+                // animate label
+                timerPost12.Start();
+                swPost12.Start();
+
+                topTextPost12 = String.Format("{0} : Nomor {1} di {2} {3}  ", post12RunText, prefix + number, textCounterOrLabel, stationId);
+
+                playAudio = _settings.Post12PlayAudio;
+                postMainCaption = _settings.Post12Caption;
+            }
+            else if (post.Equals(post13Name))
+            {
+                if (!recall) lblPost13JumAnVal.Text = queueCount;
+
+                lblPost13No.Text = prefix + number;
+                lblPost13CounterNo.Text = GetStationIdAsChar(stationId);
+
+                // animate label
+                timerPost13.Start();
+                swPost13.Start();
+
+                topTextPost13 = String.Format("{0} : Nomor {1} di {2} {3}  ", post13RunText, prefix + number, textCounterOrLabel, stationId);
+
+                playAudio = _settings.Post13PlayAudio;
+                postMainCaption = _settings.Post13Caption;
+            }
+            else if (post.Equals(post14Name))
+            {
+                if (!recall) lblPost14JumAnVal.Text = queueCount;
+
+                lblPost14No.Text = prefix + number;
+                lblPost14CounterNo.Text = GetStationIdAsChar(stationId);
+
+                // animate label
+                timerPost14.Start();
+                swPost14.Start();
+
+                topTextPost14 = String.Format("{0} : Nomor {1} di {2} {3}  ", post14RunText, prefix + number, textCounterOrLabel, stationId);
+
+                playAudio = _settings.Post14PlayAudio;
+                postMainCaption = _settings.Post14Caption;
+            }
 
             // Main Post Current number display
             if (post == _settings.StationPost || _settings.UpdateNumberFromOtherPost)
@@ -526,6 +648,11 @@ namespace Tobasa
             string post7Name = _settings.Post7Post;
             string post8Name = _settings.Post8Post;
             string post9Name = _settings.Post9Post;
+            string post10Name = _settings.Post10Post;
+            string post11Name = _settings.Post11Post;
+            string post12Name = _settings.Post12Post;
+            string post13Name = _settings.Post13Post;
+            string post14Name = _settings.Post14Post;
 
             string post0RunText = _settings.Post0RunText;
             string post1RunText = _settings.Post1RunText;
@@ -537,6 +664,11 @@ namespace Tobasa
             string post7RunText = _settings.Post7RunText;
             string post8RunText = _settings.Post8RunText;
             string post9RunText = _settings.Post9RunText;
+            string post10RunText = _settings.Post10RunText;
+            string post11RunText = _settings.Post11RunText;
+            string post12RunText = _settings.Post12RunText;
+            string post13RunText = _settings.Post13RunText;
+            string post14RunText = _settings.Post14RunText;
 
             // if panel POST#3/POST#4/POST#8/POST#9 is hidden, stop process
             if (post.Equals(post3Name) && !_settings.Post3Visible)
@@ -546,6 +678,16 @@ namespace Tobasa
             else if (post.Equals(post8Name) && !_settings.Post8Visible)
                 return;
             else if (post.Equals(post9Name) && !_settings.Post9Visible)
+                return;
+            else if (post.Equals(post10Name) && !_settings.Post10Visible)
+                return;
+            else if (post.Equals(post11Name) && !_settings.Post11Visible)
+                return;
+            else if (post.Equals(post12Name) && !_settings.Post12Visible)
+                return;
+            else if (post.Equals(post13Name) && !_settings.Post13Visible)
+                return;
+            else if (post.Equals(post14Name) && !_settings.Post14Visible)
                 return;
             else
             {
@@ -571,6 +713,16 @@ namespace Tobasa
                     midTextPost8 = post8RunText + " : " + message;
                 else if (post.Equals(post9Name))
                     midTextPost9 = post9RunText + " : " + message;
+                else if (post.Equals(post10Name))
+                    midTextPost10 = post10RunText + " : " + message;
+                else if (post.Equals(post11Name))
+                    midTextPost11 = post11RunText + " : " + message;
+                else if (post.Equals(post12Name))
+                    midTextPost12 = post12RunText + " : " + message;
+                else if (post.Equals(post13Name))
+                    midTextPost13 = post13RunText + " : " + message;
+                else if (post.Equals(post14Name))
+                    midTextPost14 = post14RunText + " : " + message;
             }
         }
 
@@ -666,6 +818,11 @@ namespace Tobasa
             string post7Name = _settings.Post7Post;
             string post8Name = _settings.Post8Post;
             string post9Name = _settings.Post9Post;
+            string post10Name = _settings.Post10Post;
+            string post11Name = _settings.Post11Post;
+            string post12Name = _settings.Post12Post;
+            string post13Name = _settings.Post13Post;
+            string post14Name = _settings.Post14Post;
             
             string postMainCaption = "";
 
@@ -745,6 +902,41 @@ namespace Tobasa
                 lblPost9No.Text = queueNo;
                 lblPost9CounterNo.Text = stationId;
                 postMainCaption = _settings.Post9Caption;
+            }
+            else if (post == post10Name)
+            {
+                lblPost10JumAnVal.Text = numberleft;
+                lblPost10No.Text = queueNo;
+                lblPost10CounterNo.Text = stationId;
+                postMainCaption = _settings.Post10Caption;
+            }
+            else if (post == post11Name)
+            {
+                lblPost11JumAnVal.Text = numberleft;
+                lblPost11No.Text = queueNo;
+                lblPost11CounterNo.Text = stationId;
+                postMainCaption = _settings.Post11Caption;
+            }
+            else if (post == post12Name)
+            {
+                lblPost12JumAnVal.Text = numberleft;
+                lblPost12No.Text = queueNo;
+                lblPost12CounterNo.Text = stationId;
+                postMainCaption = _settings.Post12Caption;
+            }
+            else if (post == post13Name)
+            {
+                lblPost13JumAnVal.Text = numberleft;
+                lblPost13No.Text = queueNo;
+                lblPost13CounterNo.Text = stationId;
+                postMainCaption = _settings.Post13Caption;
+            }
+            else if (post == post14Name)
+            {
+                lblPost14JumAnVal.Text = numberleft;
+                lblPost14No.Text = queueNo;
+                lblPost14CounterNo.Text = stationId;
+                postMainCaption = _settings.Post14Caption;
             }
 
             // Main Post Current number display
@@ -943,6 +1135,41 @@ namespace Tobasa
             labelRecordList.Add(new LabelRecord(lblPost9No));
             labelRecordList.Add(new LabelRecord(lblPost9JumAnVal));
             labelRecordList.Add(new LabelRecord(lblPost9CounterNo));
+
+            // POST#10
+            labelRecordList.Add(new LabelRecord(lblPost10Caption));
+            labelRecordList.Add(new LabelRecord(lblPost10JumAn));
+            labelRecordList.Add(new LabelRecord(lblPost10No));
+            labelRecordList.Add(new LabelRecord(lblPost10JumAnVal));
+            labelRecordList.Add(new LabelRecord(lblPost10CounterNo));
+
+            // POST#11
+            labelRecordList.Add(new LabelRecord(lblPost11Caption));
+            labelRecordList.Add(new LabelRecord(lblPost11JumAn));
+            labelRecordList.Add(new LabelRecord(lblPost11No));
+            labelRecordList.Add(new LabelRecord(lblPost11JumAnVal));
+            labelRecordList.Add(new LabelRecord(lblPost11CounterNo));
+
+            // POST#12
+            labelRecordList.Add(new LabelRecord(lblPost12Caption));
+            labelRecordList.Add(new LabelRecord(lblPost12JumAn));
+            labelRecordList.Add(new LabelRecord(lblPost12No));
+            labelRecordList.Add(new LabelRecord(lblPost12JumAnVal));
+            labelRecordList.Add(new LabelRecord(lblPost12CounterNo));
+
+            // POST#13
+            labelRecordList.Add(new LabelRecord(lblPost13Caption));
+            labelRecordList.Add(new LabelRecord(lblPost13JumAn));
+            labelRecordList.Add(new LabelRecord(lblPost13No));
+            labelRecordList.Add(new LabelRecord(lblPost13JumAnVal));
+            labelRecordList.Add(new LabelRecord(lblPost13CounterNo));
+
+            // POST#14
+            labelRecordList.Add(new LabelRecord(lblPost14Caption));
+            labelRecordList.Add(new LabelRecord(lblPost14JumAn));
+            labelRecordList.Add(new LabelRecord(lblPost14No));
+            labelRecordList.Add(new LabelRecord(lblPost14JumAnVal));
+            labelRecordList.Add(new LabelRecord(lblPost14CounterNo));
 
             labelRecordList.Add(new LabelRecord(lblQueueNumberFinished));
             labelRecordList.Add(new LabelRecord(lblFin0));
@@ -1173,6 +1400,36 @@ namespace Tobasa
                 lblCtr = lblPost9CounterNo;
                 sw = swPost9;
             }
+            else if (tmr == timerPost10)
+            {
+                lblNo = lblPost10No;
+                lblCtr = lblPost10CounterNo;
+                sw = swPost10;
+            }
+            else if (tmr == timerPost11)
+            {
+                lblNo = lblPost11No;
+                lblCtr = lblPost11CounterNo;
+                sw = swPost11;
+            }
+            else if (tmr == timerPost12)
+            {
+                lblNo = lblPost12No;
+                lblCtr = lblPost12CounterNo;
+                sw = swPost12;
+            }
+            else if (tmr == timerPost13)
+            {
+                lblNo = lblPost13No;
+                lblCtr = lblPost13CounterNo;
+                sw = swPost13;
+            }
+            else if (tmr == timerPost14)
+            {
+                lblNo = lblPost14No;
+                lblCtr = lblPost14CounterNo;
+                sw = swPost14;
+            }
 
             // animate label
             if (lblNo.ForeColor == colorProfile.basePostTextColor)
@@ -1320,6 +1577,11 @@ namespace Tobasa
             lblPost7No.Text = "_";
             lblPost8No.Text = "_";
             lblPost9No.Text = "_";
+            lblPost10No.Text = "_";
+            lblPost11No.Text = "_";
+            lblPost12No.Text = "_";
+            lblPost13No.Text = "_";
+            lblPost14No.Text = "_";
 
             lblPost0CounterNo.Text = "_";
             lblPost1CounterNo.Text = "_";
@@ -1331,6 +1593,11 @@ namespace Tobasa
             lblPost7CounterNo.Text = "_";
             lblPost8CounterNo.Text = "_";
             lblPost9CounterNo.Text = "_";
+            lblPost10CounterNo.Text = "_";
+            lblPost11CounterNo.Text = "_";
+            lblPost12CounterNo.Text = "_";
+            lblPost13CounterNo.Text = "_";
+            lblPost14CounterNo.Text = "_";
 
             lblPostNumber.Text = "_";
 
@@ -1344,6 +1611,11 @@ namespace Tobasa
             lblPost7JumAnVal.Text = "_";
             lblPost8JumAnVal.Text = "_";
             lblPost9JumAnVal.Text = "_";
+            lblPost10JumAnVal.Text = "_";
+            lblPost11JumAnVal.Text = "_";
+            lblPost12JumAnVal.Text = "_";
+            lblPost13JumAnVal.Text = "_";
+            lblPost14JumAnVal.Text = "_";
 
             lblFin0.Text = "_";
             lblFin1.Text = "_";
@@ -1359,85 +1631,36 @@ namespace Tobasa
 
         private void AdaptLeftDivPostLayout()
         {
-            bool visible3 = _settings.Post3Visible;
-            pnlPost3.Visible = visible3;
+            pnlPost0.Visible = _settings.Post0Visible;
+            pnlPost1.Visible = _settings.Post1Visible;
+            pnlPost2.Visible = _settings.Post2Visible;
+            pnlPost3.Visible = _settings.Post3Visible;
+            pnlPost4.Visible = _settings.Post4Visible;
+            pnlPost10.Visible = _settings.Post10Visible;
+            pnlPost11.Visible = _settings.Post11Visible;
+            pnlPost12.Visible = _settings.Post12Visible;
 
-            bool visible4 = _settings.Post4Visible;
-            pnlPost4.Visible = visible4;
-
-            if (visible3 && visible4)
+            foreach (RowStyle style in leftDivPost.RowStyles)
             {
-                foreach (RowStyle style in leftDivPost.RowStyles)
-                {
-                    style.SizeType = SizeType.Percent;
-                    style.Height = 20F;
-                }
-            }
-            else if (!visible3 && !visible4)
-            {
-                leftDivPost.RowStyles[0].Height = 33.33F;
-                leftDivPost.RowStyles[1].Height = 33.33F;
-                leftDivPost.RowStyles[2].Height = 33.33F;
-                leftDivPost.RowStyles[3].Height = 0F;
-                leftDivPost.RowStyles[4].Height = 0F;
-            }
-            else if (!visible3 && visible4)
-            {
-                leftDivPost.RowStyles[0].Height = 25F;
-                leftDivPost.RowStyles[1].Height = 25F;
-                leftDivPost.RowStyles[2].Height = 25F;
-                leftDivPost.RowStyles[3].Height = 0F;
-                leftDivPost.RowStyles[4].Height = 25F;
-            }
-            else if (visible3 && !visible4)
-            {
-                leftDivPost.RowStyles[0].Height = 25F;
-                leftDivPost.RowStyles[1].Height = 25F;
-                leftDivPost.RowStyles[2].Height = 25F;
-                leftDivPost.RowStyles[3].Height = 25F;
-                leftDivPost.RowStyles[4].Height = 0F;
+                style.SizeType = SizeType.Percent;
+                style.Height = 12.5F;
             }
         }
 
         private void AdaptRightDivPostLayout()
         {
-            bool visible8 = _settings.Post8Visible;
-            pnlPost8.Visible = visible8;
+            pnlPost5.Visible = _settings.Post5Visible;
+            pnlPost6.Visible = _settings.Post6Visible;
+            pnlPost7.Visible = _settings.Post7Visible;
+            pnlPost8.Visible = _settings.Post8Visible;
+            pnlPost9.Visible = _settings.Post9Visible;
+            pnlPost13.Visible = _settings.Post13Visible;
+            pnlPost14.Visible = _settings.Post14Visible;
 
-            bool visible9 = _settings.Post9Visible;
-            pnlPost9.Visible = visible9;
-
-            if (visible8 && visible9)
+            foreach (RowStyle style in rightDivPost.RowStyles)
             {
-                foreach (RowStyle style in rightDivPost.RowStyles)
-                {
-                    style.SizeType = SizeType.Percent;
-                    style.Height = 20F;
-                }
-            }
-            else if (!visible8 && !visible9)
-            {
-                rightDivPost.RowStyles[0].Height = 33.33F;
-                rightDivPost.RowStyles[1].Height = 33.33F;
-                rightDivPost.RowStyles[2].Height = 33.33F;
-                rightDivPost.RowStyles[3].Height = 0F;
-                rightDivPost.RowStyles[4].Height = 0F;
-            }
-            else if (!visible8 && visible9)
-            {
-                rightDivPost.RowStyles[0].Height = 25F;
-                rightDivPost.RowStyles[1].Height = 25F;
-                rightDivPost.RowStyles[2].Height = 25F;
-                rightDivPost.RowStyles[3].Height = 0F;
-                rightDivPost.RowStyles[4].Height = 25F;
-            }
-            else if (visible8 && !visible9)
-            {
-                rightDivPost.RowStyles[0].Height = 25F;
-                rightDivPost.RowStyles[1].Height = 25F;
-                rightDivPost.RowStyles[2].Height = 25F;
-                rightDivPost.RowStyles[3].Height = 25F;
-                rightDivPost.RowStyles[4].Height = 0F;
+                style.SizeType = SizeType.Percent;
+                style.Height = 14.28F;
             }
         }
 
@@ -1709,6 +1932,11 @@ namespace Tobasa
             lblPost7Caption.Text = _settings.Post7Caption;
             lblPost8Caption.Text = _settings.Post8Caption;
             lblPost9Caption.Text = _settings.Post9Caption;
+            lblPost10Caption.Text = _settings.Post10Caption;
+            lblPost11Caption.Text = _settings.Post11Caption;
+            lblPost12Caption.Text = _settings.Post12Caption;
+            lblPost13Caption.Text = _settings.Post13Caption;
+            lblPost14Caption.Text = _settings.Post14Caption;
 
             lblPostNameCaption.Text = _settings.Post0Caption;
         }
@@ -2231,6 +2459,96 @@ namespace Tobasa
             this.lblPost9JumAn.BackColor = postTotalQueueLabelBackColor;
             this.lblPost9JumAnVal.ForeColor = postTotalQueueValueColor;
             this.lblPost9JumAnVal.BackColor = postTotalQueueValueBackColor;
+
+            // --------------------------------------------------------------
+            // POST 10
+            // --------------------------------------------------------------
+            this.pnlPost10.BackgroundImage = null;
+            this.pnlPost10.BackColor = postPanelBackColor;
+            this.lblPost10Caption.Image = null;
+            this.lblPost10Caption.ForeColor = postCaptionColor;
+            this.lblPost10Caption.BackColor = postCaptionBackColor;
+            this.lblPost10No.ForeColor = postQueueNoColor;
+            this.lblPost10No.BackColor = postQueueNoBackColor;
+            this.lblPost10CounterNo.Image = null;
+            this.lblPost10CounterNo.ForeColor = postCounterNoColor;
+            this.lblPost10CounterNo.BackColor = postCounterNoBackColor;
+            this.lblPost10JumAn.ForeColor = postTotalQueueLabelColor;
+            this.lblPost10JumAn.BackColor = postTotalQueueLabelBackColor;
+            this.lblPost10JumAnVal.ForeColor = postTotalQueueValueColor;
+            this.lblPost10JumAnVal.BackColor = postTotalQueueValueBackColor;
+
+            // --------------------------------------------------------------
+            // POST 11
+            // --------------------------------------------------------------
+            this.pnlPost11.BackgroundImage = null;
+            this.pnlPost11.BackColor = postPanelBackColor;
+            this.lblPost11Caption.Image = null;
+            this.lblPost11Caption.ForeColor = postCaptionColor;
+            this.lblPost11Caption.BackColor = postCaptionBackColor;
+            this.lblPost11No.ForeColor = postQueueNoColor;
+            this.lblPost11No.BackColor = postQueueNoBackColor;
+            this.lblPost11CounterNo.Image = null;
+            this.lblPost11CounterNo.ForeColor = postCounterNoColor;
+            this.lblPost11CounterNo.BackColor = postCounterNoBackColor;
+            this.lblPost11JumAn.ForeColor = postTotalQueueLabelColor;
+            this.lblPost11JumAn.BackColor = postTotalQueueLabelBackColor;
+            this.lblPost11JumAnVal.ForeColor = postTotalQueueValueColor;
+            this.lblPost11JumAnVal.BackColor = postTotalQueueValueBackColor;
+
+            // --------------------------------------------------------------
+            // POST 12
+            // --------------------------------------------------------------
+            this.pnlPost12.BackgroundImage = null;
+            this.pnlPost12.BackColor = postPanelBackColor;
+            this.lblPost12Caption.Image = null;
+            this.lblPost12Caption.ForeColor = postCaptionColor;
+            this.lblPost12Caption.BackColor = postCaptionBackColor;
+            this.lblPost12No.ForeColor = postQueueNoColor;
+            this.lblPost12No.BackColor = postQueueNoBackColor;
+            this.lblPost12CounterNo.Image = null;
+            this.lblPost12CounterNo.ForeColor = postCounterNoColor;
+            this.lblPost12CounterNo.BackColor = postCounterNoBackColor;
+            this.lblPost12JumAn.ForeColor = postTotalQueueLabelColor;
+            this.lblPost12JumAn.BackColor = postTotalQueueLabelBackColor;
+            this.lblPost12JumAnVal.ForeColor = postTotalQueueValueColor;
+            this.lblPost12JumAnVal.BackColor = postTotalQueueValueBackColor;
+
+            // --------------------------------------------------------------
+            // POST 13
+            // --------------------------------------------------------------
+            this.pnlPost13.BackgroundImage = null;
+            this.pnlPost13.BackColor = postPanelBackColor;
+            this.lblPost13Caption.Image = null;
+            this.lblPost13Caption.ForeColor = postCaptionColor;
+            this.lblPost13Caption.BackColor = postCaptionBackColor;
+            this.lblPost13No.ForeColor = postQueueNoColor;
+            this.lblPost13No.BackColor = postQueueNoBackColor;
+            this.lblPost13CounterNo.Image = null;
+            this.lblPost13CounterNo.ForeColor = postCounterNoColor;
+            this.lblPost13CounterNo.BackColor = postCounterNoBackColor;
+            this.lblPost13JumAn.ForeColor = postTotalQueueLabelColor;
+            this.lblPost13JumAn.BackColor = postTotalQueueLabelBackColor;
+            this.lblPost13JumAnVal.ForeColor = postTotalQueueValueColor;
+            this.lblPost13JumAnVal.BackColor = postTotalQueueValueBackColor;
+
+            // --------------------------------------------------------------
+            // POST 14
+            // --------------------------------------------------------------
+            this.pnlPost14.BackgroundImage = null;
+            this.pnlPost14.BackColor = postPanelBackColor;
+            this.lblPost14Caption.Image = null;
+            this.lblPost14Caption.ForeColor = postCaptionColor;
+            this.lblPost14Caption.BackColor = postCaptionBackColor;
+            this.lblPost14No.ForeColor = postQueueNoColor;
+            this.lblPost14No.BackColor = postQueueNoBackColor;
+            this.lblPost14CounterNo.Image = null;
+            this.lblPost14CounterNo.ForeColor = postCounterNoColor;
+            this.lblPost14CounterNo.BackColor = postCounterNoBackColor;
+            this.lblPost14JumAn.ForeColor = postTotalQueueLabelColor;
+            this.lblPost14JumAn.BackColor = postTotalQueueLabelBackColor;
+            this.lblPost14JumAnVal.ForeColor = postTotalQueueValueColor;
+            this.lblPost14JumAnVal.BackColor = postTotalQueueValueBackColor;
 
             #endregion
 

@@ -36,6 +36,11 @@
   &lt;string&gt;POST7|Poli Mata&lt;/string&gt;
   &lt;string&gt;POST8|Poli Kulit&lt;/string&gt;
   &lt;string&gt;POST9|Poli THT&lt;/string&gt;
+  &lt;string&gt;POST10|Poli Saraf&lt;/string&gt;
+  &lt;string&gt;POST11|Poli Jantung&lt;/string&gt;
+  &lt;string&gt;POST12|Poli Interna&lt;/string&gt;
+  &lt;string&gt;POST13|Poli Bedah&lt;/string&gt;
+  &lt;string&gt;POST14|Poli Paru&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="ManageAllPostAdvanceQueue" Type="System.Boolean" Scope="User">

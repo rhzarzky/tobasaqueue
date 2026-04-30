@@ -1,4 +1,4 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Tobasa.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
@@ -290,6 +290,96 @@
     <Setting Name="Post9Visible" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="Post10Caption" Type="System.String" Scope="User">
+      <Value Profile="(Default)">POLI SARAF</Value>
+    </Setting>
+    <Setting Name="Post10Post" Type="System.String" Scope="User">
+      <Value Profile="(Default)">POST10</Value>
+    </Setting>
+    <Setting Name="Post10Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Poli Saraf</Value>
+    </Setting>
+    <Setting Name="Post10RunText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Poli Saraf</Value>
+    </Setting>
+    <Setting Name="Post10PlayAudio" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Post10Visible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Post11Caption" Type="System.String" Scope="User">
+      <Value Profile="(Default)">POLI JANTUNG</Value>
+    </Setting>
+    <Setting Name="Post11Post" Type="System.String" Scope="User">
+      <Value Profile="(Default)">POST11</Value>
+    </Setting>
+    <Setting Name="Post11Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Poli Jantung</Value>
+    </Setting>
+    <Setting Name="Post11RunText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Poli Jantung</Value>
+    </Setting>
+    <Setting Name="Post11PlayAudio" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Post11Visible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Post12Caption" Type="System.String" Scope="User">
+      <Value Profile="(Default)">POLI INTERNA</Value>
+    </Setting>
+    <Setting Name="Post12Post" Type="System.String" Scope="User">
+      <Value Profile="(Default)">POST12</Value>
+    </Setting>
+    <Setting Name="Post12Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Poli Interna</Value>
+    </Setting>
+    <Setting Name="Post12RunText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Poli Interna</Value>
+    </Setting>
+    <Setting Name="Post12PlayAudio" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Post12Visible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Post13Caption" Type="System.String" Scope="User">
+      <Value Profile="(Default)">POLI BEDAH</Value>
+    </Setting>
+    <Setting Name="Post13Post" Type="System.String" Scope="User">
+      <Value Profile="(Default)">POST13</Value>
+    </Setting>
+    <Setting Name="Post13Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Poli Bedah</Value>
+    </Setting>
+    <Setting Name="Post13RunText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Poli Bedah</Value>
+    </Setting>
+    <Setting Name="Post13PlayAudio" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Post13Visible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Post14Caption" Type="System.String" Scope="User">
+      <Value Profile="(Default)">POLI PARU</Value>
+    </Setting>
+    <Setting Name="Post14Post" Type="System.String" Scope="User">
+      <Value Profile="(Default)">POST14</Value>
+    </Setting>
+    <Setting Name="Post14Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Poli Paru</Value>
+    </Setting>
+    <Setting Name="Post14RunText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Poli Paru</Value>
+    </Setting>
+    <Setting Name="Post14PlayAudio" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Post14Visible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
     <Setting Name="Post0Visible" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
@@ -327,6 +417,11 @@
   &lt;string&gt;POST7&lt;/string&gt;
   &lt;string&gt;POST8&lt;/string&gt;
   &lt;string&gt;POST9&lt;/string&gt;
+  &lt;string&gt;POST10&lt;/string&gt;
+  &lt;string&gt;POST11&lt;/string&gt;
+  &lt;string&gt;POST12&lt;/string&gt;
+  &lt;string&gt;POST13&lt;/string&gt;
+  &lt;string&gt;POST14&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="Theme" Type="System.String" Scope="User">

@@ -132,6 +132,51 @@ namespace Tobasa
                 settings.Post9Visible = Visible;
                 settings.Post9PlayAudio = PlayAudio;
             }
+            else if (Id == "POST10")
+            {
+                settings.Post10Name = Name;
+                //settings.Post10Post = Id;
+                settings.Post10Caption = Caption;
+                settings.Post10RunText = RunText;
+                settings.Post10Visible = Visible;
+                settings.Post10PlayAudio = PlayAudio;
+            }
+            else if (Id == "POST11")
+            {
+                settings.Post11Name = Name;
+                //settings.Post11Post = Id;
+                settings.Post11Caption = Caption;
+                settings.Post11RunText = RunText;
+                settings.Post11Visible = Visible;
+                settings.Post11PlayAudio = PlayAudio;
+            }
+            else if (Id == "POST12")
+            {
+                settings.Post12Name = Name;
+                //settings.Post12Post = Id;
+                settings.Post12Caption = Caption;
+                settings.Post12RunText = RunText;
+                settings.Post12Visible = Visible;
+                settings.Post12PlayAudio = PlayAudio;
+            }
+            else if (Id == "POST13")
+            {
+                settings.Post13Name = Name;
+                //settings.Post13Post = Id;
+                settings.Post13Caption = Caption;
+                settings.Post13RunText = RunText;
+                settings.Post13Visible = Visible;
+                settings.Post13PlayAudio = PlayAudio;
+            }
+            else if (Id == "POST14")
+            {
+                settings.Post14Name = Name;
+                //settings.Post14Post = Id;
+                settings.Post14Caption = Caption;
+                settings.Post14RunText = RunText;
+                settings.Post14Visible = Visible;
+                settings.Post14PlayAudio = PlayAudio;
+            }
             else
             {
                 // do nothing
@@ -240,6 +285,56 @@ namespace Tobasa
                 RunText = settings.Post9RunText;
                 Visible = settings.Post9Visible;
                 PlayAudio = settings.Post9PlayAudio;
+            }
+            else if (Id == "POST10")
+            {
+                Index = 10;
+                Name = settings.Post10Name;
+                Id = settings.Post10Post;
+                Caption = settings.Post10Caption;
+                RunText = settings.Post10RunText;
+                Visible = settings.Post10Visible;
+                PlayAudio = settings.Post10PlayAudio;
+            }
+            else if (Id == "POST11")
+            {
+                Index = 11;
+                Name = settings.Post11Name;
+                Id = settings.Post11Post;
+                Caption = settings.Post11Caption;
+                RunText = settings.Post11RunText;
+                Visible = settings.Post11Visible;
+                PlayAudio = settings.Post11PlayAudio;
+            }
+            else if (Id == "POST12")
+            {
+                Index = 12;
+                Name = settings.Post12Name;
+                Id = settings.Post12Post;
+                Caption = settings.Post12Caption;
+                RunText = settings.Post12RunText;
+                Visible = settings.Post12Visible;
+                PlayAudio = settings.Post12PlayAudio;
+            }
+            else if (Id == "POST13")
+            {
+                Index = 13;
+                Name = settings.Post13Name;
+                Id = settings.Post13Post;
+                Caption = settings.Post13Caption;
+                RunText = settings.Post13RunText;
+                Visible = settings.Post13Visible;
+                PlayAudio = settings.Post13PlayAudio;
+            }
+            else if (Id == "POST14")
+            {
+                Index = 14;
+                Name = settings.Post14Name;
+                Id = settings.Post14Post;
+                Caption = settings.Post14Caption;
+                RunText = settings.Post14RunText;
+                Visible = settings.Post14Visible;
+                PlayAudio = settings.Post14PlayAudio;
             }
             else
             {

@@ -1,4 +1,4 @@
-﻿#region License
+#region License
 /*
     Tobasa Library - Provide Async TCP server, DirectShow wrapper and simple Logger class
     Copyright (C) 2015-2025  Jefri Sibarani
@@ -99,7 +99,7 @@ namespace Tobasa
             {
                 MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder();
                 builder.ConnectionString = partialConnStr;
-                string clearPwd = Util.DecryptPassword(encryptedPwd, salt);
+                string clearPwd = string.IsNullOrEmpty(encryptedPwd) ? "" : Util.DecryptPassword(encryptedPwd, salt);
                 builder.Add("Password", clearPwd);
                 return builder.ToString();
             }
@@ -107,7 +107,7 @@ namespace Tobasa
             {
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
                 builder.ConnectionString = partialConnStr;
-                string clearPwd = Util.DecryptPassword(encryptedPwd, salt);
+                string clearPwd = string.IsNullOrEmpty(encryptedPwd) ? "" : Util.DecryptPassword(encryptedPwd, salt);
                 builder.Password = clearPwd;
                 return builder.ToString();
             }
@@ -115,7 +115,7 @@ namespace Tobasa
             {
                 NpgsqlConnectionStringBuilder builder = new NpgsqlConnectionStringBuilder();
                 builder.ConnectionString = partialConnStr;
-                string clearPwd = Util.DecryptPassword(encryptedPwd, salt);
+                string clearPwd = string.IsNullOrEmpty(encryptedPwd) ? "" : Util.DecryptPassword(encryptedPwd, salt);
                 builder.Add("Password", clearPwd);
                 return builder.ToString();
             }

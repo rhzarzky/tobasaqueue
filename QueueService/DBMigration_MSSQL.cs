@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 namespace Tobasa
 {
@@ -218,20 +218,29 @@ namespace Tobasa
 
         public static string cmd_insert_all_basic_data =
             @"
-            INSERT INTO queue_logins(username,password,expired,active)   VALUES
-               ('tobasaqueue', 'A1410C6E07BDA0D774A76E644024801EB00175B27B85D0289469978603EBB9F4','2026-07-16 00:00:00.000',1),
-               ('admin',       '51C5FB67361F529DD9DDF96959FC5FA51960E0F7516560290BD7BFCF9421C6F6','2035-01-01 00:00:00.000',1);
+            -- queue_logins
+            IF NOT EXISTS (SELECT 1 FROM queue_logins WHERE username = 'tobasaqueue')
+               INSERT INTO queue_logins(username,password,expired,active) VALUES ('tobasaqueue', 'A1410C6E07BDA0D774A76E644024801EB00175B27B85D0289469978603EBB9F4','2026-07-16 00:00:00.000',1);
+            IF NOT EXISTS (SELECT 1 FROM queue_logins WHERE username = 'admin')
+               INSERT INTO queue_logins(username,password,expired,active) VALUES ('admin',       '51C5FB67361F529DD9DDF96959FC5FA51960E0F7516560290BD7BFCF9421C6F6','2035-01-01 00:00:00.000',1);
 
-            INSERT INTO queue_ipaccesslists VALUES 
-               ('10.62.22.1',  1, 'Komputer devepoment'),
-               ('192.168.1.1', 1, 'Komputer Caller #1'),
-               ('192.168.1.2', 1, 'Komputer Caller #2');
+            -- queue_ipaccesslists
+            IF NOT EXISTS (SELECT 1 FROM queue_ipaccesslists WHERE ipaddress = '10.62.22.1')
+               INSERT INTO queue_ipaccesslists VALUES ('10.62.22.1',  1, 'Komputer devepoment');
+            IF NOT EXISTS (SELECT 1 FROM queue_ipaccesslists WHERE ipaddress = '192.168.1.1')
+               INSERT INTO queue_ipaccesslists VALUES ('192.168.1.1', 1, 'Komputer Caller #1');
+            IF NOT EXISTS (SELECT 1 FROM queue_ipaccesslists WHERE ipaddress = '192.168.1.2')
+               INSERT INTO queue_ipaccesslists VALUES ('192.168.1.2', 1, 'Komputer Caller #2');
    
-            INSERT INTO queue_runningtexts (station_name,sticky,active,running_text)  VALUES
-               ('DISP#1', 1, 1, 'Running text Display #1 dari database server'),
-               ('DISP#2', 1, 1, 'Running text Display #2 dari database server');
+            -- queue_runningtexts
+            IF NOT EXISTS (SELECT 1 FROM queue_runningtexts WHERE station_name = 'DISP#1')
+               INSERT INTO queue_runningtexts (station_name,sticky,active,running_text)  VALUES ('DISP#1', 1, 1, 'Running text Display #1 dari database server');
+            IF NOT EXISTS (SELECT 1 FROM queue_runningtexts WHERE station_name = 'DISP#2')
+               INSERT INTO queue_runningtexts (station_name,sticky,active,running_text)  VALUES ('DISP#2', 1, 1, 'Running text Display #2 dari database server');
    
-            INSERT INTO queue_posts (name,keterangan,numberprefix) VALUES
+            -- queue_posts
+            CREATE TABLE #temp_posts (name VARCHAR(32), keterangan VARCHAR(256), numberprefix VARCHAR(5));
+            INSERT INTO #temp_posts (name, keterangan, numberprefix) VALUES
                ( 'POST0', 'Pos layanan 1',  'A'),
                ( 'POST1', 'Pos layanan 2',  'B'),
                ( 'POST2', 'Pos layanan 3',  'C'),
@@ -241,9 +250,22 @@ namespace Tobasa
                ( 'POST6', 'Pos layanan 7',  'DR'),
                ( 'POST7', 'Pos layanan 8',  'P'),
                ( 'POST8', 'Pos layanan 9',  'Z'),
-               ( 'POST9', 'Pos layanan 10', 'HO');   
+               ( 'POST9', 'Pos layanan 10', 'HO'),
+               ( 'POST10', 'Pos layanan 11', 'K'),
+               ( 'POST11', 'Pos layanan 12', 'L'),
+               ( 'POST12', 'Pos layanan 13', 'M'),
+               ( 'POST13', 'Pos layanan 14', 'N'),
+               ( 'POST14', 'Pos layanan 15', 'O');
+
+            INSERT INTO queue_posts (name, keterangan, numberprefix)
+            SELECT t.name, t.keterangan, t.numberprefix FROM #temp_posts t
+            LEFT JOIN queue_posts q ON t.name = q.name
+            WHERE q.name IS NULL;
+            DROP TABLE #temp_posts;
 	
-            INSERT INTO queue_stations (name,post,keterangan,canlogin) VALUES
+            -- queue_stations
+            CREATE TABLE #temp_stations (name VARCHAR(32), post VARCHAR(32), keterangan VARCHAR(256), canlogin INTEGER);
+            INSERT INTO #temp_stations (name,post,keterangan,canlogin) VALUES
                ('ADMIN#1',  'POST0',NULL, 1),
                ('ADMIN#1',  'POST1',NULL, 1),
                ('ADMIN#1',  'POST2',NULL, 1),
@@ -254,6 +276,11 @@ namespace Tobasa
                ('ADMIN#1',  'POST7',NULL, 1),
                ('ADMIN#1',  'POST8',NULL, 1),
                ('ADMIN#1',  'POST9',NULL, 1),
+               ('ADMIN#1',  'POST10',NULL, 1),
+               ('ADMIN#1',  'POST11',NULL, 1),
+               ('ADMIN#1',  'POST12',NULL, 1),
+               ('ADMIN#1',  'POST13',NULL, 1),
+               ('ADMIN#1',  'POST14',NULL, 1),
 
                ('ADMIN#2',  'POST0',NULL, 1),
                ('ADMIN#2',  'POST1',NULL, 1),
@@ -265,6 +292,11 @@ namespace Tobasa
                ('ADMIN#2',  'POST7',NULL, 1),
                ('ADMIN#2',  'POST8',NULL, 1),
                ('ADMIN#2',  'POST9',NULL, 1),
+               ('ADMIN#2',  'POST10',NULL, 1),
+               ('ADMIN#2',  'POST11',NULL, 1),
+               ('ADMIN#2',  'POST12',NULL, 1),
+               ('ADMIN#2',  'POST13',NULL, 1),
+               ('ADMIN#2',  'POST14',NULL, 1),
 
                ('CALL#1',   'POST0',NULL, 1),
                ('CALL#1',   'POST1',NULL, 1),
@@ -276,6 +308,11 @@ namespace Tobasa
                ('CALL#1',   'POST7',NULL, 1),
                ('CALL#1',   'POST8',NULL, 1),
                ('CALL#1',   'POST9',NULL, 1),
+               ('CALL#1',   'POST10',NULL, 1),
+               ('CALL#1',   'POST11',NULL, 1),
+               ('CALL#1',   'POST12',NULL, 1),
+               ('CALL#1',   'POST13',NULL, 1),
+               ('CALL#1',   'POST14',NULL, 1),
 
                ('CALL#2',   'POST0',NULL, 1),
                ('CALL#2',   'POST1',NULL, 1),
@@ -287,6 +324,11 @@ namespace Tobasa
                ('CALL#2',   'POST7',NULL, 1),
                ('CALL#2',   'POST8',NULL, 1),
                ('CALL#2',   'POST9',NULL, 1),
+               ('CALL#2',   'POST10',NULL, 1),
+               ('CALL#2',   'POST11',NULL, 1),
+               ('CALL#2',   'POST12',NULL, 1),
+               ('CALL#2',   'POST13',NULL, 1),
+               ('CALL#2',   'POST14',NULL, 1),
 
                ('CALL#3',   'POST0',NULL, 1),
                ('CALL#3',   'POST1',NULL, 1),
@@ -298,6 +340,11 @@ namespace Tobasa
                ('CALL#3',   'POST7',NULL, 1),
                ('CALL#3',   'POST8',NULL, 1),
                ('CALL#3',   'POST9',NULL, 1),
+               ('CALL#3',   'POST10',NULL, 1),
+               ('CALL#3',   'POST11',NULL, 1),
+               ('CALL#3',   'POST12',NULL, 1),
+               ('CALL#3',   'POST13',NULL, 1),
+               ('CALL#3',   'POST14',NULL, 1),
 
                ('CALL#4',   'POST0',NULL, 1),
                ('CALL#4',   'POST1',NULL, 1),
@@ -309,6 +356,11 @@ namespace Tobasa
                ('CALL#4',   'POST7',NULL, 1),
                ('CALL#4',   'POST8',NULL, 1),
                ('CALL#4',   'POST9',NULL, 1),
+               ('CALL#4',   'POST10',NULL, 1),
+               ('CALL#4',   'POST11',NULL, 1),
+               ('CALL#4',   'POST12',NULL, 1),
+               ('CALL#4',   'POST13',NULL, 1),
+               ('CALL#4',   'POST14',NULL, 1),
 
                ('CALL#5',   'POST0',NULL, 1),
                ('CALL#5',   'POST1',NULL, 1),
@@ -320,6 +372,11 @@ namespace Tobasa
                ('CALL#5',   'POST7',NULL, 1),
                ('CALL#5',   'POST8',NULL, 1),
                ('CALL#5',   'POST9',NULL, 1),
+               ('CALL#5',   'POST10',NULL, 1),
+               ('CALL#5',   'POST11',NULL, 1),
+               ('CALL#5',   'POST12',NULL, 1),
+               ('CALL#5',   'POST13',NULL, 1),
+               ('CALL#5',   'POST14',NULL, 1),
 
                ('CALL#6',   'POST0',NULL, 1),
                ('CALL#6',   'POST1',NULL, 1),
@@ -331,6 +388,11 @@ namespace Tobasa
                ('CALL#6',   'POST7',NULL, 1),
                ('CALL#6',   'POST8',NULL, 1),
                ('CALL#6',   'POST9',NULL, 1),
+               ('CALL#6',   'POST10',NULL, 1),
+               ('CALL#6',   'POST11',NULL, 1),
+               ('CALL#6',   'POST12',NULL, 1),
+               ('CALL#6',   'POST13',NULL, 1),
+               ('CALL#6',   'POST14',NULL, 1),
 
                ('CALL#7',   'POST0',NULL, 1),
                ('CALL#7',   'POST1',NULL, 1),
@@ -342,6 +404,11 @@ namespace Tobasa
                ('CALL#7',   'POST7',NULL, 1),
                ('CALL#7',   'POST8',NULL, 1),
                ('CALL#7',   'POST9',NULL, 1),
+               ('CALL#7',   'POST10',NULL, 1),
+               ('CALL#7',   'POST11',NULL, 1),
+               ('CALL#7',   'POST12',NULL, 1),
+               ('CALL#7',   'POST13',NULL, 1),
+               ('CALL#7',   'POST14',NULL, 1),
 
                ('CALL#8',   'POST0',NULL, 1),
                ('CALL#8',   'POST1',NULL, 1),
@@ -353,6 +420,11 @@ namespace Tobasa
                ('CALL#8',   'POST7',NULL, 1),
                ('CALL#8',   'POST8',NULL, 1),
                ('CALL#8',   'POST9',NULL, 1),
+               ('CALL#8',   'POST10',NULL, 1),
+               ('CALL#8',   'POST11',NULL, 1),
+               ('CALL#8',   'POST12',NULL, 1),
+               ('CALL#8',   'POST13',NULL, 1),
+               ('CALL#8',   'POST14',NULL, 1),
 
                ('CALL#9',   'POST0',NULL, 1),
                ('CALL#9',   'POST1',NULL, 1),
@@ -364,6 +436,11 @@ namespace Tobasa
                ('CALL#9',   'POST7',NULL, 1),
                ('CALL#9',   'POST8',NULL, 1),
                ('CALL#9',   'POST9',NULL, 1),
+               ('CALL#9',   'POST10',NULL, 1),
+               ('CALL#9',   'POST11',NULL, 1),
+               ('CALL#9',   'POST12',NULL, 1),
+               ('CALL#9',   'POST13',NULL, 1),
+               ('CALL#9',   'POST14',NULL, 1),
 
                ('CALL#10',  'POST0',NULL, 1),
                ('CALL#10',  'POST1',NULL, 1),
@@ -375,6 +452,11 @@ namespace Tobasa
                ('CALL#10',  'POST7',NULL, 1),
                ('CALL#10',  'POST8',NULL, 1),
                ('CALL#10',  'POST9',NULL, 1),
+               ('CALL#10',  'POST10',NULL, 1),
+               ('CALL#10',  'POST11',NULL, 1),
+               ('CALL#10',  'POST12',NULL, 1),
+               ('CALL#10',  'POST13',NULL, 1),
+               ('CALL#10',  'POST14',NULL, 1),
 
                ('DISP#1',   'POST0',NULL, 1),
                ('DISP#1',   'POST1',NULL, 1),
@@ -386,6 +468,11 @@ namespace Tobasa
                ('DISP#1',   'POST7',NULL, 1),
                ('DISP#1',   'POST8',NULL, 1),
                ('DISP#1',   'POST9',NULL, 1),
+               ('DISP#1',   'POST10',NULL, 1),
+               ('DISP#1',   'POST11',NULL, 1),
+               ('DISP#1',   'POST12',NULL, 1),
+               ('DISP#1',   'POST13',NULL, 1),
+               ('DISP#1',   'POST14',NULL, 1),
 
                ('DISP#2',   'POST0',NULL, 1),
                ('DISP#2',   'POST1',NULL, 1),
@@ -397,6 +484,11 @@ namespace Tobasa
                ('DISP#2',   'POST7',NULL, 1),
                ('DISP#2',   'POST8',NULL, 1),
                ('DISP#2',   'POST9',NULL, 1),
+               ('DISP#2',   'POST10',NULL, 1),
+               ('DISP#2',   'POST11',NULL, 1),
+               ('DISP#2',   'POST12',NULL, 1),
+               ('DISP#2',   'POST13',NULL, 1),
+               ('DISP#2',   'POST14',NULL, 1),
 
                ('TICKET#1', 'POST0',NULL, 1),
                ('TICKET#1', 'POST1',NULL, 1),
@@ -408,6 +500,11 @@ namespace Tobasa
                ('TICKET#1', 'POST7',NULL, 1),
                ('TICKET#1', 'POST8',NULL, 1),
                ('TICKET#1', 'POST9',NULL, 1),
+               ('TICKET#1', 'POST10',NULL, 1),
+               ('TICKET#1', 'POST11',NULL, 1),
+               ('TICKET#1', 'POST12',NULL, 1),
+               ('TICKET#1', 'POST13',NULL, 1),
+               ('TICKET#1', 'POST14',NULL, 1),
 
                ('TICKET#2', 'POST0',NULL, 1),
                ('TICKET#2', 'POST1',NULL, 1),
@@ -419,6 +516,11 @@ namespace Tobasa
                ('TICKET#2', 'POST7',NULL, 1),
                ('TICKET#2', 'POST8',NULL, 1),
                ('TICKET#2', 'POST9',NULL, 1),
+               ('TICKET#2', 'POST10',NULL, 1),
+               ('TICKET#2', 'POST11',NULL, 1),
+               ('TICKET#2', 'POST12',NULL, 1),
+               ('TICKET#2', 'POST13',NULL, 1),
+               ('TICKET#2', 'POST14',NULL, 1),
 
                ('TICKET#3', 'POST0',NULL, 1),
                ('TICKET#3', 'POST1',NULL, 1),
@@ -430,6 +532,11 @@ namespace Tobasa
                ('TICKET#3', 'POST7',NULL, 1),
                ('TICKET#3', 'POST8',NULL, 1),
                ('TICKET#3', 'POST9',NULL, 1),
+               ('TICKET#3', 'POST10',NULL, 1),
+               ('TICKET#3', 'POST11',NULL, 1),
+               ('TICKET#3', 'POST12',NULL, 1),
+               ('TICKET#3', 'POST13',NULL, 1),
+               ('TICKET#3', 'POST14',NULL, 1),
 
                ('TICKET#4', 'POST0',NULL, 1),
                ('TICKET#4', 'POST1',NULL, 1),
@@ -440,7 +547,19 @@ namespace Tobasa
                ('TICKET#4', 'POST6',NULL, 1),
                ('TICKET#4', 'POST7',NULL, 1),
                ('TICKET#4', 'POST8',NULL, 1),
-               ('TICKET#4', 'POST9',NULL, 1);
+               ('TICKET#4', 'POST9',NULL, 1),
+               ('TICKET#4', 'POST10',NULL, 1),
+               ('TICKET#4', 'POST11',NULL, 1),
+               ('TICKET#4', 'POST12',NULL, 1),
+               ('TICKET#4', 'POST13',NULL, 1),
+               ('TICKET#4', 'POST14',NULL, 1);
+
+            INSERT INTO queue_stations (name, post, keterangan, canlogin)
+            SELECT t.name, t.post, t.keterangan, t.canlogin FROM #temp_stations t
+            LEFT JOIN queue_stations q ON t.name = q.name AND t.post = q.post
+            WHERE q.name IS NULL;
+            DROP TABLE #temp_stations;
+
             ";
 
         public static List<string> GetCommandList()

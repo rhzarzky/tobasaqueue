@@ -1,4 +1,4 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Tobasa.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
@@ -36,6 +36,11 @@
   &lt;string&gt;POST7&lt;/string&gt;
   &lt;string&gt;POST8&lt;/string&gt;
   &lt;string&gt;POST9&lt;/string&gt;
+  &lt;string&gt;POST10&lt;/string&gt;
+  &lt;string&gt;POST11&lt;/string&gt;
+  &lt;string&gt;POST12&lt;/string&gt;
+  &lt;string&gt;POST13&lt;/string&gt;
+  &lt;string&gt;POST14&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
   </Settings>

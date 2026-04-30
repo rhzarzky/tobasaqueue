@@ -1,4 +1,4 @@
-﻿#region License
+#region License
 /*
     Sotware Antrian Tobasa
     Copyright (C) 2015-2025  Jefri Sibarani
@@ -210,6 +210,11 @@ namespace Tobasa
                         GetPostQueueInfo("POST7");
                         GetPostQueueInfo("POST8");
                         GetPostQueueInfo("POST9");
+                        GetPostQueueInfo("POST10");
+                        GetPostQueueInfo("POST11");
+                        GetPostQueueInfo("POST12");
+                        GetPostQueueInfo("POST13");
+                        GetPostQueueInfo("POST14");
                     }
                     else
                     {
