@@ -89,7 +89,6 @@ namespace Tobasa
             this.btnChangePost11 = new System.Windows.Forms.Button();
             this.btnChangePost12 = new System.Windows.Forms.Button();
             this.btnChangePost13 = new System.Windows.Forms.Button();
-            this.btnChangePost14 = new System.Windows.Forms.Button();
             this.tabProcessing = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -495,7 +494,6 @@ namespace Tobasa
             this.postsBtnDiv.Controls.Add(this.btnChangePost11, 1, 2);
             this.postsBtnDiv.Controls.Add(this.btnChangePost12, 2, 2);
             this.postsBtnDiv.Controls.Add(this.btnChangePost13, 3, 2);
-            this.postsBtnDiv.Controls.Add(this.btnChangePost14, 4, 2);
             this.postsBtnDiv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.postsBtnDiv.Location = new System.Drawing.Point(201, 334);
             this.postsBtnDiv.Name = "postsBtnDiv";
@@ -673,18 +671,6 @@ namespace Tobasa
             this.btnChangePost13.Text = "Post 13";
             this.btnChangePost13.UseVisualStyleBackColor = true;
             this.btnChangePost13.Click += new System.EventHandler(this.OnChangePost);
-            // 
-            // btnChangePost14
-            // 
-            this.btnChangePost14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnChangePost14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChangePost14.Location = new System.Drawing.Point(211, 83);
-            this.btnChangePost14.Name = "btnChangePost14";
-            this.btnChangePost14.Size = new System.Drawing.Size(46, 34);
-            this.btnChangePost14.TabIndex = 14;
-            this.btnChangePost14.Text = "Post 14";
-            this.btnChangePost14.UseVisualStyleBackColor = true;
-            this.btnChangePost14.Click += new System.EventHandler(this.OnChangePost);
             // 
             // tabProcessing
             // 
@@ -1238,7 +1224,6 @@ namespace Tobasa
 		private System.Windows.Forms.Button btnChangePost11;
 		private System.Windows.Forms.Button btnChangePost12;
 		private System.Windows.Forms.Button btnChangePost13;
-		private System.Windows.Forms.Button btnChangePost14;
 		private System.Windows.Forms.ToolTip toolTip;
 		private System.Windows.Forms.GroupBox gbConnProps;
 		private System.Windows.Forms.GroupBox groupBox1;

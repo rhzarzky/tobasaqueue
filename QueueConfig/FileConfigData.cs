@@ -144,11 +144,11 @@ namespace Tobasa
                     new PostConfigDisplay
                     {
                         code = "POST0",
-                        name = "Apotik",
-                        caption = "APOTIK",
+                        name = "Poli Paru",
+                        caption = "POLI PARU",
                         visible = true,
                         playAudio = true,
-                        infoText = "Apotik"
+                        infoText = "POLI PARU"
                     }
                 },
                 {
@@ -156,11 +156,11 @@ namespace Tobasa
                     new PostConfigDisplay
                     {
                         code = "POST1",
-                        name = "Laboratorium",
-                        caption = "LABORATORIUM",
+                        name = "Poli Mata",
+                        caption = "POLI MATA",
                         visible = true,
                         playAudio = true,
-                        infoText = "Laboratorium"
+                        infoText = "POLI MATA"
                     }
                 },
                 {
@@ -168,11 +168,11 @@ namespace Tobasa
                     new PostConfigDisplay
                     {
                         code = "POST2",
-                        name = "Pendaftaran RJ",
-                        caption = "PENDAFTARAN RJ",
+                        name = "Poli Kandungan",
+                        caption = "POLI KANDUNGAN",
                         visible = true,
                         playAudio = true,
-                        infoText = "Pendaftaran RJ"
+                        infoText = "POLI KANDUNGAN"
                     }
                 },
                 {
@@ -180,11 +180,11 @@ namespace Tobasa
                     new PostConfigDisplay
                     {
                         code = "POST3",
-                        name = "BPJS Kesehatan",
-                        caption = "BPJS KESEHATAN",
+                        name = "Poli Bedah",
+                        caption = "POLI BEDAH",
                         visible = true,
                         playAudio = true,
-                        infoText = "BPJS Kesehatan"
+                        infoText = "POLI BEDAH"
                     }
                 },
                 {
@@ -192,11 +192,11 @@ namespace Tobasa
                     new PostConfigDisplay
                     {
                         code = "POST4",
-                        name = "Customer Service",
-                        caption = "CUSTOMER SERVICE",
+                        name = "Poli Anak",
+                        caption = "POLI ANAK",
                         visible = true,
                         playAudio = true,
-                        infoText = "Customer Service"
+                        infoText = "POLI ANAK"
                     }
                 },
                 {
@@ -204,11 +204,11 @@ namespace Tobasa
                     new PostConfigDisplay
                     {
                         code = "POST5",
-                        name = "Poli Gigi",
-                        caption = "POLI GIGI",
+                        name = "Poli Ortopedi",
+                        caption = "POLI ORTOPEDI",
                         visible = true,
                         playAudio = true,
-                        infoText = "Poli Gigi"
+                        infoText = "POLI ORTOPEDI"
                     }
                 },
                 {
@@ -216,11 +216,11 @@ namespace Tobasa
                     new PostConfigDisplay
                     {
                         code = "POST6",
-                        name = "Poli Anak",
-                        caption = "POLI ANAK",
+                        name = "Poli Jantung",
+                        caption = "POLI JANTUNG",
                         visible = true,
                         playAudio = true,
-                        infoText = "Poli Anak"
+                        infoText = "POLI JANTUNG"
                     }
                 },
                 {
@@ -228,11 +228,11 @@ namespace Tobasa
                     new PostConfigDisplay
                     {
                         code = "POST7",
-                        name = "Poli Mata",
-                        caption = "POLI MATA",
+                        name = "Poli THT",
+                        caption = "POLI THT",
                         visible = true,
                         playAudio = true,
-                        infoText = "Poli Mata"
+                        infoText = "POLI THT"
                     }
                 },
                 {
@@ -252,11 +252,59 @@ namespace Tobasa
                     new PostConfigDisplay
                     {
                         code = "POST9",
-                        name = "Poli THT",
-                        caption = "POLI THT",
+                        name = "Poli Dalam",
+                        caption = "POLI DALAM",
                         visible = true,
                         playAudio = true,
-                        infoText = "Poli THT"
+                        infoText = "POLI DALAM"
+                    }
+                },
+                {
+                    "POST10",
+                    new PostConfigDisplay
+                    {
+                        code = "POST10",
+                        name = "Poli Saraf",
+                        caption = "POLI SARAF",
+                        visible = true,
+                        playAudio = true,
+                        infoText = "POLI SARAF"
+                    }
+                },
+                {
+                    "POST11",
+                    new PostConfigDisplay
+                    {
+                        code = "POST11",
+                        name = "Poli Psikiatri",
+                        caption = "POLI PSIKIATRI",
+                        visible = true,
+                        playAudio = true,
+                        infoText = "POLI PSIKIATRI"
+                    }
+                },
+                {
+                    "POST12",
+                    new PostConfigDisplay
+                    {
+                        code = "POST12",
+                        name = "Poli Paru",
+                        caption = "POLI PARU",
+                        visible = true,
+                        playAudio = true,
+                        infoText = "POLI PARU"
+                    }
+                },
+                {
+                    "POST13",
+                    new PostConfigDisplay
+                    {
+                        code = "POST13",
+                        name = "Rehab Medik",
+                        caption = "REHAB MEDIK",
+                        visible = true,
+                        playAudio = true,
+                        infoText = "REHAB MEDIK"
                     }
                 }
             };
@@ -273,12 +321,12 @@ namespace Tobasa
                     new PostConfigTicket
                     {
                         code = "POST0",
-                        name = "Apotik",
-                        caption = "Apotik - Penyerahan Resep",
+                        name = "Poli Gigi",
+                        caption = "POLI GIGI",
                         enabled = true,
                         visible= true,
                         printCopies = 1,
-                        ticketHeader = "Apotik"
+                        ticketHeader = "POLI GIGI"
                     }
                 },
                 {
@@ -286,12 +334,12 @@ namespace Tobasa
                     new PostConfigTicket
                     {
                         code = "POST1",
-                        name = "Laboratorium",
-                        caption = "Daftar Laboratorium",
+                        name = "Poli Mata",
+                        caption = "POLI MATA",
                         enabled = true,
                         visible= true,
                         printCopies = 1,
-                        ticketHeader = "Laboratorium"
+                        ticketHeader = "POLI MATA"
                     }
                 },
                 {
@@ -299,12 +347,12 @@ namespace Tobasa
                     new PostConfigTicket
                     {
                         code = "POST2",
-                        name = "Pendaftaran",
-                        caption = "Pendaftaran Rawat Jalan",
+                        name = "Poli Kandungan",
+                        caption = "POLI KANDUNGAN",
                         enabled = true,
                         visible= true,
                         printCopies = 1,
-                        ticketHeader = "Pendaftaran"
+                        ticketHeader = "POLI KANDUNGAN"
                     }
                 },
                 {
@@ -312,12 +360,12 @@ namespace Tobasa
                     new PostConfigTicket
                     {
                         code = "POST3",
-                        name = "BPJS Kesehatan",
-                        caption = "BPJS Kesehatan",
+                        name = "Poli Bedah",
+                        caption = "POLI BEDAH",
                         enabled = true,
                         visible= true,
                         printCopies = 1,
-                        ticketHeader = "BPJS Kesehatan"
+                        ticketHeader = "POLI BEDAH"
                     }
                 },
                 {
@@ -325,12 +373,12 @@ namespace Tobasa
                     new PostConfigTicket
                     {
                         code = "POST4",
-                        name = "Customer Service",
-                        caption = "Customer Service",
+                        name = "Poli Anak",
+                        caption = "POLI ANAK",
                         enabled = true,
                         visible= true,
                         printCopies = 1,
-                        ticketHeader = "Customer Service"
+                        ticketHeader = "POLI ANAK"
                     }
                 },
                 {
@@ -338,12 +386,12 @@ namespace Tobasa
                     new PostConfigTicket
                     {
                         code = "POST5",
-                        name = "Poli Gigi",
-                        caption = "POLI GIGI",
+                        name = "Poli Ortopedi",
+                        caption = "POLI ORTOPEDI",
                         enabled = true,
                         visible= true,
                         printCopies = 1,
-                        ticketHeader = "Poli Gigi"
+                        ticketHeader = "POLI ORTOPEDI"
                     }
                 },
                 {
@@ -351,12 +399,12 @@ namespace Tobasa
                     new PostConfigTicket
                     {
                         code = "POST6",
-                        name = "Poli Anak",
-                        caption = "POLI ANAK",
+                        name = "Poli Jantung",
+                        caption = "POLI JANTUNG",
                         enabled = true,
                         visible= true,
                         printCopies = 1,
-                        ticketHeader = "Poli Anak"
+                        ticketHeader = "POLI JANTUNG"
                     }
                 },
                 {
@@ -364,12 +412,12 @@ namespace Tobasa
                     new PostConfigTicket
                     {
                         code = "POST7",
-                        name = "Poli Mata",
-                        caption = "POLI MATA",
+                        name = "Poli THT",
+                        caption = "POLI THT",
                         enabled = true,
                         visible= true,
                         printCopies = 1,
-                        ticketHeader = "Poli Mata"
+                        ticketHeader = "POLI THT"
                     }
                 },
                 {
@@ -390,12 +438,64 @@ namespace Tobasa
                     new PostConfigTicket
                     {
                         code = "POST9",
-                        name = "Poli THT",
-                        caption = "POLI THT",
+                        name = "Poli Dalam",
+                        caption = "POLI DALAM",
                         enabled = true,
                         visible= true,
                         printCopies = 1,
-                        ticketHeader = "Poli THT"
+                        ticketHeader = "POLI DALAM"
+                    }
+                },
+                {
+                    "POST10",
+                    new PostConfigTicket
+                    {
+                        code = "POST10",
+                        name = "Poli Saraf",
+                        caption = "POLI SARAF",
+                        enabled = true,
+                        visible= true,
+                        printCopies = 1,
+                        ticketHeader = "POLI SARAF"
+                    }
+                },
+                {
+                    "POST11",
+                    new PostConfigTicket
+                    {
+                        code = "POST11",
+                        name = "Poli Psikiatri",
+                        caption = "POLI PSIKIATRI",
+                        enabled = true,
+                        visible= true,
+                        printCopies = 1,
+                        ticketHeader = "POLI PSIKIATRI"
+                    }
+                },
+                {
+                    "POST12",
+                    new PostConfigTicket
+                    {
+                        code = "POST12",
+                        name = "Poli Paru",
+                        caption = "POLI PARU",
+                        enabled = true,
+                        visible= true,
+                        printCopies = 1,
+                        ticketHeader = "POLI PARU"
+                    }
+                },
+                {
+                    "POST13",
+                    new PostConfigTicket
+                    {
+                        code = "POST13",
+                        name = "Rehab Medik",
+                        caption = "REHAB MEDIK",
+                        enabled = true,
+                        visible= true,
+                        printCopies = 1,
+                        ticketHeader = "REHAB MEDIK"
                     }
                 }
             };
@@ -412,8 +512,8 @@ namespace Tobasa
                     new PostConfigCaller
                     {
                         code = "POST0",
-                        name = "Apotik",
-                        caption = "Apotik"
+                        name = "Poli Gigi",
+                        caption = "Poli Gigi"
                     }
                 },
                 {
@@ -421,8 +521,8 @@ namespace Tobasa
                     new PostConfigCaller
                     {
                         code = "POST1",
-                        name = "Laboratorium",
-                        caption = "Laboratorium"
+                        name = "Poli Mata",
+                        caption = "Poli Mata"
                     }
                 },
                 {
@@ -430,8 +530,8 @@ namespace Tobasa
                     new PostConfigCaller
                     {
                         code = "POST2",
-                        name = "Pendaftaran RJ",
-                        caption = "Pendaftaran RJ"
+                        name = "Poli Kandungan",
+                        caption = "Poli Kandungan"
                     }
                 },
                 {
@@ -439,8 +539,8 @@ namespace Tobasa
                     new PostConfigCaller
                     {
                         code = "POST3",
-                        name = "BPJS Kesehatan",
-                        caption = "BPJS Kesehatan"
+                        name = "Poli Bedah",
+                        caption = "Poli Bedah"
                     }
                 },
                 {
@@ -448,8 +548,8 @@ namespace Tobasa
                     new PostConfigCaller
                     {
                         code = "POST4",
-                        name = "Customer Service",
-                        caption = "Customer Service"
+                        name = "Poli Anak",
+                        caption = "Poli Anak"
                     }
                 },
                 {
@@ -457,8 +557,8 @@ namespace Tobasa
                     new PostConfigCaller
                     {
                         code = "POST5",
-                        name = "Poli Gigi",
-                        caption = "Poli Gigi"
+                        name = "Poli Ortopedi",
+                        caption = "Poli Ortopedi"
                     }
                 },
                 {
@@ -466,8 +566,8 @@ namespace Tobasa
                     new PostConfigCaller
                     {
                         code = "POST6",
-                        name = "Poli Anak",
-                        caption = "Poli Anak"
+                        name = "Poli Jantung",
+                        caption = "Poli Jantung"
                     }
                 },
                 {
@@ -475,8 +575,8 @@ namespace Tobasa
                     new PostConfigCaller
                     {
                         code = "POST7",
-                        name = "Poli Mata",
-                        caption = "Poli Mata"
+                        name = "Poli THT",
+                        caption = "Poli THT"
                     }
                 },
                 {
@@ -493,8 +593,44 @@ namespace Tobasa
                     new PostConfigCaller
                     {
                         code = "POST9",
-                        name = "Poli THT",
-                        caption = "Poli THT"
+                        name = "Poli Dalam",
+                        caption = "Poli Dalam"
+                    }
+                },
+                {
+                    "POST10",
+                    new PostConfigCaller
+                    {
+                        code = "POST10",
+                        name = "Poli Saraf",
+                        caption = "Poli Saraf"
+                    }
+                },
+                {
+                    "POST11",
+                    new PostConfigCaller
+                    {
+                        code = "POST11",
+                        name = "Poli Psikiatri",
+                        caption = "Poli Psikiatri"
+                    }
+                },
+                {
+                    "POST12",
+                    new PostConfigCaller
+                    {
+                        code = "POST12",
+                        name = "Poli Paru",
+                        caption = "Poli Paru"
+                    }
+                },
+                {
+                    "POST13",
+                    new PostConfigCaller
+                    {
+                        code = "POST13",
+                        name = "Rehab Medik",
+                        caption = "Rehab Medik"
                     }
                 }
             };

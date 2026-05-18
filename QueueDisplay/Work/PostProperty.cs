@@ -170,12 +170,6 @@ namespace Tobasa
             }
             else if (Id == "POST14")
             {
-                settings.Post14Name = Name;
-                //settings.Post14Post = Id;
-                settings.Post14Caption = Caption;
-                settings.Post14RunText = RunText;
-                settings.Post14Visible = Visible;
-                settings.Post14PlayAudio = PlayAudio;
             }
             else
             {
@@ -329,12 +323,6 @@ namespace Tobasa
             else if (Id == "POST14")
             {
                 Index = 14;
-                Name = settings.Post14Name;
-                Id = settings.Post14Post;
-                Caption = settings.Post14Caption;
-                RunText = settings.Post14RunText;
-                Visible = settings.Post14Visible;
-                PlayAudio = settings.Post14PlayAudio;
             }
             else
             {

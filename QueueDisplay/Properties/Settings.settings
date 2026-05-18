@@ -54,52 +54,52 @@
       <Value Profile="(Default)">11</Value>
     </Setting>
     <Setting Name="Post0Caption" Type="System.String" Scope="User">
-      <Value Profile="(Default)">APOTIK</Value>
+      <Value Profile="(Default)">POLI GIGI</Value>
     </Setting>
     <Setting Name="Post0Post" Type="System.String" Scope="User">
       <Value Profile="(Default)">POST0</Value>
     </Setting>
     <Setting Name="Post0Name" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Apotik</Value>
+      <Value Profile="(Default)">Poli Gigi</Value>
     </Setting>
     <Setting Name="Post1Caption" Type="System.String" Scope="User">
-      <Value Profile="(Default)">LABORATORIUM</Value>
+      <Value Profile="(Default)">POLI MATA</Value>
     </Setting>
     <Setting Name="Post1Post" Type="System.String" Scope="User">
       <Value Profile="(Default)">POST1</Value>
     </Setting>
     <Setting Name="Post1Name" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Laboratorium</Value>
+      <Value Profile="(Default)">Poli Mata</Value>
     </Setting>
     <Setting Name="Post2Caption" Type="System.String" Scope="User">
-      <Value Profile="(Default)">PENDAFTARAN RJ</Value>
+      <Value Profile="(Default)">POLI KANDUNGAN</Value>
     </Setting>
     <Setting Name="Post2Post" Type="System.String" Scope="User">
       <Value Profile="(Default)">POST2</Value>
     </Setting>
     <Setting Name="Post2Name" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Pendaftaran</Value>
+      <Value Profile="(Default)">Poli Kandungan</Value>
     </Setting>
     <Setting Name="Post3Caption" Type="System.String" Scope="User">
-      <Value Profile="(Default)">BPJS KESEHATAN</Value>
+      <Value Profile="(Default)">POLI BEDAH</Value>
     </Setting>
     <Setting Name="Post3Post" Type="System.String" Scope="User">
       <Value Profile="(Default)">POST3</Value>
     </Setting>
     <Setting Name="Post3Name" Type="System.String" Scope="User">
-      <Value Profile="(Default)">BPJS Kesehatan</Value>
+      <Value Profile="(Default)">Poli Bedah</Value>
     </Setting>
     <Setting Name="Post0RunText" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Apotik</Value>
+      <Value Profile="(Default)">Poli Gigi</Value>
     </Setting>
     <Setting Name="Post1RunText" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Laboratorium</Value>
+      <Value Profile="(Default)">Poli Mata</Value>
     </Setting>
     <Setting Name="Post2RunText" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Pendaftaran</Value>
+      <Value Profile="(Default)">Poli Kandungan</Value>
     </Setting>
     <Setting Name="Post3RunText" Type="System.String" Scope="User">
-      <Value Profile="(Default)">BPJS</Value>
+      <Value Profile="(Default)">Poli Bedah</Value>
     </Setting>
     <Setting Name="NumberAnimationColor" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">Red</Value>
@@ -162,16 +162,16 @@
       <Value Profile="(Default)">C4BC3A3AC2D6D367A74580388B20BC069C96B048DFEAF5CCDC0CE1E25BF23F39</Value>
     </Setting>
     <Setting Name="Post4Caption" Type="System.String" Scope="User">
-      <Value Profile="(Default)">CUSTOMER SERVICE</Value>
+      <Value Profile="(Default)">POLI ANAK</Value>
     </Setting>
     <Setting Name="Post4Post" Type="System.String" Scope="User">
       <Value Profile="(Default)">POST4</Value>
     </Setting>
     <Setting Name="Post4Name" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Customer Service</Value>
+      <Value Profile="(Default)">Poli Anak</Value>
     </Setting>
     <Setting Name="Post4RunText" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Customer Service</Value>
+      <Value Profile="(Default)">Poli Anak</Value>
     </Setting>
     <Setting Name="Post4PlayAudio" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
@@ -201,16 +201,16 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="Post5Caption" Type="System.String" Scope="User">
-      <Value Profile="(Default)">POLI GIGI</Value>
+      <Value Profile="(Default)">POLI ORTOPEDI</Value>
     </Setting>
     <Setting Name="Post5Post" Type="System.String" Scope="User">
       <Value Profile="(Default)">POST5</Value>
     </Setting>
     <Setting Name="Post5Name" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Poli Gigi</Value>
+      <Value Profile="(Default)">Poli Ortopedi</Value>
     </Setting>
     <Setting Name="Post5RunText" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Poli Gigi</Value>
+      <Value Profile="(Default)">Poli Ortopedi</Value>
     </Setting>
     <Setting Name="Post5PlayAudio" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
@@ -219,16 +219,16 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="Post6Caption" Type="System.String" Scope="User">
-      <Value Profile="(Default)">POLI ANAK</Value>
+      <Value Profile="(Default)">POLI JANTUNG</Value>
     </Setting>
     <Setting Name="Post6Post" Type="System.String" Scope="User">
       <Value Profile="(Default)">POST6</Value>
     </Setting>
     <Setting Name="Post6Name" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Poli Anak</Value>
+      <Value Profile="(Default)">Poli Jantung</Value>
     </Setting>
     <Setting Name="Post6RunText" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Poli Anak</Value>
+      <Value Profile="(Default)">Poli Jantung</Value>
     </Setting>
     <Setting Name="Post6PlayAudio" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
@@ -237,16 +237,16 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="Post7Caption" Type="System.String" Scope="User">
-      <Value Profile="(Default)">POLI MATA</Value>
+      <Value Profile="(Default)">POLI THT</Value>
     </Setting>
     <Setting Name="Post7Post" Type="System.String" Scope="User">
       <Value Profile="(Default)">POST7</Value>
     </Setting>
     <Setting Name="Post7Name" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Poli Mata</Value>
+      <Value Profile="(Default)">Poli THT</Value>
     </Setting>
     <Setting Name="Post7RunText" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Poli Mata</Value>
+      <Value Profile="(Default)">Poli THT</Value>
     </Setting>
     <Setting Name="Post7PlayAudio" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
@@ -273,16 +273,16 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="Post9Caption" Type="System.String" Scope="User">
-      <Value Profile="(Default)">POLI THT</Value>
+      <Value Profile="(Default)">POLI DALAM</Value>
     </Setting>
     <Setting Name="Post9Post" Type="System.String" Scope="User">
       <Value Profile="(Default)">POST9</Value>
     </Setting>
     <Setting Name="Post9Name" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Poli THT</Value>
+      <Value Profile="(Default)">Poli Dalam</Value>
     </Setting>
     <Setting Name="Post9RunText" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Poli THT</Value>
+      <Value Profile="(Default)">Poli Dalam</Value>
     </Setting>
     <Setting Name="Post9PlayAudio" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
@@ -309,16 +309,16 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="Post11Caption" Type="System.String" Scope="User">
-      <Value Profile="(Default)">POLI JANTUNG</Value>
+      <Value Profile="(Default)">POLI PSIKIATRI</Value>
     </Setting>
     <Setting Name="Post11Post" Type="System.String" Scope="User">
       <Value Profile="(Default)">POST11</Value>
     </Setting>
     <Setting Name="Post11Name" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Poli Jantung</Value>
+      <Value Profile="(Default)">Poli Psikiatri</Value>
     </Setting>
     <Setting Name="Post11RunText" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Poli Jantung</Value>
+      <Value Profile="(Default)">Poli Psikiatri</Value>
     </Setting>
     <Setting Name="Post11PlayAudio" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
@@ -327,16 +327,16 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="Post12Caption" Type="System.String" Scope="User">
-      <Value Profile="(Default)">POLI INTERNA</Value>
+      <Value Profile="(Default)">POLI PARU</Value>
     </Setting>
     <Setting Name="Post12Post" Type="System.String" Scope="User">
       <Value Profile="(Default)">POST12</Value>
     </Setting>
     <Setting Name="Post12Name" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Poli Interna</Value>
+      <Value Profile="(Default)">Poli Paru</Value>
     </Setting>
     <Setting Name="Post12RunText" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Poli Interna</Value>
+      <Value Profile="(Default)">Poli Paru</Value>
     </Setting>
     <Setting Name="Post12PlayAudio" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
@@ -345,16 +345,16 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="Post13Caption" Type="System.String" Scope="User">
-      <Value Profile="(Default)">POLI BEDAH</Value>
+      <Value Profile="(Default)">REHAB MEDIK</Value>
     </Setting>
     <Setting Name="Post13Post" Type="System.String" Scope="User">
       <Value Profile="(Default)">POST13</Value>
     </Setting>
     <Setting Name="Post13Name" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Poli Bedah</Value>
+      <Value Profile="(Default)">Rehab Medik</Value>
     </Setting>
     <Setting Name="Post13RunText" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Poli Bedah</Value>
+      <Value Profile="(Default)">Rehab Medik</Value>
     </Setting>
     <Setting Name="Post13PlayAudio" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
@@ -378,7 +378,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="Post14Visible" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="Post0Visible" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>

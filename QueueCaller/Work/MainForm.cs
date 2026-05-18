@@ -700,10 +700,6 @@ namespace Tobasa
                 {
                     postId = "POST13";
                 }
-                else if ((Button)sender == btnChangePost14)
-                {
-                    postId = "POST14";
-                }
                 else
                     postId = cbPost.Text;
 
@@ -1098,7 +1094,6 @@ namespace Tobasa
             toolTip.SetToolTip(btnChangePost11, _postIdsDict["POST11"]);
             toolTip.SetToolTip(btnChangePost12, _postIdsDict["POST12"]);
             toolTip.SetToolTip(btnChangePost13, _postIdsDict["POST13"]);
-            toolTip.SetToolTip(btnChangePost14, _postIdsDict["POST14"]);
         }
 
         #endregion

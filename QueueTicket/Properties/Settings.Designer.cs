@@ -85,7 +85,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Apotik - Penyerahan Resep")]
+        [global::System.Configuration.DefaultSettingValueAttribute("POLI GIGI")]
         public string Post0Caption {
             get {
                 return ((string)(this["Post0Caption"]));
@@ -109,7 +109,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Apotik")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Poli Gigi")]
         public string Post0Name {
             get {
                 return ((string)(this["Post0Name"]));
@@ -133,7 +133,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Daftar Laboratorium")]
+        [global::System.Configuration.DefaultSettingValueAttribute("POLI MATA")]
         public string Post1Caption {
             get {
                 return ((string)(this["Post1Caption"]));
@@ -157,7 +157,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Laboratorium")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Poli Mata")]
         public string Post1Name {
             get {
                 return ((string)(this["Post1Name"]));
@@ -181,7 +181,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Pendaftaran Rawat Jalan")]
+        [global::System.Configuration.DefaultSettingValueAttribute("POLI KANDUNGAN")]
         public string Post2Caption {
             get {
                 return ((string)(this["Post2Caption"]));
@@ -205,7 +205,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Pendaftaran")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Poli Kandungan")]
         public string Post2Name {
             get {
                 return ((string)(this["Post2Name"]));
@@ -229,7 +229,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("BPJS Kesehatan")]
+        [global::System.Configuration.DefaultSettingValueAttribute("POLI BEDAH")]
         public string Post3Caption {
             get {
                 return ((string)(this["Post3Caption"]));
@@ -253,7 +253,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("BPJS Kesehatan")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Poli Bedah")]
         public string Post3Name {
             get {
                 return ((string)(this["Post3Name"]));
@@ -514,7 +514,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Customer Service")]
+        [global::System.Configuration.DefaultSettingValueAttribute("POLI ANAK")]
         public string Post4Caption {
             get {
                 return ((string)(this["Post4Caption"]));
@@ -538,7 +538,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Customer Service")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Poli Anak")]
         public string Post4Name {
             get {
                 return ((string)(this["Post4Name"]));
@@ -718,7 +718,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("POLI GIGI")]
+        [global::System.Configuration.DefaultSettingValueAttribute("POLI ORTOPEDI")]
         public string Post5Caption {
             get {
                 return ((string)(this["Post5Caption"]));
@@ -742,7 +742,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Poli Gigi")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Poli Ortopedi")]
         public string Post5Name {
             get {
                 return ((string)(this["Post5Name"]));
@@ -826,7 +826,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("POLI ANAK")]
+        [global::System.Configuration.DefaultSettingValueAttribute("POLI JANTUNG")]
         public string Post6Caption {
             get {
                 return ((string)(this["Post6Caption"]));
@@ -850,7 +850,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Poli Anak")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Poli Jantung")]
         public string Post6Name {
             get {
                 return ((string)(this["Post6Name"]));
@@ -934,7 +934,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("POLI MATA")]
+        [global::System.Configuration.DefaultSettingValueAttribute("POLI THT")]
         public string Post7Caption {
             get {
                 return ((string)(this["Post7Caption"]));
@@ -958,7 +958,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Poli Mata")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Poli THT")]
         public string Post7Name {
             get {
                 return ((string)(this["Post7Name"]));
@@ -1150,7 +1150,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("POLI THT")]
+        [global::System.Configuration.DefaultSettingValueAttribute("POLI DALAM")]
         public string Post9Caption {
             get {
                 return ((string)(this["Post9Caption"]));
@@ -1174,7 +1174,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Poli THT")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Poli Dalam")]
         public string Post9Name {
             get {
                 return ((string)(this["Post9Name"]));
@@ -1378,7 +1378,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("POLI JANTUNG")]
+        [global::System.Configuration.DefaultSettingValueAttribute("POLI PSIKIATRI")]
         public string Post11Caption {
             get {
                 return ((string)(this["Post11Caption"]));
@@ -1402,7 +1402,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Poli Jantung")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Poli Psikiatri")]
         public string Post11Name {
             get {
                 return ((string)(this["Post11Name"]));
@@ -1498,7 +1498,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("POLI INTERNA")]
+        [global::System.Configuration.DefaultSettingValueAttribute("POLI PARU")]
         public string Post12Caption {
             get {
                 return ((string)(this["Post12Caption"]));
@@ -1522,7 +1522,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Poli Interna")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Poli Paru")]
         public string Post12Name {
             get {
                 return ((string)(this["Post12Name"]));
@@ -1618,7 +1618,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("POLI BEDAH")]
+        [global::System.Configuration.DefaultSettingValueAttribute("REHAB MEDIK")]
         public string Post13Caption {
             get {
                 return ((string)(this["Post13Caption"]));
@@ -1642,7 +1642,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Poli Bedah")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Rehab Medik")]
         public string Post13Name {
             get {
                 return ((string)(this["Post13Name"]));
@@ -1774,7 +1774,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool Post14Enabled {
             get {
                 return ((bool)(this["Post14Enabled"]));
@@ -1786,7 +1786,7 @@ namespace Tobasa.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool Post14Visible {
             get {
                 return ((bool)(this["Post14Visible"]));

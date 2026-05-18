@@ -256,17 +256,18 @@ namespace Tobasa
             // 
             this.divMenuRight.ColumnCount = 1;
             this.divMenuRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.divMenuRight.Controls.Add(this.divPost14, 0, 6);
-            this.divMenuRight.Controls.Add(this.divPost13, 0, 5);
-            this.divMenuRight.Controls.Add(this.divPost9, 0, 4);
-            this.divMenuRight.Controls.Add(this.divPost8, 0, 3);
-            this.divMenuRight.Controls.Add(this.divPost7, 0, 2);
-            this.divMenuRight.Controls.Add(this.divPost6, 0, 1);
-            this.divMenuRight.Controls.Add(this.divPost5, 0, 0);
+            this.divMenuRight.Controls.Add(this.divPost14, 0, 7);
+            this.divMenuRight.Controls.Add(this.divPost13, 0, 6);
+            this.divMenuRight.Controls.Add(this.divPost12, 0, 5);
+            this.divMenuRight.Controls.Add(this.divPost11, 0, 4);
+            this.divMenuRight.Controls.Add(this.divPost10, 0, 3);
+            this.divMenuRight.Controls.Add(this.divPost9, 0, 2);
+            this.divMenuRight.Controls.Add(this.divPost8, 0, 1);
+            this.divMenuRight.Controls.Add(this.divPost7, 0, 0);
             this.divMenuRight.Dock = System.Windows.Forms.DockStyle.Fill;
             this.divMenuRight.Location = new System.Drawing.Point(382, 3);
             this.divMenuRight.Name = "divMenuRight";
-            this.divMenuRight.RowCount = 7;
+            this.divMenuRight.RowCount = 8;
             this.divMenuRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.divMenuRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.divMenuRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
@@ -516,9 +517,8 @@ namespace Tobasa
             // 
             this.divMenuLeft.ColumnCount = 1;
             this.divMenuLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.divMenuLeft.Controls.Add(this.divPost12, 0, 7);
-            this.divMenuLeft.Controls.Add(this.divPost11, 0, 6);
-            this.divMenuLeft.Controls.Add(this.divPost10, 0, 5);
+            this.divMenuLeft.Controls.Add(this.divPost6, 0, 6);
+            this.divMenuLeft.Controls.Add(this.divPost5, 0, 5);
             this.divMenuLeft.Controls.Add(this.divPost4, 0, 4);
             this.divMenuLeft.Controls.Add(this.divPost3, 0, 3);
             this.divMenuLeft.Controls.Add(this.divPost2, 0, 2);
@@ -527,7 +527,7 @@ namespace Tobasa
             this.divMenuLeft.Dock = System.Windows.Forms.DockStyle.Fill;
             this.divMenuLeft.Location = new System.Drawing.Point(3, 3);
             this.divMenuLeft.Name = "divMenuLeft";
-            this.divMenuLeft.RowCount = 8;
+            this.divMenuLeft.RowCount = 7;
             this.divMenuLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.divMenuLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.divMenuLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));

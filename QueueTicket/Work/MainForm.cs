@@ -726,31 +726,35 @@ namespace Tobasa
 
         private void AdaptDivMenuLayout()
         {
-            // Left Part
+            // Left Part (POST0-6)
             divPost3.Visible = _settings.Post3Visible;
             divPost4.Visible = _settings.Post4Visible;
+            divPost5.Visible = _settings.Post5Visible;
+            divPost6.Visible = _settings.Post6Visible;
+
+            // Right Part (POST7-14)
+            divPost8.Visible = _settings.Post8Visible;
+            divPost9.Visible = _settings.Post9Visible;
             divPost10.Visible = _settings.Post10Visible;
             divPost11.Visible = _settings.Post11Visible;
             divPost12.Visible = _settings.Post12Visible;
-
-            // Right Part
-            divPost8.Visible = _settings.Post8Visible;
-            divPost9.Visible = _settings.Post9Visible;
             divPost13.Visible = _settings.Post13Visible;
             divPost14.Visible = _settings.Post14Visible;
 
-            // Count visible rows in left panel (POST0, 1, 2 always visible; 3,4,10,11,12 conditional)
+            // Count visible rows in left panel (POST0, 1, 2 always visible; 3,4,5,6 conditional)
             int leftVisible = 3; // POST0, POST1, POST2 always visible
             if (divPost3.Visible)  leftVisible++;
             if (divPost4.Visible)  leftVisible++;
-            if (divPost10.Visible) leftVisible++;
-            if (divPost11.Visible) leftVisible++;
-            if (divPost12.Visible) leftVisible++;
+            if (divPost5.Visible)  leftVisible++;
+            if (divPost6.Visible)  leftVisible++;
 
-            // Count visible rows in right panel (POST5, 6, 7 always visible; 8,9,13,14 conditional)
-            int rightVisible = 3; // POST5, POST6, POST7 always visible
+            // Count visible rows in right panel (POST7 always visible; 8-14 conditional)
+            int rightVisible = 1; // POST7 always visible
             if (divPost8.Visible)  rightVisible++;
             if (divPost9.Visible)  rightVisible++;
+            if (divPost10.Visible) rightVisible++;
+            if (divPost11.Visible) rightVisible++;
+            if (divPost12.Visible) rightVisible++;
             if (divPost13.Visible) rightVisible++;
             if (divPost14.Visible) rightVisible++;
 
